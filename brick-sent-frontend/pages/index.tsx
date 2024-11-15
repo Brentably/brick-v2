@@ -45,7 +45,7 @@ export default function Home() {
       setHasStarted(true)
     } else {
       validateSentence(sentenceToTranslate, (e.target as HTMLTextAreaElement).value)
-      
+      ObtainAndSetSentence()
     }
   }
 
