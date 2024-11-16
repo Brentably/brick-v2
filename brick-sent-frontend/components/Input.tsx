@@ -1,39 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface InputProps {
-  handleSend: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+  handleSend?: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
   disabled?: boolean;
+  value: string;
+  setInput?: (input: string) => void;
+  displayMode?: boolean; // New prop for display mode
 }
 
-const Input: React.FC<InputProps> = ({ handleSend, disabled }) => {
+const Input: React.FC<InputProps> = ({ handleSend, disabled, value, setInput, displayMode = false }) => {
   const textareaRef = React.useRef<HTMLTextAreaElement | null>(null);
   const textareaContainerRef = React.useRef<HTMLDivElement | null>(null);
-  const [input, setInput] = useState('')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (textareaRef.current === null || textareaContainerRef.current === null || disabled) return;
+    if (textareaRef.current === null || textareaContainerRef.current === null || disabled || displayMode) return;
     textareaRef.current.style.height = "auto";
     textareaRef.current.style.height = textareaRef.current.scrollHeight + "px";
-    setInput(e.target.value) // Assuming setInput is a function that updates the input state
+    setInput?.(e.target.value)
   };
 
   return (
     <div ref={textareaContainerRef} className='relative flex flex-grow items-end mt-4'>
-      <textarea ref={textareaRef}
+      <textarea
+        ref={textareaRef}
         onChange={handleInputChange}
-        value={input}
+        value={value}
         rows={1}
-        className='text-base chatbot-input flex-1 outline-none rounded-md p-2 resize-none m-0 w-full overflow-hidden md:min-w-96'
+        className={`text-base chatbot-input flex-1 outline-none rounded-md p-2 resize-none m-0 w-full overflow-hidden md:min-w-96 ${displayMode ? 'bg-gray-100 cursor-default' : ''}`}
         placeholder='Enter your translation'
         onKeyDown={(e) => {
-          if (e.key === 'Enter' && !e.shiftKey && input.trim() !== '' && !disabled) {
+          if (e.key === 'Enter' && !e.shiftKey && value.trim() !== '' && !disabled && !displayMode) {
             e.preventDefault();
-            handleSend(e)
-            setInput('')
+            e.stopPropagation() // prevents event from immediately being marked as correct
+            handleSend?.(e)
           }
         }}
         style={{ height: '2.5rem' }}
-        disabled={disabled}
+        disabled={disabled || displayMode}
+        readOnly={displayMode}
       />
     </div>
   );

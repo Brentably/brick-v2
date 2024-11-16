@@ -14,7 +14,7 @@ export default async function handler(
     const translator = new deepl.Translator(process.env.NEXT_SERVER_DEEPL_KEY!);
     console.log("getEnglish translation hit");
     
-    const { sentence, language } = req.body;
+    const { sentence } = req.body;
 
     console.log("translating ", sentence, " to english");
 
