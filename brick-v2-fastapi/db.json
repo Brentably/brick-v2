@@ -1,0 +1,11 @@
+{
+  "user": {
+    "words": [
+      {
+        "word": "wordhere",
+        "correct_attempts": 1,
+        "total_attempts": 2
+      }
+    ]
+  }
+}
