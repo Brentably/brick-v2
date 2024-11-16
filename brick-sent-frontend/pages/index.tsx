@@ -45,7 +45,8 @@ export default function Home() {
 
 
 
-  async function ObtainAndSetSentence() {
+  async function obtainAndSetSentence() {
+    console.log('oASS() called')
     setSentenceLoading(true)
     fetch('http://localhost:8000/sentence')
       .then(response => response.json())
@@ -76,25 +77,26 @@ export default function Home() {
     console.log(`User's translation was ${isCorrect ? 'correct' : 'incorrect'}`)
     isUserValidating.current = false
     setUserTranslation("")
-    ObtainAndSetSentence()
+    obtainAndSetSentence()
   }
 
   function handleSend(e: KeyboardEvent<HTMLTextAreaElement>) {
-    if (!hasStarted) {
-      ObtainAndSetSentence()
-      setHasStarted(true)
-    } else {
       if (englishTranslationPromise === null) throw new Error('cant handle because no english translation promise')
       setUserTranslation((e.target as HTMLTextAreaElement).value)
       validateSentence(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
-      // ObtainAndSetSentence()
-    }
   }
+
+  function handleStart() {
+    obtainAndSetSentence()
+    setHasStarted(true)
+  }
+
 
   return (
     <div
       className={`flex h-full justify-center flex-row p-10`}
     >
+      {hasStarted ? 
       <div className="max-w-4x flex justify-stretch flex-col">
         <div className="text-center text-lg">
 
@@ -125,6 +127,10 @@ export default function Home() {
         }
 
       </div>
+
+      : 
+      <Button onClick={handleStart}>Push to start</Button>
+      }
     </div>
   );
 }
