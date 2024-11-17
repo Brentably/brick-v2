@@ -6,7 +6,7 @@ from pprint import pprint
 import spacy
 import random
 
-# must use build constrainst when install spacy
+# must use build constraint when install spacy
 # must install numpy<2
 
 with open('5009_word_and_scraped_cd.json') as f:
