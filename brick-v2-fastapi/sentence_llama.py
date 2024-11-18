@@ -10,15 +10,24 @@ flavor = "devel"  #  includes full CUDA toolkit
 operating_sys = "ubuntu22.04"
 tag = f"{cuda_version}-{flavor}-{operating_sys}"
 
+LLAMA_CPP_RELEASE = "b4120"
+r = "https://github.com/ggerganov/llama.cpp/releases/download/b4120/llama-b4120-bin-ubuntu-x64.zip"
+
 image = (
-    modal.Image.from_registry(f"ghcr.io/ggerganov/llama.cpp:light-cuda", add_python="3.11")
-    .entrypoint([])
-    .apt_install("sudo")
+    modal.Image.debian_slim(python_version="3.11")
+    .apt_install(["curl", "unzip"])
+    .run_commands(
+        [
+            f"curl -L -O https://github.com/ggerganov/llama.cpp/releases/download/{LLAMA_CPP_RELEASE}/llama-{LLAMA_CPP_RELEASE}-bin-ubuntu-x64.zip",
+            f"unzip llama-{LLAMA_CPP_RELEASE}-bin-ubuntu-x64.zip",
+        ]
+    )
     .pip_install("torch")
     .copy_local_file('./experimental/top_2000_german.gbnf', '/experimental/top_2000_german.gbnf')
     .copy_local_file('./experimental/top_600_german.gbnf', '/experimental/top_600_german.gbnf')
     .copy_local_file('./experimental/chess.gbnf', '/experimental/chess.gbnf')
     .copy_local_file("./5009_word_and_scraped_cd.json", "/experimental/5009_word_and_scraped_cd.json")
+    
     # .run_commands("curl -L -o /volume/model https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf")
 
 )
@@ -101,17 +110,10 @@ def generate(prompt):
     #     max_tokens=100, # Generate up to 32 tokens, set to None to generate up to the end of the context window
     #     echo=True, # Echo the prompt back in the output
     #     # grammar=german_grammar,
-    find_process = subprocess.run(["find", "/", "-name", "libllama.so"], capture_output=True, text=True)
-    print(find_process.stdout)
-    print(find_process.stderr)
-    
-    echo_process = subprocess.run(["echo", "$LD_LIBRARY_PATH"], capture_output=True, text=True)
-    print(echo_process.stdout)
-    print(echo_process.stderr)
     # subprocess.run(["export", "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/"])
 
         
-    output = subprocess.run(['/llama-cli', '-m', model_path, "-p", 'hi', '-n', '100', "--gpus", "all", "--n-gpu-layers", '-1'], text=True, capture_output=True)
+    output = subprocess.run(["/build/bin/llama-cli", '-m', model_path, "-p", 'hi', '-n', '100', "--gpus", "all", "--n-gpu-layers", '-1'], text=True, capture_output=True)
         
     # ) # Generate a completion, can also call create_completion
     # for item in output:

@@ -3,3 +3,4 @@ __pycache__
 experimental
 .DS_Store
 
+.env
