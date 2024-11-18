@@ -1,7 +1,7 @@
 import modal
 import subprocess
 import os
-from llama_cpp.llama import Llama, LlamaGrammar
+# from llama_cpp.llama import Llama, LlamaGrammar
 
 app = modal.App("sentence-generator")
 
@@ -11,19 +11,9 @@ operating_sys = "ubuntu22.04"
 tag = f"{cuda_version}-{flavor}-{operating_sys}"
 
 image = (
-    modal.Image.from_registry(f"nvidia/cuda:{tag}", add_python="3.11")
-    .apt_install('git', 'curl', 'build-essential', 'clang', "sudo")  # Added clang and build-essential
-    .run_commands("curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
-  && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
-    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
-    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list")
-    .run_commands("sudo apt-get update")
-    .run_commands("sudo apt-get install -y nvidia-container-toolkit")
-    .run_commands(
-        "pip install -U pip",
-        "pip install llama-cpp-python \
-  --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124"    
-    )
+    modal.Image.from_registry(f"ghcr.io/ggerganov/llama.cpp:light-cuda", add_python="3.11")
+    .entrypoint([])
+    .apt_install("sudo")
     .pip_install("torch")
     .copy_local_file('./experimental/top_2000_german.gbnf', '/experimental/top_2000_german.gbnf')
     .copy_local_file('./experimental/top_600_german.gbnf', '/experimental/top_600_german.gbnf')
@@ -95,33 +85,42 @@ def generate(prompt):
     else:
         print("GPU is not available, using CPU")
         
-    llm = Llama(
-        model_path=model_path,
-        n_gpu_layers=-1, # Uncomment to use GPU acceleration
-        # seed=1337, # Uncomment to set a specific seed
-        n_ctx=10000, # Uncomment to increase the context window
-    )
-    grammar = LlamaGrammar.from_file("/experimental/chess.gbnf")
-    german_grammar = LlamaGrammar.from_file("/experimental/top_2000_german.gbnf")
+    # llm = Llama(
+    #     model_path=model_path,
+    #     n_gpu_layers=-1, # Uncomment to use GPU acceleration
+    #     # seed=1337, # Uncomment to set a specific seed
+    #     n_ctx=10000, # Uncomment to increase the context window
+    # )
+    # grammar = LlamaGrammar.from_file("/experimental/chess.gbnf")
+    # german_grammar = LlamaGrammar.from_file("/experimental/top_2000_german.gbnf")
 
-    prompt = "Create a vibrant german sentence using only the following words: " + ", ".join(words) + "." + "Vibrant german sentence: "
+    # prompt = "Create a vibrant german sentence using only the following words: " + ", ".join(words) + "." + "Vibrant german sentence: "
     
-    output = llm(
-        prompt=prompt, # Prompt
-        max_tokens=100, # Generate up to 32 tokens, set to None to generate up to the end of the context window
-        echo=True, # Echo the prompt back in the output
-        # grammar=german_grammar,
-        
+    # output = llm(
+    #     prompt=prompt, # Prompt
+    #     max_tokens=100, # Generate up to 32 tokens, set to None to generate up to the end of the context window
+    #     echo=True, # Echo the prompt back in the output
+    #     # grammar=german_grammar,
+    find_process = subprocess.run(["find", "/", "-name", "libllama.so"], capture_output=True, text=True)
+    print(find_process.stdout)
+    print(find_process.stderr)
+    
+    echo_process = subprocess.run(["echo", "$LD_LIBRARY_PATH"], capture_output=True, text=True)
+    print(echo_process.stdout)
+    print(echo_process.stderr)
+    # subprocess.run(["export", "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/"])
 
         
-    ) # Generate a completion, can also call create_completion
-    for item in output:
-        print(item['choices'][0]['text'], end='')
+    output = subprocess.run(['/llama-cli', '-m', model_path, "-p", 'hi', '-n', '100', "--gpus", "all", "--n-gpu-layers", '-1'], text=True, capture_output=True)
         
-    print(output)
+    # ) # Generate a completion, can also call create_completion
+    # for item in output:
+    #     print(item['choices'][0]['text'], end='')
+        
+    print(output.stderr)
 
     
-    return output
+    return output.stdout
 
 @app.local_entrypoint()
 def main():
