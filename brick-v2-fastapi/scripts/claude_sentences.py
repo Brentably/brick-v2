@@ -130,8 +130,7 @@ def process_claude_response(resp: str):
   
 
 # process a normal message => split it into tokens and determine what root words it traces back to.
-def find_root_words(body: TokenizeRequest): 
-    input_str, language = body.input_str, body.language
+def find_root_words(input_str, language): 
     if language == 'German':
         nlp = nlp_de
     else:
@@ -180,14 +179,30 @@ def find_root_words(body: TokenizeRequest):
     # pprint(tokens_list)
     return {"tokens": tokens_list}
 
-def validate_message(root_words: list[list[str]], focus_word: str, words_list: list[str]) -> ValidationResult:
+def process_and_validate_message(preprocessed_message: str, root_words: list[list[str]], focus_word: str, words_list: list[str]) -> ValidationResult:
+    message = process_claude_response(preprocessed_message)
+
+    pprint("message:\n")
+    pprint(message)
+
+    # Process and validate the generated message
+    data = find_root_words(input_str=message, language="German")
+    print('data:\n')
+    pprint(data)
+    
+    root_words = [token['root_words'] for token in data['tokens']]
+    
+    pprint('root words:')
+    print(root_words)
+    
+    
     # Validate that at least one of the random words is used
     found = any(focus_word in root_word_list for root_word_list in root_words)
     if not found:
         return {"is_valid": False, "reason": "focus_word missing"}
 
     # Validate that all root words are in the words list
-
+    # the below doesn't work because the 
     for root_word_list in root_words:
         if not root_word_list:
             continue
@@ -195,7 +210,7 @@ def validate_message(root_words: list[list[str]], focus_word: str, words_list: l
     if words_not_in_list:
         return {"is_valid": False, "reason": "words not on word_list found", "invalid_words": words_not_in_list}
       
-    return {"is_valid": True}
+    return {"is_valid": True, "message": message, "data": data}
 
 
 def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messages=None) -> tuple[str, dict[str, list[dict]]]:
@@ -223,22 +238,12 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
   # print("pre-processed message:\n")
   # print(preprocessed_message)
   
-  message = process_claude_response(preprocessed_message)
 
-  pprint("message:\n")
-  pprint(message)
 
-  # Process and validate the generated message
-  data = find_root_words(TokenizeRequest(input_str=message, language="German"))
-  root_words = [token['root_words'] for token in data['tokens']]
-  
-  pprint('root words:')
-  print(root_words)
-
-  result = validate_message(root_words, focus_word, words_list)
+  result = process_and_validate_message(preprocessed_message, focus_word, words_list)
   
   if result["is_valid"]:
-    return [message, data]
+    return [result["message"], result["data"]]
   else:
     if result["reason"] == "words not on word_list found":
         messages.append({"role": "user", "content": f"Unfortunately, you used: {result['invalid_words']} which are not on the list"})
