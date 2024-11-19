@@ -6,6 +6,7 @@ import Loading from "@/components/Loading";
 import { getEnglishTranslation } from "@/lib/getEnglishTranslation";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle } from "lucide-react";
+import bricks from "../public/assets/bricks.svg"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -51,11 +52,13 @@ export default function Home() {
     fetch('http://localhost:8000/sentence')
       .then(response => response.json())
       .then(data => {
-        setSentenceToTranslate(data.content)
+        console.log('data:\n')
         console.log(data)
+
+        setSentenceToTranslate(data.message)
         setSentenceLoading(false)
 
-        setEnglishTranslationPromise(getEnglishTranslation(data.content))
+        setEnglishTranslationPromise(getEnglishTranslation(data.message))
       })
       .catch(error => {
         console.error('Error:', error)
@@ -81,9 +84,9 @@ export default function Home() {
   }
 
   function handleSend(e: KeyboardEvent<HTMLTextAreaElement>) {
-      if (englishTranslationPromise === null) throw new Error('cant handle because no english translation promise')
-      setUserTranslation((e.target as HTMLTextAreaElement).value)
-      validateSentence(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
+    if (englishTranslationPromise === null) throw new Error('cant handle because no english translation promise')
+    setUserTranslation((e.target as HTMLTextAreaElement).value)
+    validateSentence(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
   }
 
   function handleStart() {
@@ -96,41 +99,51 @@ export default function Home() {
     <div
       className={`flex h-full justify-center flex-row p-10`}
     >
-      {hasStarted ? 
-      <div className="max-w-4x flex justify-stretch flex-col">
-        <div className="text-center text-lg">
-
-          {sentenceLoading ? <Loading /> : sentenceToTranslate}
-
+      <div className="flex flex-col items-center">
+        <div className='flex items-center gap-2 mb-10'>
+          <Image src={bricks} alt='' className='w-10' />
+          <div className='flex items-center'>
+            <h1 className='chatbot-text-primary text-xl lg:text-3xl font-medium'>Brick Bot v2</h1>
+            {/* <span className='ml-2 bg-[var(--background-soft)] text-[var(--text-primary-main)] px-2 py-1 text-xs rounded'>Beta</span> */}
+          </div>
         </div>
 
-        <Input handleSend={handleSend} disabled={sentenceLoading} value={userTranslation} setInput={setUserTranslation} displayMode={isUserValidating.current} />  
+        {hasStarted ?
+          <div className="max-w-4x flex justify-stretch flex-col">
+            <div className="text-center text-lg">
 
-        {isUserValidating.current ?
-          <>
-            <div className="text-center text-md mt-4">Correct translation:</div>
-            <Input disabled={true} value={englishTranslation} displayMode={true} />  
-            {/* <div className="text-center text-lg font-medium mt-4">{englishTranslation}</div> */}
-            <div className="flex justify-center space-x-4 mt-4">
-              <Button onClick={() => handleValidation(false)} className="bg-red-500 hover:bg-red-600">
-                <XCircle className="mr-2 h-4 w-4" /> Incorrect
-              </Button>
-              <Button onClick={() => handleValidation(true)} className="bg-green-500 hover:bg-green-600">
-                <CheckCircle className="mr-2 h-4 w-4" /> Correct
-              </Button>
+              {sentenceLoading ? <Loading /> : sentenceToTranslate}
+
             </div>
-          <div className="mt-4 text-sm text-center">
-            (As long as it's roughly correct, that's ok. That is: the meaning is conveyed.)
+
+            <Input handleSend={handleSend} disabled={sentenceLoading} value={userTranslation} setInput={setUserTranslation} displayMode={isUserValidating.current} />
+
+            {isUserValidating.current ?
+              <>
+                <div className="text-center text-md mt-4">Correct translation:</div>
+                <Input disabled={true} value={englishTranslation} displayMode={true} />
+                {/* <div className="text-center text-lg font-medium mt-4">{englishTranslation}</div> */}
+                <div className="flex justify-center space-x-4 mt-4">
+                  <Button onClick={() => handleValidation(false)} className="bg-red-500 hover:bg-red-600">
+                    <XCircle className="mr-2 h-4 w-4" /> Incorrect
+                  </Button>
+                  <Button onClick={() => handleValidation(true)} className="bg-green-500 hover:bg-green-600">
+                    <CheckCircle className="mr-2 h-4 w-4" /> Correct
+                  </Button>
+                </div>
+                <div className="mt-4 text-sm text-center">
+                  (As long as it's roughly correct, that's ok. That is: the meaning is conveyed.)
+                </div>
+              </>
+              : null
+            }
+
           </div>
-          </>
-          : null
+
+          :
+          <Button onClick={handleStart}>Push to start</Button>
         }
-
       </div>
-
-      : 
-      <Button onClick={handleStart}>Push to start</Button>
-      }
     </div>
   );
 }

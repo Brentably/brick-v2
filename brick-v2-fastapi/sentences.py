@@ -1,8 +1,8 @@
 import json
 import random
 from pprint import pprint
-from typing import TypedDict 
-
+from typing import Any, Optional, TypedDict 
+from rich import print
 import openai
 import spacy
 from pydantic import BaseModel
@@ -41,7 +41,7 @@ def create_system_prompt(focus_word: str, language: str = 'German') -> str:
 
     But *ONLY* use words and versions of words from this list. DO NOT use any other words. Let me reiterate, do NOT, use any other words.
     
-    Additionally, your main requirement is to use the following word: {focus_word}. Create a great example sentence with this focus word in context in order for the user to get a good grasp on how it might be used.
+    Additionally, your main requirement is to use the focus word specified. Create a great example sentence with this focus word in context in order for the user to get a good grasp on how it might be used.
     You are a native speaker, and you actually don't know English. Make sure that your <answer> always contains only German.
     
     Before you reply, consider the word list and how you might structure your reply given your limited vocabulary. Write out this thinking within <thinking> tags.
@@ -64,11 +64,23 @@ LOOKUP_TABLE_FILE = './5009_cd_to_word_lookup.json'
 class TokenizeRequest(BaseModel):
     input_str: str
     language: str
+
+class TokenInfo(BaseModel):
+    token: str
+    token_ws: str
+    id: Optional[int]
+    root_words: list[str]
+    is_svp: bool
     
-class ValidationResult(TypedDict, total=False):
+class MessageData(BaseModel):
+    message: str
+    data: list[TokenInfo]
+
+class ValidationResult(BaseModel):
     is_valid: bool
-    reason: str  # Optional because total=False
-    invalid_words: list[str]  # Optional because total=False
+    reason: Optional[str] = None  # Now using Optional for clarity
+    invalid_words: Optional[list[str]] = None
+    messageData: Optional[MessageData] = None
 
 # Initialize clients and models
 client = openai.OpenAI()
@@ -83,7 +95,7 @@ def load_word_list():
 def load_lookup_table():
     with open(LOOKUP_TABLE_FILE, "r") as file:
         return json.load(file)
-lookup_table: dict[str, list[str]] = load_lookup_table()
+full_lookup_table: dict[str, list[str]] = load_lookup_table()
 
 # Helper functions
 # Get all potential roots from the look up table based on the list of tokens
@@ -93,11 +105,14 @@ def get_roots(token: tokens.Token) -> list[str]:
         text = text[len("Lieblings"):]
         
     final = []
-    if text in lookup_table:
-        final.extend(lookup_table[text])
+    if text in full_lookup_table:
+        final.extend(full_lookup_table[text])
         
-    if text.lower() in lookup_table:
-        final.extend(lookup_table[text.lower()])
+    if text.lower() in full_lookup_table:
+        final.extend(full_lookup_table[text.lower()])
+        
+    if text.capitalize() in full_lookup_table:
+        final.extend(full_lookup_table[text.capitalize()])
         
     if len(final) == 0:
         # raise Exception(f"{token.text} not in lookup table")
@@ -130,14 +145,14 @@ def process_claude_response(resp: str):
   
 
 # process a normal message => split it into tokens and determine what root words it traces back to.
-def find_root_words(input_str, language): 
+def analyze_and_add_roots(input_str, language): 
     if language == 'German':
         nlp = nlp_de
     else:
         raise ValueError("language not allowed")
     doc = nlp(input_str)
 
-    tokens_list: list[dict] = []
+    tokens_list: list[TokenInfo] = []
     # idx is used as a unique identifier for words. 
     # svp's will have one unique identifier. 
     # punctuation/other non-word tokens will have None/null id value.
@@ -177,20 +192,35 @@ def find_root_words(input_str, language):
         })
   
     # pprint(tokens_list)
-    return {"tokens": tokens_list}
+    return tokens_list
 
-def process_and_validate_message(preprocessed_message: str, root_words: list[list[str]], focus_word: str, words_list: list[str]) -> ValidationResult:
+def process_and_validate_message(preprocessed_message: str, focus_word: str, words_list: list[str]) -> ValidationResult:
     message = process_claude_response(preprocessed_message)
 
     pprint("message:\n")
     pprint(message)
-
+    invalid_words = []
     # Process and validate the generated message
-    data = find_root_words(input_str=message, language="German")
+    tokens_list = analyze_and_add_roots(input_str=message, language="German")
+    for token in tokens_list:
+      # if token isn't punctuation
+      if token["id"] is not None:
+        # either there are no root words
+        if len(token["root_words"]) == 0:
+          print(f'couldnt identify roots for: {token["token"]}')
+          invalid_words.append(token["token"])
+        else: 
+          # make sure that some word in token["root_words"] is in the word_list, else add the token to invalid words
+          if any(root_word in words_list for root_word in token["root_words"]):
+            continue
+          else:
+            print(f'no root word of {token["token"]} found in word list')
+            print(token)
+            invalid_words.append(token["token"])
     print('data:\n')
-    pprint(data)
+    pprint(tokens_list)
     
-    root_words = [token['root_words'] for token in data['tokens']]
+    root_words = [token["root_words"] for token in tokens_list]
     
     pprint('root words:')
     print(root_words)
@@ -199,22 +229,19 @@ def process_and_validate_message(preprocessed_message: str, root_words: list[lis
     # Validate that at least one of the random words is used
     found = any(focus_word in root_word_list for root_word_list in root_words)
     if not found:
-        return {"is_valid": False, "reason": "focus_word missing"}
+        return ValidationResult(is_valid=False, reason="focus_word missing")
 
     # Validate that all root words are in the words list
-    # the below doesn't work because the 
-    for root_word_list in root_words:
-        if not root_word_list:
-            continue
-        words_not_in_list = [word for word in root_word_list if word not in words_list]
-    if words_not_in_list:
-        return {"is_valid": False, "reason": "words not on word_list found", "invalid_words": words_not_in_list}
+    # the below doesn't work because the
+    if invalid_words:
+        print("invalid words found: ")
+        pprint(invalid_words)
+        return ValidationResult(is_valid=False, reason="words not on word_list found", invalid_words=invalid_words)
       
-    return {"is_valid": True, "message": message, "data": data}
+    return ValidationResult(is_valid=True, messageData=MessageData(message=message, data=tokens_list))
 
 
-def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messages=None) -> tuple[str, dict[str, list[dict]]]:
-  from rich import print
+def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messages=None) -> MessageData:
   print(f"[red]Attempt #{attempts} to generate valid sentence...[/red]")
   
   if attempts >= max_tries:
@@ -222,14 +249,37 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
 
   if messages is None:
     messages = [
-            {"role": "user", "content": f"Generate a sentence using only words from the list and the focus word: {focus_word}."}
+            {"role": "user", 
+             "content": [{
+                "type": "text",
+                "text": f"Generate a sentence using only words from the list and the focus word: {focus_word}.",
+                "cache_control": {"type": "ephemeral"}
+          }]}
         ]
-  message_block = anthropic.Anthropic(api_key=CLAUDE_API_KEY).messages.create(
+    
+  print("messages to claude: ")
+  print(messages)
+  
+  message_block = anthropic.Anthropic(api_key=CLAUDE_API_KEY).beta.prompt_caching.messages.create(
       model="claude-3-5-sonnet-20241022",
       max_tokens=1024,
-      system=create_system_prompt(focus_word=focus_word),
-      messages=messages
+      system=[{
+        "text": create_system_prompt(focus_word=focus_word),
+        "type": "text",
+        "cache_control": {"type": "ephemeral"}
+        }],
+      messages=messages,
+      extra_headers={"anthropic-beta": "prompt-caching-2024-07-31"}
   )
+  
+  print(message_block)
+  
+  # handle edge case
+  if len(message_block.content) == 0:
+    raise Exception(f"message_block has no content. See: {message_block}")
+    # print("[red] message_block.content is None. see:  [/red]")
+    # print(message_block)
+    # return generate_with_retries(words_list=words_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
   
   preprocessed_message = message_block.content[0].text
   
@@ -242,24 +292,36 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
 
   result = process_and_validate_message(preprocessed_message, focus_word, words_list)
   
-  if result["is_valid"]:
-    return [result["message"], result["data"]]
+  if result.is_valid:
+    return result.messageData
   else:
-    if result["reason"] == "words not on word_list found":
-        messages.append({"role": "user", "content": f"Unfortunately, you used: {result['invalid_words']} which are not on the list"})
-    generate_with_retries(words_list=words_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
+    if result.reason == "words not on word_list found":
+        with open('invalid_word_counts.json', 'r+') as f:
+          counts = json.loads(f.read() or '{}')
+          counts.update({word: counts.get(word, 0) + 1 for word in result.invalid_words})
+          f.seek(0); json.dump(counts, f, indent=2); f.truncate()
+        messages.append({"role": "user", "content": f"Unfortunately, you used: {', '.join(result.invalid_words)} which are not on the list"})
+    elif result.reason == "focus_word missing":
+      messages.append({"role": "user", "content": f"Unfortunately, the focus word was missing. Make sure to use {focus_word} in the response!"})
+    else:
+      raise Exception(f"An unaccounted for reason occurred: {result.reason}")
+    
+    return generate_with_retries(words_list=words_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
 
-def main():
+def generate_sentence():
     # Load data
     words_list = load_word_list()
     focus_word = random.choice(words_list)
     print(focus_word)
     
     # Generate sentence using OpenAI
-    [message, data] = generate_with_retries(words_list, focus_word)
+    messageData = generate_with_retries(words_list, focus_word)
+    print("[blue]final message: [/blue]")
+    print(messageData.message)
+    return messageData
     
 
 
 
 if __name__ == "__main__":
-    main()
+    generate_sentence()

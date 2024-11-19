@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
+from sentences import generate_sentence  # Import the function
 
 
 app = FastAPI()
@@ -22,18 +23,9 @@ async def read_root():
 @app.get("/sentence")
 async def get_sentence():
 
-    completion = client.chat.completions.create(
-        model="o1-mini",
-        messages=[
-            {
-                "role": "user",
-                "content": "Give a simple sentence in German. Don't say anything else, just the German part."
-            }
-        ]
-    )
+    messageData = generate_sentence()
 
-    print(completion.choices[0].message)
-    return completion.choices[0].message
+    return messageData
 
 
 if __name__ == "__main__":

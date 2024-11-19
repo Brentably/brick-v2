@@ -1692,6 +1692,7 @@
   "tragend": ["tragen"],
   "getragen": ["tragen"],
   "kaum": ["kaum"],
+  "Freundin": ["Freund"],
   "Freund": ["Freund"],
   "Freundes": ["Freund"],
   "Freunds": ["Freund"],
@@ -2521,8 +2522,8 @@
   "erschienest": ["erscheinen"],
   "erschienet": ["erscheinen"],
   "erscheinend": ["erscheinen"],
-  "USA (Vereinigte Staaten von Amerika)": [
-    "USA (Vereinigte Staaten von Amerika)"
+  "USA": [
+    "USA"
   ],
   "Flüchtling": ["Flüchtling"],
   "Flüchtlings": ["Flüchtling"],
@@ -5204,7 +5205,7 @@
   "Kirche": ["Kirche"],
   "Kirchen": ["Kirche"],
   "links": ["links"],
-  "CDU (Christlich Demokratische Union Deutschlands)": [
+  "CDU": [
     "CDU (Christlich Demokratische Union Deutschlands)"
   ],
   "bislang": ["bislang"],
