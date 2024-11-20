@@ -18,9 +18,9 @@ CLAUDE_API_KEY = os.getenv('CLAUDE_API_KEY')
 
 # must use build constraint when install spacy
 # must install numpy<2
-def create_system_prompt(focus_word: str, language: str = 'German') -> str:
-    wordList = load_word_list()
-    wordList = '\n'.join(wordList)
+def create_system_prompt(focus_word: str, word_list: str, language: str = 'German') -> str:
+
+    wordList = '\n'.join(word_list)
     return f"""
     You are an expert in the {language} language. You are creative, playful, witty. Your job is to help the learner learn by generating whimsical practice sentences that meet the specified requirements. You will be given a word list, and asked to only generate 
     Only use words based on the following word list: 
@@ -87,15 +87,46 @@ client = openai.OpenAI()
 nlp_de = spacy.load(GERMAN_MODEL)
 
 # Data loading functions
+def load_full_word_list():
+    with open(WORD_DATA_FILE) as f:
+        data = json.load(f)
+    return [word_obj['word'] for word_obj in data]
+
+full_word_list: list[str] = load_full_word_list()
+
+
+
 def load_word_list():
     with open(WORD_DATA_FILE) as f:
         data = json.load(f)
-    return [word_obj['word'] for word_obj in data][:2000]
+    return [word_obj['word'] for word_obj in data][:1000]
 
 def load_lookup_table():
     with open(LOOKUP_TABLE_FILE, "r") as file:
         return json.load(file)
 full_lookup_table: dict[str, list[str]] = load_lookup_table()
+
+
+def get_focus_word(): 
+    with open("db.json", "r") as db_file:
+        db_data = json.load(db_file)
+        words_data = db_data.get("user", {}).get("words", {})
+        # Sort words by proficiency
+        sorted_words = sorted(words_data.items(), key=lambda x: x[1]['proficiency'])
+        print('sorted words')
+        print(sorted_words[:10])
+        # Choose the word with the smallest proficiency
+        if sorted_words[0][1]["proficiency"] <= 0.9:
+            return sorted_words[0][0]
+        else:
+            for word in full_word_list:
+                if word not in words_data:
+                    return word
+            raise Exception('couldnt find focus word')
+            
+    
+        
+    
 
 # Helper functions
 # Get all potential roots from the look up table based on the list of tokens
@@ -131,7 +162,7 @@ def process_claude_response(resp: str):
     
     start_idx = resp.find(start_tag)
     if start_idx == -1:
-        raise ValueError("Could not find opening <answer> tag in Claude response")
+        raise ValueError(f"Could not find opening <answer> tag in Claude response: \n {resp}")
         
     end_idx = resp.find(end_tag)
     
@@ -194,7 +225,7 @@ def analyze_and_add_roots(input_str, language):
     # pprint(tokens_list)
     return tokens_list
 
-def process_and_validate_message(preprocessed_message: str, focus_word: str, words_list: list[str]) -> ValidationResult:
+def process_and_validate_message(preprocessed_message: str, focus_word: str, word_list: list[str]) -> ValidationResult:
     message = process_claude_response(preprocessed_message)
 
     pprint("message:\n")
@@ -211,19 +242,19 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
           invalid_words.append(token["token"])
         else: 
           # make sure that some word in token["root_words"] is in the word_list, else add the token to invalid words
-          if any(root_word in words_list for root_word in token["root_words"]):
+          if any(root_word in word_list for root_word in token["root_words"]):
             continue
           else:
             print(f'no root word of {token["token"]} found in word list')
             print(token)
             invalid_words.append(token["token"])
-    print('data:\n')
-    pprint(tokens_list)
+    # print('data:\n')
+    # pprint(tokens_list)
     
     root_words = [token["root_words"] for token in tokens_list]
     
-    pprint('root words:')
-    print(root_words)
+    # pprint('root words:')
+    # print(root_words)
     
     
     # Validate that at least one of the random words is used
@@ -241,7 +272,7 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
     return ValidationResult(is_valid=True, messageData=MessageData(message=message, data=tokens_list))
 
 
-def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messages=None) -> MessageData:
+def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messages=None) -> MessageData:
   print(f"[red]Attempt #{attempts} to generate valid sentence...[/red]")
   
   if attempts >= max_tries:
@@ -264,7 +295,7 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
       model="claude-3-5-sonnet-20241022",
       max_tokens=1024,
       system=[{
-        "text": create_system_prompt(focus_word=focus_word),
+        "text": create_system_prompt(focus_word=focus_word, word_list=word_list),
         "type": "text",
         "cache_control": {"type": "ephemeral"}
         }],
@@ -272,14 +303,14 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
       extra_headers={"anthropic-beta": "prompt-caching-2024-07-31"}
   )
   
-  print(message_block)
+#   print(message_block)
   
   # handle edge case
   if len(message_block.content) == 0:
     raise Exception(f"message_block has no content. See: {message_block}")
     # print("[red] message_block.content is None. see:  [/red]")
     # print(message_block)
-    # return generate_with_retries(words_list=words_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
+    # return generate_with_retries(word_list=word_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
   
   preprocessed_message = message_block.content[0].text
   
@@ -290,7 +321,7 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
   
 
 
-  result = process_and_validate_message(preprocessed_message, focus_word, words_list)
+  result = process_and_validate_message(preprocessed_message, focus_word, word_list)
   
   if result.is_valid:
     return result.messageData
@@ -306,16 +337,17 @@ def generate_with_retries(words_list, focus_word, max_tries=5, attempts=0, messa
     else:
       raise Exception(f"An unaccounted for reason occurred: {result.reason}")
     
-    return generate_with_retries(words_list=words_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
+    return generate_with_retries(word_list=word_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
 
 def generate_sentence():
     # Load data
-    words_list = load_word_list()
-    focus_word = random.choice(words_list)
+    focus_word = get_focus_word()
+    word_list = load_word_list()
+    word_list.append(focus_word)
     print(focus_word)
     
     # Generate sentence using OpenAI
-    messageData = generate_with_retries(words_list, focus_word)
+    messageData = generate_with_retries(word_list, focus_word)
     print("[blue]final message: [/blue]")
     print(messageData.message)
     return messageData

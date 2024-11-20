@@ -1,11 +1,5021 @@
 {
-  "user": {
-    "words": [
-      {
-        "word": "wordhere",
-        "correct_attempts": 1,
-        "total_attempts": 2
-      }
-    ]
-  }
+    "user": {
+        "words": {
+            "der": {
+                "correct_attempts": 29,
+                "total_attempts": 35,
+                "proficiency": 0.8285714285714286
+            },
+            "und": {
+                "correct_attempts": 13,
+                "total_attempts": 15,
+                "proficiency": 0.8666666666666667
+            },
+            "in": {
+                "correct_attempts": 14,
+                "total_attempts": 15,
+                "proficiency": 0.9333333333333333
+            },
+            "sein (verb)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ein": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "haben": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "sie": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "werden": {
+                "correct_attempts": 11,
+                "total_attempts": 12,
+                "proficiency": 0.9166666666666666
+            },
+            "von": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nicht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "es": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mit": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "sich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "er": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "auf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "f\u00fcr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "auch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "an": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dass": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zu": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "als": {
+                "correct_attempts": 12,
+                "total_attempts": 12,
+                "proficiency": 1.0
+            },
+            "k\u00f6nnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dies": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wir": {
+                "correct_attempts": 12,
+                "total_attempts": 12,
+                "proficiency": 1.0
+            },
+            "ihr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ihre": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "so": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sein (pron/art)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aber": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "man": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "noch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nach": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "oder": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "alle": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aus": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "was": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sagen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dann": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wenn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "m\u00fcssen": {
+                "correct_attempts": 14,
+                "total_attempts": 14,
+                "proficiency": 1.0
+            },
+            "um": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ja": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcber": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "da": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "geben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mehr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Jahr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "du": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "durch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "viel": {
+                "correct_attempts": 13,
+                "total_attempts": 15,
+                "proficiency": 0.8666666666666667
+            },
+            "wollen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "machen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "andere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sollen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schon": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kommen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "immer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gehen": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "gro\u00df": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hier": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ganz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zwei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "also": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jetzt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "doch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wieder": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bis": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wissen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sehr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lassen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "neu": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unser": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "jede": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weil": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unter": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "Mensch": {
+                "correct_attempts": 16,
+                "total_attempts": 18,
+                "proficiency": 0.8888888888888888
+            },
+            "denn": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Beispiel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erste": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zeit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lang": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Frau": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "etwas": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "selbst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wenig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "finden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zwischen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "drei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "liegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wo": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nichts, nix": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "klein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tag": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "deutsch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bleiben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nun, nu": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sondern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "heute": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beide": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hoch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "damit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ohne": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mann": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "welch, -e, -er, -es": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "tun": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einmal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ihnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hei\u00dfen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ob": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "denken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dabei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "seit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einfach": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kind": {
+                "correct_attempts": 12,
+                "total_attempts": 12,
+                "proficiency": 1.0
+            },
+            "Land": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stellen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zeigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nat\u00fcrlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "alt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dort": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Deutschland": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gleich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "d\u00fcrfen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wichtig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vielleicht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "h\u00f6ren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Haus": {
+                "correct_attempts": 12,
+                "total_attempts": 12,
+                "proficiency": 1.0
+            },
+            "nein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dazu": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eigentlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "letzte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fragen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Herr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "halten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "glauben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Frage": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gelten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gerade": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "folgen": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "sprechen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "f\u00fchren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bringen": {
+                "correct_attempts": 11,
+                "total_attempts": 12,
+                "proficiency": 0.9166666666666666
+            },
+            "Welt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "genau": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "m\u00f6gen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sp\u00e4t": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bereits": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "m\u00f6glich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Prozent": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "w\u00e4hrend": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einige": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "daf\u00fcr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kurz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "richtig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stark": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "brauchen": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Hand": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "etwa": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weitere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ende": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schreiben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "solch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nie": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "Fall": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sch\u00f6n": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wirklich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "denen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nennen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "warum": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ziehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wort": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "darauf, drauf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eben, ebend": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Seite": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Teil": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vier": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besser": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fast": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schnell": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stadt": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "spielen": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "zwar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Euro": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Arbeit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Million, Mio.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Problem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verstehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bekommen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "meinen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "davon": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fahren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kennen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mutter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Woche": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Weg": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weiter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Auge": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "oft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Leute": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "allerdings": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sogar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jedoch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "setzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "deshalb": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sitzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vater": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "arbeiten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Geld": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Unternehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "n\u00e4chsten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erkl\u00e4ren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "klar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Doktor, Dr.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Paar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "paar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Recht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "euerer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wasser": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "bestehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "versuchen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Punkt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Grund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kopf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beginnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "laufen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bild": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verschieden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Name": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Aufgabe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schwer": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "entsprechen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "treffen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Art": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wohl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Geschichte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erz\u00e4hlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "entstehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sicher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "neben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "allein, alleine": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Abbildung, Abb.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hinter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besonders": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "tragen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kaum": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Freund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "f\u00fcnf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "scheinen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stunde": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aussehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gern, gerne": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "\u00fcberhaupt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bestimmt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sowie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Professor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dar\u00fcber, dr\u00fcber": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "deren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schaffen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "damals": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erhalten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lernen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "frei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wert": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beziehungsweise, bzw.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "daran, dran": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "suchen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Europa": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "gemeinsam": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zahl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Thema": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "handeln": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Buch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bisschen, bissel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "deutlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "anders": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "politisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lesen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Blick": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Form": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einzeln": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erreichen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vergehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leicht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "je": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verlieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beste": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bilden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Monat": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "L\u00f6sung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sache": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bekannt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ziel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "steigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "essen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Minute": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Nacht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Platz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlecht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Spiel": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Familie": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "jemand": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dessen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fallen": {
+                "correct_attempts": 12,
+                "total_attempts": 12,
+                "proficiency": 1.0
+            },
+            "zehn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Preis": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "europ\u00e4isch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sonst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Staat": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "helfen": {
+                "correct_attempts": 15,
+                "total_attempts": 15,
+                "proficiency": 1.0
+            },
+            "Bereich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "tats\u00e4chlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ort": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Abend": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einzig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stelle": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unterschiedlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gesicht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Entwicklung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Uhr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mehrere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlie\u00dfen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlie\u00dflich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "legen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "direkt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "daher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "offen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erkennen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Person": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Moment": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Schule": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "darin, drin, drinnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Auto": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "niemand": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gesellschaft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "warten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vorstellen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fr\u00fch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "treten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "reden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gruppe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ding": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "na": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gewinnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zun\u00e4chst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "T\u00fcr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Schritt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "entwickeln": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "meiste": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "M\u00f6glichkeit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sinn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "passieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "manchmal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vergleich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "System": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Rolle": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ergebnis": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vergleichen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "voll": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erwarten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "obwohl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stra\u00dfe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Angst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "allgemein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "f\u00fchlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jene": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erinnern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "oh": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bedeuten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stimme": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Reaktion": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wirken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "darstellen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Raum": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Eltern": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "bezeichnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Funktion": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "h\u00e4ufig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erscheinen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "USA": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Fl\u00fcchtling": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fr\u00fcher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "pro": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ergeben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "entscheiden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Universit\u00e4t, Uni": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "betreffen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "oben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Richtung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bestimmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fehlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sprache": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Produkt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Situation": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "au\u00dferdem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "n\u00e4mlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "international": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Anfang": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sechs": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nutzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sozial": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Folge": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "Satz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "manche": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Verbindung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beschreiben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Licht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00e4hnlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Regel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gegen\u00fcber": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kollege": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bisher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "tief": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "halb": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lachen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ebenfalls": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sofort": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Grenze": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00e4ndern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Entscheidung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verlassen": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Idee": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verbinden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Milliarde, Mrd.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "endlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Energie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "pl\u00f6tzlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "danach": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kraft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lieber": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "geh\u00f6ren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "einsetzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gef\u00fchl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "trotzdem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "befinden (sich)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Information": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dadurch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dagegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Weise": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zukunft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wachsen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bitte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wei\u00df": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Text": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schwarz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sterben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Markt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rot": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "halt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Meter, m": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nahe, nah": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Hilfe": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Kapitel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ausgehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bedeutung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "betrachten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Chemie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Luft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "K\u00f6rper": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Struktur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stimmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bitten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Jahrhundert": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wahrscheinlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00f6ffentlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "insgesamt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "anfangen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "genug": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Deutsche": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ver\u00e4ndern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wohnung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gelingen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bald": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gering": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Film": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kaufen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ansehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00f6ffnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Musik": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schauen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "St\u00fcck": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besondere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "tot": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gott": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "v\u00f6llig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "positiv": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gespr\u00e4ch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "darum": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kunde": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Menge": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Regierung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Antwort": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "annehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "falsch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zusammenhang": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "langsam": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Arm": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "nachdem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rufen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bieten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Herz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zusammen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "inzwischen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ebenso": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Boden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bevor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verwenden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Politik": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tod": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Erfolg": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zudem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bank": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ab": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "pers\u00f6nlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Pr\u00e4sident": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "holen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Junge": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sogenannt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Polizei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Chance": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gewiss": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "innerhalb": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kunst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Lage": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sch\u00fcler": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gesamt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Druck": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verschwinden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wohnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bewegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "enthalten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aufnehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kosten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wintersemester": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "merken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fest": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aktuell": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Begriff": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erleben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "relativ": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "laut (prep)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Fu\u00df": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Daten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Krieg": {
+                "correct_attempts": 18,
+                "total_attempts": 20,
+                "proficiency": 0.9
+            },
+            "Gast": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Aussage": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gesetz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "planen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schwierig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kilometer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zus\u00e4tzlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vergessen": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "Gedanke": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besitzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ach": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Partei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "freuen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "h\u00e4ngen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "berichten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zelle": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eng": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kultur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Prozess": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sohn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Dank": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "trotz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fordern": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "studieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gefallen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "M\u00e4dchen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verhalten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mindestens": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ziemlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Interesse": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unterscheiden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wobei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jeweils": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "reichen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sieben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zumindest": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlagen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tier": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "jedenfalls": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "am": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erh\u00f6hen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sorgen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Erfahrung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Patient": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Morgen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Arzt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "geschehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bayern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "l\u00f6sen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "irgendwie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "anbieten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vorkommen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "okay": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "w\u00fcnschen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "interessieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Unterschied": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Foto": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "trinken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "derselbe, dieselbe, dasselbe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "w\u00e4hlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gleichzeitig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "knapp": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mitarbeiter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcbernehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gl\u00fcck": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "normal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leider": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "Grundlage": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "acht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Leistung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vorliegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erfolgen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Beziehung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zunehmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Molek\u00fcl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stattfinden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ankommen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "auftreten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "insbesondere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "technisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wann": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "los": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bett": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "H\u00f6he": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wesentlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "englisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zuletzt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zimmer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "indem": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bauen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Verh\u00e4ltnis": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "selten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zeitung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "innere": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beispielsweise, bspw.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bedingung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Fenster": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zug": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "derzeit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "funktionieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sowohl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlafen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "statt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Werk": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gr\u00fcn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "B\u00fcrger": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dienen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "echt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Firma": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wirtschaft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stecken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hoffen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erfahren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mittel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Folie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leisten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tochter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Lehrer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "passen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beobachten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Einf\u00fchrung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Element": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "klingen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lieben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Dame": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vorlesung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "z\u00e4hlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "meist": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dunkel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00d6sterreich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Modell": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bewegung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mitte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hin": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aufgrund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besch\u00e4ftigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zuvor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "miteinander": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dennoch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "werfen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Angebot": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Projekt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verkaufen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "reagieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Autor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kriegen": {
+                "correct_attempts": 13,
+                "total_attempts": 15,
+                "proficiency": 0.8666666666666667
+            },
+            "zirka, circa, ca.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "EU (Europ\u00e4ische Union)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gr\u00f6\u00dfe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "hart": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "offenbar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bruder": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beteiligen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Phase": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "angeben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Reise": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erfolgreich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Zustand": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wahr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Reihe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Natur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rechnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "blo\u00df": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "notwendig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "entdecken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dauern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wirtschaftlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "privat": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "modern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Haar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "deswegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sp\u00fcren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unabh\u00e4ngig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "morgen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Rahmen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcbrigens": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Einheit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcberall": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "feststellen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Stoff": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Rede": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unterst\u00fctzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "chemisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schlimm": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Schweiz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "irgendwann": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gesch\u00e4ft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weder": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Anteil": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Angabe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Team": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "au\u00dfer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sommer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Hotel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "laut (adj)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eins": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Alter": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sicherheit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "SPD (Sozialdemokratische Partei Deutschlands)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "niedrig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "st\u00e4ndig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Einsatz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "liefern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "betonen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Erde": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Studie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vorne, vorn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rechte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Meinung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "drehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "K\u00fcnstler": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aktiv": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Versuch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "somit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bezahlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Eigenschaft": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "l\u00e4ngst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Methode": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ordnung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Russland": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wahl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "daraus": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erf\u00fcllen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mama": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Region": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sonntag": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Internet": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Nummer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "l\u00e4cheln": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "genauso": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcberzeugen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "interessant": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "menschlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Elektron": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Frankreich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Freiheit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "speziell": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "franz\u00f6sisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "negativ": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zentral": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ebene": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "besuchen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "gestern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Spieler": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "absolut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fliegen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Hund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "antworten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weiterhin": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wand": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "rechts": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "konkret": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "russisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zahlen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zugleich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Feld": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verdienen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "amerikanisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sekunde": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Brief": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mitglied": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "praktisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gefahr": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "binden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weltweit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Liebe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Beginn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "China": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "breit": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "drau\u00dfen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Wirkung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bildung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Blut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Meer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Anzahl": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ver\u00e4nderung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "durchaus": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Mund": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "berechnen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "betragen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "fremd": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Untersuchung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Fehler": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mittlerweile": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aufbauen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sonne": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Prinzip": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "vorher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kampf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Verf\u00fcgung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "feiern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Programm": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "linke": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Einfluss": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Temperatur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "mitteilen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Verfahren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "danke": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "beziehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verlangen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zuerst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Analyse": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "klassisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ehemalig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Glas": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "untersuchen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kalt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sorge": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Himmel": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "k\u00fcnftig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "national": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kirche": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "links": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "CDU (Christlich Demokratische Union Deutschlands)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bislang": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "messen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "lieb": {
+                "correct_attempts": 11,
+                "total_attempts": 11,
+                "proficiency": 1.0
+            },
+            "unbedingt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Verein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Atom": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "historisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sinken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "kosten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vorstellung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "entscheidend": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "teilen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Typ": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stammen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wissenschaftlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wieso": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Faktor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Bindung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Literatur": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcberraschen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "best\u00e4tigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "bewusst": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Abschnitt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "N\u00e4he": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "zahlreich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "medizinisch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "\u00fcbrig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "T\u00fcrkei": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Produktion": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "dr\u00fccken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "drohen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Linie": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gas": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schicken": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "H\u00e4lfte": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kontakt": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Interview": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "egal": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "reisen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Berg": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "irgendwo": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "trennen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ben\u00f6tigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Erinnerung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "verhindern": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sicht": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Dollar": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "leiden": {
+                "correct_attempts": 10,
+                "total_attempts": 11,
+                "proficiency": 0.9090909090909091
+            },
+            "Anspruch": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Position": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sport": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "BGB (B\u00fcrgerliches Gesetzbuch)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Nachfrage": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "blau": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "anschauen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "teuer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Medien": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "richten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Institut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Plan": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "immerhin": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tor": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Betrieb": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "komplex": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Dorf": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eignen (sich)": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Klasse": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "eingehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erlauben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "treiben": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "weg": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aufstehen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Absatz, Abs.": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "unterwegs": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vertrag": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ausdruck": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "geraten": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "toll": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schweigen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Schwester": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Chef": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "greifen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Risiko": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "schwach": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Tabelle": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erm\u00f6glichen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Freitag": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Hinweis": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Vorteil": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Protein": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Gewinn": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "grunds\u00e4tzlich": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "M\u00e4rz": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wiederholen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ruhe": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Darstellung": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "ruhig": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Traum": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "behandeln": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "stets": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "aufh\u00f6ren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "sch\u00fctzen": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "diskutieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Ferse": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Sprecher": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "produzieren": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Kritik": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "erneut": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "Trainer": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "April": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "melden": {
+                "correct_attempts": 10,
+                "total_attempts": 10,
+                "proficiency": 1.0
+            },
+            "wiederum": {
+                "correct_attempts": 1,
+                "total_attempts": 1,
+                "proficiency": 1
+            },
+            "Opfer": {
+                "correct_attempts": 8,
+                "total_attempts": 10,
+                "proficiency": 0.8
+            },
+            "Falle": {
+                "correct_attempts": 2,
+                "total_attempts": 2,
+                "proficiency": 1.0
+            }
+        }
+    }
 }
