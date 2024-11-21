@@ -71,15 +71,26 @@ class TokenInfo(BaseModel):
     id: Optional[int]
     root_words: list[str]
     is_svp: bool
+    full_svp_word: Optional[str]
     
+class ResultTokenInfo(TokenInfo):
+    isClicked: Optional[bool] = False
+    translationLoading: Optional[bool] = False
+    translationInContext: Optional[str] = None
+    
+
 class MessageData(BaseModel):
     message: str
     data: list[TokenInfo]
+    
+class ResultMessageData(MessageData):
+    message: str
+    data: list[ResultTokenInfo]
 
 class ValidationResult(BaseModel):
     is_valid: bool
     reason: Optional[str] = None  # Now using Optional for clarity
-    invalid_words: Optional[list[str]] = None
+    invalid_words: Optional[list[TokenInfo]] = None
     messageData: Optional[MessageData] = None
 
 # Initialize clients and models
@@ -194,9 +205,16 @@ def analyze_and_add_roots(input_str, language):
         # compound verbs will link to the same id, for instance stehe and auf will both have the id of stehe
         # if token.dep_ == "compound:prt":
         is_svp = False
+        full_svp_word = None
         if token.dep_ == "svp":
             is_svp = True
             id = token.head.idx
+            
+            full_svp_word = token.text + token.head.text
+            print(token)
+            print(token.head)
+            
+            
             root_words = [token.text + lemma for lemma in get_roots(token.head)]
             # print(f"spv lemmas: {root_words}")
             # set token head's lemmas to lemmas of current (spv) token
@@ -219,7 +237,8 @@ def analyze_and_add_roots(input_str, language):
             "token_ws": token.whitespace_,
             "id": id,
             "root_words": root_words,
-            "is_svp": is_svp
+            "is_svp": is_svp,
+            "full_svp_word": full_svp_word if full_svp_word else None
         })
   
     # pprint(tokens_list)
@@ -230,7 +249,7 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
 
     pprint("message:\n")
     pprint(message)
-    invalid_words = []
+    invalid_words: list[TokenInfo] = []
     # Process and validate the generated message
     tokens_list = analyze_and_add_roots(input_str=message, language="German")
     for token in tokens_list:
@@ -239,7 +258,7 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
         # either there are no root words
         if len(token["root_words"]) == 0:
           print(f'couldnt identify roots for: {token["token"]}')
-          invalid_words.append(token["token"])
+          invalid_words.append(token)
         else: 
           # make sure that some word in token["root_words"] is in the word_list, else add the token to invalid words
           if any(root_word in word_list for root_word in token["root_words"]):
@@ -247,7 +266,7 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
           else:
             print(f'no root word of {token["token"]} found in word list')
             print(token)
-            invalid_words.append(token["token"])
+            invalid_words.append(token)
     # print('data:\n')
     # pprint(tokens_list)
     
@@ -256,18 +275,18 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
     # pprint('root words:')
     # print(root_words)
     
-    
-    # Validate that at least one of the random words is used
-    found = any(focus_word in root_word_list for root_word_list in root_words)
-    if not found:
-        return ValidationResult(is_valid=False, reason="focus_word missing")
-
     # Validate that all root words are in the words list
     # the below doesn't work because the
     if invalid_words:
         print("invalid words found: ")
         pprint(invalid_words)
         return ValidationResult(is_valid=False, reason="words not on word_list found", invalid_words=invalid_words)
+    
+    # Validate that at least one of the random words is used
+    found = any(focus_word in root_word_list for root_word_list in root_words)
+    if not found:
+        return ValidationResult(is_valid=False, reason="focus_word missing")
+
       
     return ValidationResult(is_valid=True, messageData=MessageData(message=message, data=tokens_list))
 
@@ -329,9 +348,10 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
     if result.reason == "words not on word_list found":
         with open('invalid_word_counts.json', 'r+') as f:
           counts = json.loads(f.read() or '{}')
-          counts.update({word: counts.get(word, 0) + 1 for word in result.invalid_words})
+          counts.update({invalid_word.full_svp_word if invalid_word.is_svp else invalid_word.token: counts.get(invalid_word.full_svp_word if invalid_word.full_svp_word else invalid_word.token, 0) + 1 for invalid_word in result.invalid_words})
           f.seek(0); json.dump(counts, f, indent=2); f.truncate()
-        messages.append({"role": "user", "content": f"Unfortunately, you used: {', '.join(result.invalid_words)} which are not on the list"})
+        add_svp_message = any(invalid_word.is_svp for invalid_word in result.invalid_words)
+        messages.append({"role": "user", "content": f"Unfortunately, you used: {', '.join([invalid_word.full_svp_word if invalid_word.full_svp_word else invalid_word.token for invalid_word in result.invalid_words])} which are not on the list. {'If the word you were assigned is also a separable prefix, make sure to use it in a context that it is not a separable prefix.' if add_svp_message else ''} "})
     elif result.reason == "focus_word missing":
       messages.append({"role": "user", "content": f"Unfortunately, the focus word was missing. Make sure to use {focus_word} in the response!"})
     else:

@@ -2,7 +2,7 @@ import json
 from fastapi import FastAPI, Body
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
-from sentences import MessageData, generate_sentence  # Import the function
+from sentences import MessageData, ResultMessageData, generate_sentence  # Import the function
 
 
 app = FastAPI()
@@ -30,7 +30,7 @@ async def get_sentence():
 
 @app.post('/sentence_result')
 def sentence_result(body: dict = Body(...)):
-    sentence_data = MessageData(**body["sentenceData"])
+    sentence_data = ResultMessageData(**body["sentenceData"])
     user_translation:str = body["userTranslation"]
     is_correct: bool = body["isCorrect"]
     print("Received sentence data:", body)
@@ -49,17 +49,17 @@ def sentence_result(body: dict = Body(...)):
             for root_word in root_words:
                 if root_word in words_data:
                     words_data[root_word]["total_attempts"] += 1
-                    if is_correct:
+                    if is_correct and not token.isClicked:
                         words_data[root_word]["correct_attempts"] += 1
                     words_data[root_word]["proficiency"] = words_data[root_word]["correct_attempts"] / words_data[root_word]["total_attempts"]
                 else:
                     words_data[root_word] = {
-                        "correct_attempts": 1 if is_correct else 0,
+                        "correct_attempts": 1 if is_correct and not token.isClicked else 0,
                         "total_attempts": 1,
-                        "proficiency": 1 if is_correct else 0,
+                        "proficiency": 1 if is_correct and not token.isClicked else 0,
                     }
                     
-        
+
         # Write the updated data back to the file
         db_file.seek(0)
         json.dump(db_data, db_file, indent=4)

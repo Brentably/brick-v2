@@ -7,6 +7,7 @@ import { getEnglishTranslation } from "@/lib/getEnglishTranslation";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle } from "lucide-react";
 import bricks from "../public/assets/bricks.svg"
+import Sentence from "@/components/Sentence";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +22,7 @@ const geistMono = localFont({
 
 export default function Home() {
   const [sentenceToTranslate, setSentenceToTranslate] = useState<string>("type anything and hit enter to start")
+  const [sentenceToTranslateData, setSentenceToTranslateData] = useState<null | MessageData>(null)
   const [hasStarted, setHasStarted] = useState<boolean>(false)
   const [sentenceLoading, setSentenceLoading] = useState(false)
   const [englishTranslationPromise, setEnglishTranslationPromise] = useState<Promise<string> | null>(null)
@@ -55,6 +57,7 @@ export default function Home() {
         console.log('data:\n')
         console.log(data)
 
+        setSentenceToTranslateData(data)
         setSentenceToTranslate(data.message)
         setSentenceLoading(false)
 
@@ -67,7 +70,7 @@ export default function Home() {
   }
 
   // this should handle allowing the user to determine whether or not they've answered correctly or not
-  async function validateSentence(germanTargetSentence: string, userSentence: string, englishTranslationPromise: Promise<string>) {
+  async function enterValidateState(germanTargetSentence: string, userSentence: string, englishTranslationPromise: Promise<string>) {
     const englishTranslation = await englishTranslationPromise
     isUserValidating.current = true
     setEnglishTranslation(englishTranslation)
@@ -78,15 +81,27 @@ export default function Home() {
   function handleValidation(isCorrect: boolean) {
     // Here you can implement logic to track user's performance if needed
     console.log(`User's translation was ${isCorrect ? 'correct' : 'incorrect'}`)
-    isUserValidating.current = false
+    const translation = userTranslation
     setUserTranslation("")
-    obtainAndSetSentence()
+    isUserValidating.current = false
+    setSentenceLoading(true)
+    fetch("http://localhost:8000/sentence_result", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        sentenceData: sentenceToTranslateData,
+        userTranslation: translation, // b/c already set user translation to blank
+        isCorrect: isCorrect
+      })
+    }).then(obtainAndSetSentence) // wait until data updates to get next sentence
   }
 
   function handleSend(e: KeyboardEvent<HTMLTextAreaElement>) {
     if (englishTranslationPromise === null) throw new Error('cant handle because no english translation promise')
     setUserTranslation((e.target as HTMLTextAreaElement).value)
-    validateSentence(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
+    enterValidateState(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
   }
 
   function handleStart() {
@@ -112,7 +127,9 @@ export default function Home() {
           <div className="max-w-4x flex justify-stretch flex-col">
             <div className="text-center text-lg">
 
-              {sentenceLoading ? <Loading /> : sentenceToTranslate}
+              {sentenceLoading || (sentenceToTranslateData === null) ?
+                <Loading /> :
+                <Sentence sentenceToTranslateData={sentenceToTranslateData!} setSentenceToTranslateData={setSentenceToTranslateData} />}
 
             </div>
 
