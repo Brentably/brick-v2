@@ -16,11 +16,9 @@ with open("./db.json", "r+") as db_file:
     for word_entry in words_to_add:
         word = word_entry.get("word")
         if word and word not in words_data:
-            words_data[word] = {
-                "correct_attempts": 10,
-                "total_attempts": 10,
-                "proficiency": 1.0  # Assuming first attempt is always correct
-            }
+            from cards import create_new_review_card_multiple_times
+            card = create_new_review_card_multiple_times()
+            words_data[word] = card.to_dict()
 
     # Update the database
     db_file.seek(0)

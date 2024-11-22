@@ -2,12 +2,13 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import Input from "@/components/Input";
-import Loading from "@/components/Loading";
+import LoadingDots from "@/components/LoadingDots";
 import { getEnglishTranslation } from "@/lib/getEnglishTranslation";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle } from "lucide-react";
 import bricks from "../public/assets/bricks.svg"
 import Sentence from "@/components/Sentence";
+import Proficiency from "@/components/Proficiency";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -128,7 +129,7 @@ export default function Home() {
             <div className="text-center text-lg">
 
               {sentenceLoading || (sentenceToTranslateData === null) ?
-                <Loading /> :
+                <div>Generating Sentence<LoadingDots /></div> :
                 <Sentence sentenceToTranslateData={sentenceToTranslateData!} setSentenceToTranslateData={setSentenceToTranslateData} />}
 
             </div>
@@ -154,7 +155,7 @@ export default function Home() {
               </>
               : null
             }
-
+            <Proficiency/>
           </div>
 
           :

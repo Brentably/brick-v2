@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loading: React.FC = () => {
+const LoadingDots: React.FC = () => {
   const [dots, setDots] = React.useState(0);
 
   React.useEffect(() => {
@@ -11,11 +11,11 @@ const Loading: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      Generating sentence{Array(dots).fill('.').join('')}
-    </div>
+    <>
+      {Array(dots).fill('.').join('')}
+</>
   );
 };
 
-export default Loading;
+export default LoadingDots;
 

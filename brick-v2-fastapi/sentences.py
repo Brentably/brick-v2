@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 import json
 import random
 from pprint import pprint
@@ -10,6 +11,8 @@ from spacy import tokens
 import os
 from dotenv import load_dotenv
 import anthropic
+from fsrs import Card, FSRS
+fsrs = FSRS()
 
 load_dotenv()
 CLAUDE_API_KEY = os.getenv('CLAUDE_API_KEY')
@@ -107,10 +110,13 @@ full_word_list: list[str] = load_full_word_list()
 
 
 
+# currently all allowed words are in all tracked words.
+# ideally in the future, we'd only allow context words to be ones that are 
+# *not* due or words that they are expected to remember
 def load_word_list():
-    with open(WORD_DATA_FILE) as f:
-        data = json.load(f)
-    return [word_obj['word'] for word_obj in data][:1000]
+    with open("db.json", "r") as db_file:
+        db_data = json.load(db_file)
+        return list(db_data["user"]["words"].keys())
 
 def load_lookup_table():
     with open(LOOKUP_TABLE_FILE, "r") as file:
@@ -122,14 +128,17 @@ def get_focus_word():
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)
         words_data = db_data.get("user", {}).get("words", {})
-        # Sort words by proficiency
-        sorted_words = sorted(words_data.items(), key=lambda x: x[1]['proficiency'])
+        # Sort words by due
+        sorted_words = sorted(words_data.items(), key=lambda x: x[1]['due'])
+        
         print('sorted words')
         print(sorted_words[:10])
-        # Choose the word with the smallest proficiency
-        if sorted_words[0][1]["proficiency"] <= 0.9:
+        
+        # Choose the word with the soonest due date
+        if datetime.fromisoformat(sorted_words[0][1]["due"]) < datetime.now(timezone.utc):
             return sorted_words[0][0]
         else:
+            # or the next word in the full list
             for word in full_word_list:
                 if word not in words_data:
                     return word
@@ -371,9 +380,6 @@ def generate_sentence():
     print("[blue]final message: [/blue]")
     print(messageData.message)
     return messageData
-    
-
-
 
 if __name__ == "__main__":
     generate_sentence()
