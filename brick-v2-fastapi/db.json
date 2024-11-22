@@ -2,9 +2,9 @@
     "user": {
         "words": {
             "der": {
-                "correct_attempts": 26,
-                "total_attempts": 27,
-                "proficiency": 0.9629629629629629
+                "correct_attempts": 36,
+                "total_attempts": 37,
+                "proficiency": 0.972972972972973
             },
             "und": {
                 "correct_attempts": 11,
@@ -12,13 +12,13 @@
                 "proficiency": 1.0
             },
             "in": {
-                "correct_attempts": 12,
-                "total_attempts": 12,
+                "correct_attempts": 15,
+                "total_attempts": 15,
                 "proficiency": 1.0
             },
             "sein (verb)": {
-                "correct_attempts": 14,
-                "total_attempts": 14,
+                "correct_attempts": 17,
+                "total_attempts": 17,
                 "proficiency": 1.0
             },
             "ein": {
@@ -32,8 +32,8 @@
                 "proficiency": 1.0
             },
             "sie": {
-                "correct_attempts": 13,
-                "total_attempts": 13,
+                "correct_attempts": 15,
+                "total_attempts": 15,
                 "proficiency": 1.0
             },
             "werden": {
@@ -57,13 +57,13 @@
                 "proficiency": 1.0
             },
             "es": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "mit": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "sich": {
@@ -72,9 +72,9 @@
                 "proficiency": 1.0
             },
             "er": {
-                "correct_attempts": 11,
-                "total_attempts": 12,
-                "proficiency": 0.9166666666666666
+                "correct_attempts": 12,
+                "total_attempts": 13,
+                "proficiency": 0.9230769230769231
             },
             "auf": {
                 "correct_attempts": 11,
@@ -102,8 +102,8 @@
                 "proficiency": 1.0
             },
             "zu": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "als": {
@@ -172,8 +172,8 @@
                 "proficiency": 1.0
             },
             "nach": {
-                "correct_attempts": 13,
-                "total_attempts": 13,
+                "correct_attempts": 18,
+                "total_attempts": 18,
                 "proficiency": 1.0
             },
             "oder": {
@@ -187,8 +187,8 @@
                 "proficiency": 1.0
             },
             "aus": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 13,
+                "total_attempts": 13,
                 "proficiency": 1.0
             },
             "was": {
@@ -322,8 +322,8 @@
                 "proficiency": 1.0
             },
             "gehen": {
-                "correct_attempts": 11,
-                "total_attempts": 11,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "gro\u00df": {
@@ -342,8 +342,8 @@
                 "proficiency": 1.0
             },
             "zwei": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "also": {
@@ -372,8 +372,8 @@
                 "proficiency": 1.0
             },
             "bis": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "wissen": {
@@ -587,8 +587,8 @@
                 "proficiency": 1.0
             },
             "Mann": {
-                "correct_attempts": 11,
-                "total_attempts": 11,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "welch, -e, -er, -es": {
@@ -647,8 +647,8 @@
                 "proficiency": 1.0
             },
             "Kind": {
-                "correct_attempts": 11,
-                "total_attempts": 11,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "Land": {
@@ -677,13 +677,13 @@
                 "proficiency": 1.0
             },
             "dort": {
-                "correct_attempts": 11,
-                "total_attempts": 12,
-                "proficiency": 0.9166666666666666
+                "correct_attempts": 12,
+                "total_attempts": 13,
+                "proficiency": 0.9230769230769231
             },
             "Deutschland": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "gleich": {
@@ -717,8 +717,8 @@
                 "proficiency": 1.0
             },
             "Haus": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "nein": {
@@ -792,9 +792,9 @@
                 "proficiency": 1.0
             },
             "f\u00fchren": {
-                "correct_attempts": 10,
-                "total_attempts": 11,
-                "proficiency": 0.9090909090909091
+                "correct_attempts": 11,
+                "total_attempts": 12,
+                "proficiency": 0.9166666666666666
             },
             "bringen": {
                 "correct_attempts": 10,
@@ -1002,8 +1002,8 @@
                 "proficiency": 1.0
             },
             "Stadt": {
-                "correct_attempts": 11,
-                "total_attempts": 11,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "spielen": {
@@ -1077,8 +1077,8 @@
                 "proficiency": 1.0
             },
             "Weg": {
-                "correct_attempts": 12,
-                "total_attempts": 12,
+                "correct_attempts": 14,
+                "total_attempts": 14,
                 "proficiency": 1.0
             },
             "weiter": {
@@ -1097,8 +1097,8 @@
                 "proficiency": 1.0
             },
             "Leute": {
-                "correct_attempts": 12,
-                "total_attempts": 12,
+                "correct_attempts": 13,
+                "total_attempts": 13,
                 "proficiency": 1.0
             },
             "allerdings": {
@@ -1607,8 +1607,8 @@
                 "proficiency": 1.0
             },
             "Nacht": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "Platz": {
@@ -2522,8 +2522,8 @@
                 "proficiency": 1.0
             },
             "schauen": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "St\u00fcck": {
@@ -2882,8 +2882,8 @@
                 "proficiency": 1.0
             },
             "Kilometer": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 11,
+                "total_attempts": 11,
                 "proficiency": 1.0
             },
             "zus\u00e4tzlich": {
@@ -3342,8 +3342,8 @@
                 "proficiency": 1.0
             },
             "Fenster": {
-                "correct_attempts": 12,
-                "total_attempts": 12,
+                "correct_attempts": 13,
+                "total_attempts": 13,
                 "proficiency": 1.0
             },
             "Zug": {
@@ -3502,8 +3502,8 @@
                 "proficiency": 1.0
             },
             "dunkel": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "\u00d6sterreich": {
@@ -3667,8 +3667,8 @@
                 "proficiency": 1.0
             },
             "Natur": {
-                "correct_attempts": 11,
-                "total_attempts": 11,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "rechnen": {
@@ -4232,8 +4232,8 @@
                 "proficiency": 1.0
             },
             "Meer": {
-                "correct_attempts": 10,
-                "total_attempts": 10,
+                "correct_attempts": 12,
+                "total_attempts": 12,
                 "proficiency": 1.0
             },
             "Anzahl": {
@@ -4797,8 +4797,8 @@
                 "proficiency": 1.0
             },
             "weg": {
-                "correct_attempts": 12,
-                "total_attempts": 12,
+                "correct_attempts": 14,
+                "total_attempts": 14,
                 "proficiency": 1.0
             },
             "aufstehen": {
@@ -5012,9 +5012,9 @@
                 "proficiency": 1
             },
             "hinaus": {
-                "correct_attempts": 4,
-                "total_attempts": 8,
-                "proficiency": 0.5
+                "correct_attempts": 10,
+                "total_attempts": 15,
+                "proficiency": 0.6666666666666666
             },
             "Gr\u00fcne": {
                 "correct_attempts": 1,
