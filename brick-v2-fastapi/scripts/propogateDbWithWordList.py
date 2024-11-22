@@ -27,3 +27,9 @@ with open("./db.json", "r+") as db_file:
     json.dump(db_data, db_file, indent=4)
     db_file.truncate()
 
+from fsrs import FSRS, Card, Rating
+
+fsrs = FSRS()
+
+card = Card()
+card, _ = fsrs.review_card(card, Rating.Good)

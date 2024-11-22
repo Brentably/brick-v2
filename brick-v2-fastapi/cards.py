@@ -1,3 +1,4 @@
+from sre_parse import State
 from fsrs import FSRS, Card, Rating
 
 # HOW TO BUILD from FSRS:
@@ -9,7 +10,8 @@ from fsrs import FSRS, Card, Rating
 # Create FSRS instance
 fsrs = FSRS()
 
-card = Card()
+card = Card(due=datetime.now(timezone.utc)+timedelta(days=365), state=State.Review)
+
 from datetime import datetime, timedelta, timezone
 print(datetime.now(timezone.utc))
 
