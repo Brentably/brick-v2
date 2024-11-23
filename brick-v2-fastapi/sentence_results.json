@@ -360,5 +360,49 @@
         "english_translation": "Today, people keep more distance between themselves than in the past.",
         "user_translation": "People stop today ",
         "is_correct": false
+    },
+    {
+        "sentence": "Mach halt, was du willst!",
+        "clicked_words": [
+            "halt"
+        ],
+        "english_translation": "Mach halt, was du willst!",
+        "user_translation": "Do stop what you want",
+        "is_correct": false
+    },
+    {
+        "sentence": "Die Menschen halten einen gro\u00dfen Abstand zwischen sich.",
+        "clicked_words": [],
+        "english_translation": "People keep a large distance between them.",
+        "user_translation": "People hold a big distance between themselves. ",
+        "is_correct": true
+    },
+    {
+        "sentence": "In der Moderne leben wir mit technischen Systemen, die das Leben der Menschen stark ver\u00e4ndern.",
+        "clicked_words": [],
+        "english_translation": "In the modern age, we live with technical systems that are changing people's lives dramatically.",
+        "user_translation": "In modern life, we live with technical systems, that strongly change people's lives.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das neue Buch hat einen interessanten Titel, aber ich kann ihn nicht lesen.",
+        "clicked_words": [],
+        "english_translation": "The new book has an interesting title, but I can't read it.",
+        "user_translation": "The new book had an interesting title, but I can't read it. ",
+        "is_correct": true
+    },
+    {
+        "sentence": "Leider ist im Moment nicht genug Geld vorhanden, um das neue Auto zu kaufen.",
+        "clicked_words": [],
+        "english_translation": "Unfortunately, we don't have enough money at the moment to buy the new car.",
+        "user_translation": "Unfortunately at the moment, there is not enough money available, in order to buy a new car",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Menschen halten einen gro\u00dfen Abstand zwischen sich.",
+        "clicked_words": [],
+        "english_translation": "People keep a large distance between them.",
+        "user_translation": "People hold a big distance between themselves.",
+        "is_correct": true
     }
 ]

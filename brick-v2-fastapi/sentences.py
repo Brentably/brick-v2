@@ -112,7 +112,7 @@ full_word_list: list[str] = load_full_word_list()
 
 # currently all allowed words are in all tracked words (rounded down to nearest 25 to save on tokens)
 # ideally in the future, we'd only allow words that they know well
-def load_word_list():
+def load_allowed_word_list():
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)
         num_words = len(db_data["user"]["words"])
@@ -321,10 +321,10 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
     
   print("messages to claude: ")
   print(messages)
-  
   message_block = anthropic.Anthropic(api_key=CLAUDE_API_KEY).beta.prompt_caching.messages.create(
-      model="claude-3-5-sonnet-20241022",
+      model="claude-3-5-sonnet-20241022", 
       max_tokens=1024,
+      temperature=1,
       system=[{
         "text": create_system_prompt(focus_word=focus_word, word_list=word_list),
         "type": "text",
@@ -374,7 +374,7 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
 def generate_sentence():
     # Load data
     focus_word = get_focus_word()
-    word_list = load_word_list()
+    word_list = load_allowed_word_list()
     word_list.append(focus_word)
     print(focus_word)
     

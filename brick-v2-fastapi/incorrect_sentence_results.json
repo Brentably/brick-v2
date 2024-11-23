@@ -26,5 +26,14 @@
         "english_translation": "Today, people keep more distance between themselves than in the past.",
         "user_translation": "People stop today ",
         "is_correct": false
+    },
+    {
+        "sentence": "Mach halt, was du willst!",
+        "clicked_words": [
+            "halt"
+        ],
+        "english_translation": "Mach halt, was du willst!",
+        "user_translation": "Do stop what you want",
+        "is_correct": false
     }
 ]
