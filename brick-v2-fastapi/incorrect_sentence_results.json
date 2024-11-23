@@ -1,0 +1,30 @@
+[
+    {
+        "sentence": "Die Moderne zeigt sich besonders stark in der Kunst unserer Zeit.",
+        "clicked_words": [
+            "Moderne",
+            "zeigt"
+        ],
+        "english_translation": "Modernism is particularly evident in the art of our time.",
+        "user_translation": "The modern pull is especially ",
+        "is_correct": false
+    },
+    {
+        "sentence": "Die Gr\u00fcne gewinnt in Deutschland immer mehr an Bedeutung in der Politik.",
+        "clicked_words": [
+            "Gr\u00fcne",
+            "gewinnt",
+            "Bedeutung"
+        ],
+        "english_translation": "The Greens are becoming increasingly important in politics in Germany.",
+        "user_translation": "The greens win in germany always more ",
+        "is_correct": false
+    },
+    {
+        "sentence": "Die Menschen halten heute mehr Abstand zwischen sich als fr\u00fcher.",
+        "clicked_words": [],
+        "english_translation": "Today, people keep more distance between themselves than in the past.",
+        "user_translation": "People stop today ",
+        "is_correct": false
+    }
+]

@@ -1,0 +1,364 @@
+[
+    {
+        "sentence": "Es gibt viele M\u00f6glichkeiten, aber die beste M\u00f6glichkeit ist es, einfach anzufangen.",
+        "clicked_words": [],
+        "english_translation": "There are many options, but the best option is to simply get started.",
+        "user_translation": "There are many opportunities, but the best possibility is to simply start.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das Kind ist nicht kalt, aber die Mutter ist sehr kalt.",
+        "clicked_words": [],
+        "english_translation": "The child is not cold, but the mother is very cold.",
+        "user_translation": "The child is not cold, but the mother is very cold.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Menschen wollen immer mehr Geld haben.",
+        "clicked_words": [],
+        "english_translation": "People always want more money.",
+        "user_translation": "People always want to have more money.",
+        "is_correct": true
+    },
+    {
+        "sentence": "In der Firma sind nicht genug Mitarbeiter vorhanden, um das Problem zu l\u00f6sen.",
+        "clicked_words": [],
+        "english_translation": "There are not enough employees in the company to solve the problem.",
+        "user_translation": "In the company, there are not enough employees available in order to solve the problem",
+        "is_correct": true
+    },
+    {
+        "sentence": "Ein Mann steht vor dem Haus und wartet auf seinen Freund.",
+        "clicked_words": [],
+        "english_translation": "A man stands in front of the house waiting for his friend.",
+        "user_translation": "A mean stands in from of a house and waits on his friend.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Er ist einer der besten Lehrer in der Stadt.",
+        "clicked_words": [],
+        "english_translation": "He is one of the best teachers in the city.",
+        "user_translation": "He is one of the best teachers in the city",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die L\u00f6sung des Problems war nicht schnell zu finden, aber das Team hat gut zusammen gearbeitet.",
+        "clicked_words": [],
+        "english_translation": "The solution to the problem was not quick to find, but the team worked well together.",
+        "user_translation": "The solution to the problem weren't quick to be found, but the team worked together well",
+        "is_correct": true
+    },
+    {
+        "sentence": "Ich m\u00f6chte f\u00fcr zwei Tage ein Hotel in Deutschland buchen.",
+        "clicked_words": [],
+        "english_translation": "I would like to book a hotel in Germany for two days.",
+        "user_translation": "I want to book a hotel in Germany for 2 days.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das neue Buch hat einen sehr guten Titel, aber ich kann mich nicht erinnern, wie er hei\u00dft.",
+        "clicked_words": [],
+        "english_translation": "The new book has a very good title, but I can't remember what it's called.",
+        "user_translation": "The new book had a very good title, but I can't remember what its called.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die moderne Kunst in Deutschland ist sehr interessant, aber nicht alle Menschen k\u00f6nnen sie verstehen.",
+        "clicked_words": [],
+        "english_translation": "Modern art in Germany is very interesting, but not everyone can understand it.",
+        "user_translation": "The modern art in Germany is very interesting, but not all people can understand it.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die neue Stra\u00dfe geht durch die ganze Stadt.",
+        "clicked_words": [],
+        "english_translation": "The new road runs through the entire city.",
+        "user_translation": "The new street goes through the whole city. ",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der erste Eindruck war stark und positiv.",
+        "clicked_words": [],
+        "english_translation": "The first impression was strong and positive.",
+        "user_translation": "The first impression was strong and positive.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Moderne zeigt sich besonders stark in der Kunst unserer Zeit.",
+        "clicked_words": [
+            "Moderne",
+            "zeigt"
+        ],
+        "english_translation": "Modernism is particularly evident in the art of our time.",
+        "user_translation": "The modern pull is especially ",
+        "is_correct": false
+    },
+    {
+        "sentence": "Das erste Kind kommt ins Zimmer und lacht.",
+        "clicked_words": [],
+        "english_translation": "The first child comes into the room and laughs.",
+        "user_translation": "The first child comes in the room and laughs.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der erste Eindruck macht einen starken Unterschied.",
+        "clicked_words": [],
+        "english_translation": "First impressions make a big difference.",
+        "user_translation": "The first impression makes a big difference.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der alte Baum steht hinter unserem Haus und w\u00e4chst immer h\u00f6her in den Himmel.",
+        "clicked_words": [],
+        "english_translation": "The old tree stands behind our house and grows higher and higher into the sky.",
+        "user_translation": "The old tree stands behind our house and grows ever higher in the sky",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Frage lautet, wie wir das Problem l\u00f6sen k\u00f6nnen.",
+        "clicked_words": [],
+        "english_translation": "The question is how we can solve the problem.",
+        "user_translation": "The question is, how can we solve the problem",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Macht der Politik in Deutschland ist sehr gro\u00df und stark.",
+        "clicked_words": [],
+        "english_translation": "The power of politics in Germany is very large and strong.",
+        "user_translation": "The power of politics in germany is very big and strong.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Alte wohnt seit vielen Jahren allein in der Stadt.",
+        "clicked_words": [
+            "Alte"
+        ],
+        "english_translation": "The old woman has lived alone in the city for many years.",
+        "user_translation": "The old have lived for many years alone in the city.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der gro\u00dfe gr\u00fcne Baum w\u00e4chst zwischen zwei alten H\u00e4usern in der Stadt.",
+        "clicked_words": [],
+        "english_translation": "The large green tree grows between two old houses in the town.",
+        "user_translation": "The big green tree growns in between to houses in the city",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Frage lautet: \"Wie gro\u00df ist das Haus?\"",
+        "clicked_words": [],
+        "english_translation": "The question is: \"How big is the house?\"",
+        "user_translation": "The question is: how big is the house?",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das Leben in der modernen Stadt ist sehr schnell und anders als fr\u00fcher.",
+        "clicked_words": [],
+        "english_translation": "Life in the modern city is very fast and different than it used to be.",
+        "user_translation": "Life in the modern city is very fast and different than before.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Moderne ist eine Zeit, in der die Menschen ohne Internet nicht leben k\u00f6nnen.",
+        "clicked_words": [],
+        "english_translation": "The modern age is a time when people cannot live without the Internet.",
+        "user_translation": "The modern era is a time, where people can't live without internet",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der Lehrer zeigt den Sch\u00fclern das neue Buch und erkl\u00e4rt die wichtigen Teile.",
+        "clicked_words": [],
+        "english_translation": "The teacher shows the students the new book and explains the important parts.",
+        "user_translation": "The teacher shows the school children the new book and explains the important parts.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Leider ist nicht genug Geld vorhanden, um das neue Auto zu kaufen.",
+        "clicked_words": [],
+        "english_translation": "Unfortunately, there is not enough money to buy the new car.",
+        "user_translation": "Unfortunately there is not enough money available in order to buy a new car",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Gr\u00fcne gewinnt in Deutschland immer mehr an Bedeutung in der Politik.",
+        "clicked_words": [
+            "Gr\u00fcne",
+            "gewinnt",
+            "Bedeutung"
+        ],
+        "english_translation": "The Greens are becoming increasingly important in politics in Germany.",
+        "user_translation": "The greens win in germany always more ",
+        "is_correct": false
+    },
+    {
+        "sentence": "Die neue Diskussion \u00fcber politische Fragen f\u00fchrte zu einer wichtigen Entscheidung in der Universit\u00e4t.",
+        "clicked_words": [],
+        "english_translation": "The new discussion on political issues led to an important decision at the university.",
+        "user_translation": "The new discussion about politics questions leads to one of the most important decision in the Universitity",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der Vater ist gro\u00df, der Sohn hingegen klein.",
+        "clicked_words": [],
+        "english_translation": "The father is big, but the son is small.",
+        "user_translation": "The father is big, but the son is small",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der Student studiert an der Universit\u00e4t und lernt jeden Tag viel Neues.",
+        "clicked_words": [],
+        "english_translation": "The student studies at the university and learns a lot of new things every day.",
+        "user_translation": "The student studies at university and learns a lot of new things every day",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die politische Diskussion zwischen den Menschen war sehr interessant, und alle wollten dazu sprechen.",
+        "clicked_words": [
+            "dazu"
+        ],
+        "english_translation": "The political discussion between the people was very interesting and everyone wanted to talk about it.",
+        "user_translation": "The political discussion between people was very intersting, and everyone wanted to speak about it",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das Haus ist klein, die Stadt hingegen ist sehr gro\u00df.",
+        "clicked_words": [],
+        "english_translation": "The house is small, but the city is very large.",
+        "user_translation": "The house is small, the city, on the other hand, is very big.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der Student lernt mit anderen Studenten an der Universit\u00e4t, und der Professor findet das sehr gut.",
+        "clicked_words": [],
+        "english_translation": "The student learns with other students at the university, and the professor thinks that's very good.",
+        "user_translation": "The studnet learn with other students at the University and the professor thinks that's very good.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Bev\u00f6lkerung in Deutschland w\u00e4chst schnell, aber die Unterschiede zwischen Stadt und Land werden immer st\u00e4rker.",
+        "clicked_words": [],
+        "english_translation": "The population in Germany is growing rapidly, but the differences between urban and rural areas are becoming ever greater.",
+        "user_translation": "The population in germany grows quickly, but the difference between city and country grows ever bigger",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der kleine Junge zeigte mit seinem Finger auf das hohe Haus und lachte.",
+        "clicked_words": [
+            "zeigte"
+        ],
+        "english_translation": "The little boy pointed his finger at the tall house and laughed.",
+        "user_translation": "The young boy showed",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Bev\u00f6lkerung in China w\u00e4chst jedes Jahr, w\u00e4hrend die deutsche Bev\u00f6lkerung langsam sinkt.",
+        "clicked_words": [],
+        "english_translation": "The population in China is growing every year, while the German population is slowly declining.",
+        "user_translation": "The population in china grows every year, while the german population slowly decreases.",
+        "is_correct": true
+    },
+    {
+        "sentence": "Viele Fl\u00fcchtlinge landen in Deutschland und suchen hier eine neue Zukunft.",
+        "clicked_words": [
+            "Fl\u00fcchtlinge",
+            "landen"
+        ],
+        "english_translation": "Many refugees end up in Germany and seek a new future here.",
+        "user_translation": "Many refuges land in Germany and search here for a new future",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Gr\u00fcne reden heute \u00fcber Politik in Deutschland.",
+        "clicked_words": [],
+        "english_translation": "The Greens are talking about politics in Germany today.",
+        "user_translation": "The Greens talk today about politics in Germany",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Spieler gewinnen das wichtige Spiel, und alle Freunde freuen sich.",
+        "clicked_words": [
+            "gewinnen",
+            "Spiel"
+        ],
+        "english_translation": "The players win the important game and all their friends are happy.",
+        "user_translation": "The players win the important game, and alle the friends are happy",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Bedeutung der Sprache f\u00fcr das Leben in Deutschland ist sehr wichtig zu verstehen.",
+        "clicked_words": [],
+        "english_translation": "The importance of language for life in Germany is very important to understand.",
+        "user_translation": "The meaning of language for Life in germany is very important to understand",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der kleine Junge zeigt mit seinem langen Finger auf das neue Auto.",
+        "clicked_words": [],
+        "english_translation": "The little boy points to the new car with his long finger.",
+        "user_translation": "The small boy points with his long finger to the new car",
+        "is_correct": true
+    },
+    {
+        "sentence": "Der Chef sagt nein, und ich sage dazu auch nichts mehr.",
+        "clicked_words": [],
+        "english_translation": "The boss says no, and I don't say anything more.",
+        "user_translation": "The boss says no, and I ",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Suche nach einer neuen Arbeit in Deutschland kann sehr schwer sein.",
+        "clicked_words": [],
+        "english_translation": "Finding a new job in Germany can be very difficult.",
+        "user_translation": "The search for a new job in germany can be very difficult",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die total neue Situation hat mein Leben ver\u00e4ndert.",
+        "clicked_words": [],
+        "english_translation": "This totally new situation has changed my life.",
+        "user_translation": "the totally new situation changed my life",
+        "is_correct": true
+    },
+    {
+        "sentence": "Viele Fl\u00fcchtlinge kommen nach Deutschland, wo sie ein neues Leben beginnen und Hilfe bekommen.",
+        "clicked_words": [],
+        "english_translation": "Many refugees come to Germany, where they start a new life and receive help.",
+        "user_translation": "Many refugees come to germany, where they begin a new life and receive help",
+        "is_correct": true
+    },
+    {
+        "sentence": "In Deutschland leben viele Menschen auf dem Land und in den gro\u00dfen St\u00e4dten.",
+        "clicked_words": [],
+        "english_translation": "In Germany, many people live in the countryside and in the big cities.",
+        "user_translation": "In germany, many people live in the country and in big cities",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Firma macht dieses Jahr einen Gewinn von zwei Millionen Euro.",
+        "clicked_words": [],
+        "english_translation": "The company is making a profit of two million euros this year.",
+        "user_translation": "The business makes a profit of 2 million euros this year",
+        "is_correct": true
+    },
+    {
+        "sentence": "Das Spiel zwischen Deutschland und Frankreich war sehr interessant, und die Spieler haben gut gespielt.",
+        "clicked_words": [],
+        "english_translation": "The match between Germany and France was very interesting and the players played well.",
+        "user_translation": "The play between Germany and France was very interesting, and the players played well",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die totale Ver\u00e4nderung in seinem Leben war nicht leicht, aber er ist jetzt ein total anderer Mensch.",
+        "clicked_words": [],
+        "english_translation": "The total change in his life was not easy, but he is now a totally different person.",
+        "user_translation": "The total change in his life was not easy, but he is now a totally different person",
+        "is_correct": true
+    },
+    {
+        "sentence": "Die Menschen halten heute mehr Abstand zwischen sich als fr\u00fcher.",
+        "clicked_words": [],
+        "english_translation": "Today, people keep more distance between themselves than in the past.",
+        "user_translation": "People stop today ",
+        "is_correct": false
+    }
+]

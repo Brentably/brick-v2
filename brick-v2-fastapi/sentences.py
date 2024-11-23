@@ -110,13 +110,16 @@ full_word_list: list[str] = load_full_word_list()
 
 
 
-# currently all allowed words are in all tracked words.
-# ideally in the future, we'd only allow context words to be ones that are 
-# *not* due or words that they are expected to remember
+# currently all allowed words are in all tracked words (rounded down to nearest 25 to save on tokens)
+# ideally in the future, we'd only allow words that they know well
 def load_word_list():
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)
-        return list(db_data["user"]["words"].keys())
+        num_words = len(db_data["user"]["words"])
+        # Round down to nearest 25
+        rounded_num = 25 * (num_words // 25)
+        # Get that many words from full word list
+        return full_word_list[:rounded_num]
 
 def load_lookup_table():
     with open(LOOKUP_TABLE_FILE, "r") as file:

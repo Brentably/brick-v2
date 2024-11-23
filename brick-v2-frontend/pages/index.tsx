@@ -93,6 +93,7 @@ export default function Home() {
       },
       body: JSON.stringify({
         sentenceData: sentenceToTranslateData,
+        englishTranslation: englishTranslation,
         userTranslation: translation, // b/c already set user translation to blank
         isCorrect: isCorrect
       })

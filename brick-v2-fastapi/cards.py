@@ -28,14 +28,16 @@ def create_new_review_card_multiple_times(times=5):
 def calc_total_proficiency():
     proficiency_sum = 0
     full_word_list = load_full_word_list()
+    count = 0 
     for word in full_word_list:
         with open("db.json", "r") as db_file:
             db_data = json.load(db_file).get("user", {}).get("words", {})
             if word in db_data:
-                retrivability = fsrs.approximate_retrievability(Card.from_dict(db_data[word]["card"]))
+                count += 1
+                retrivability = fsrs.approximate_retrievability(Card.from_dict(db_data[word]))
                 # print(f"{word}: {retrivability}")
                 proficiency_sum += retrivability
-
+    print(f"count: {count} / {len(full_word_list)}")
     return float((proficiency_sum / len(full_word_list)).real)
 
 from fsrs.models import SchedulingCards
