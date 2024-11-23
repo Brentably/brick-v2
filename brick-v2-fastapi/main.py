@@ -66,6 +66,7 @@ def store_sentence_result(sentence_result: SentenceResult):
     result = {
         "sentence": sentence_result.sentence_data.message,
         "clicked_words": [token.token for token in sentence_result.sentence_data.data if token.isClicked],
+        "focus_words": sentence_result.sentence_data.focus_words,
         "english_translation": sentence_result.english_translation,
         "user_translation": sentence_result.user_translation,
         "is_correct": sentence_result.is_correct,
@@ -99,11 +100,12 @@ def sentence_result(body: dict = Body(...)):
     
     print(sentence_data)
     
-    flattened_root_words = [root_word for item in sentence_data.data for root_word in item.root_words]
+    
     not_clicked_tokens_count = sum(1 for token in sentence_data.data if not token.isClicked)
     print(f"Number of tokens not clicked: {not_clicked_tokens_count}")
     not_clicked_token_weight = 1 / not_clicked_tokens_count
-    print(f"not_clicked_token_weight: {not_clicked_token_weight}")
+    print(f"not_clicked_token_weight: {not_clicked_token_weight}")\
+    
     with open("db.json", "r+") as db_file:
         db_data = json.load(db_file)
         user_data = db_data.get("user", {})

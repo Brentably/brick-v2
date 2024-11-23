@@ -35,5 +35,16 @@
         "english_translation": "Mach halt, was du willst!",
         "user_translation": "Do stop what you want",
         "is_correct": false
+    },
+    {
+        "sentence": "Das Kind landete sicher in dem neuen Land.\n\nWir landen heute in Deutschland, einem Land mit viel Geschichte.",
+        "clicked_words": [],
+        "focus_words": [
+            "Land",
+            "landen"
+        ],
+        "english_translation": "The child landed safely in the new country.\n\nToday we land in Germany, a country with a lot of history.",
+        "user_translation": "THe child lands secure in the new country. We arrive today in germany, a coutnry with a lot of history.",
+        "is_correct": false
     }
 ]

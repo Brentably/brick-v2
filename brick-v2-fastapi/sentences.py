@@ -44,8 +44,8 @@ def create_system_prompt(focus_word: str, word_list: str, language: str = 'Germa
 
     But *ONLY* use words and versions of words from this list. DO NOT use any other words. Let me reiterate, do NOT, use any other words.
     
-    Additionally, your main requirement is to use the focus word specified. Create a great example sentence with this focus word in context in order for the user to get a good grasp on how it might be used.
-    You are a native speaker, and you actually don't know English. Make sure that your <answer> always contains only German.
+    Additionally, your main requirement is to use the focus words specified. Create a great example sentence with these focus words in context in order for the user to get a good grasp on how they might be used.
+    You are a native speaker, and you actually don't know English. Make sure that your <answer> always contains only German. Make sure that you only provide one, great sentence, and not an alternative or several sentences.
     
     Before you reply, consider the word list and how you might structure your reply given your limited vocabulary. Write out this thinking within <thinking> tags.
     Always reply in this XML format:
@@ -85,6 +85,7 @@ class ResultTokenInfo(TokenInfo):
 class MessageData(BaseModel):
     message: str
     data: list[TokenInfo]
+    focus_words: list[str]
     
 class ResultMessageData(MessageData):
     message: str
@@ -127,7 +128,7 @@ def load_lookup_table():
 full_lookup_table: dict[str, list[str]] = load_lookup_table()
 
 
-def get_focus_word(): 
+def get_focus_words(number_of_words: int = 2): 
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)
         words_data = db_data.get("user", {}).get("words", {})
@@ -137,15 +138,21 @@ def get_focus_word():
         print('sorted words')
         print(sorted_words[:10])
         
-        # Choose the word with the soonest due date
-        if datetime.fromisoformat(sorted_words[0][1]["due"]) < datetime.now(timezone.utc):
-            return sorted_words[0][0]
-        else:
-            # or the next word in the full list
-            for word in full_word_list:
-                if word not in words_data:
-                    return word
-            raise Exception('couldnt find focus word')
+        
+        words = []
+        for _ in range(number_of_words):
+            # Choose the word with the soonest due date
+            if datetime.fromisoformat(sorted_words[len(words)][1]["due"]) < datetime.now(timezone.utc):
+                words.append(sorted_words[len(words)][0])
+            else:
+                # or the next word in the full list
+                for word in full_word_list:
+                    if word not in words_data and word not in words:
+                        words.append(word)
+        if len(words) < number_of_words:
+            raise Exception(f"Not enough words to meet focus_words requirement. Requested {number_of_words} words, but only found {len(words)} words.")
+        
+        return words
             
     
         
@@ -177,7 +184,7 @@ def get_roots(token: tokens.Token) -> list[str]:
   
 
 #goal here is to do whaever logic we need to do for getting claude's actual answer (not COT or w/e)
-def process_claude_response(resp: str):
+def parse_claude_response(resp: str):
     # Extract text between <answer> tags using string manipulation
     # Could use XML parser but response is simple enough that string search is sufficient
     start_tag = "<answer>"
@@ -232,9 +239,9 @@ def analyze_and_add_roots(input_str, language):
             # set token head's lemmas to lemmas of current (spv) token
             for t in tokens_list:
                 # should only match tokens head
-                if t['id'] == id:
-                    t['root_words'] = root_words
-                    t['is_svp'] = True
+                if t.id == id:
+                    t.root_words = root_words
+                    t.is_svp = True
             
         elif token.dep_ != 'punct' and token.pos_ != 'PUNCT' and token.pos_ != 'SPACE':
             id = token.idx
@@ -244,20 +251,20 @@ def analyze_and_add_roots(input_str, language):
             id = None
             root_words = []
         
-        tokens_list.append({
-            "token": token.text,
-            "token_ws": token.whitespace_,
-            "id": id,
-            "root_words": root_words,
-            "is_svp": is_svp,
-            "full_svp_word": full_svp_word if full_svp_word else None
-        })
+        tokens_list.append(TokenInfo(
+            token=token.text,
+            token_ws=token.whitespace_,
+            id=id,
+            root_words=root_words,
+            is_svp=is_svp,
+            full_svp_word=full_svp_word if full_svp_word else None
+        ))
   
     # pprint(tokens_list)
     return tokens_list
 
-def process_and_validate_message(preprocessed_message: str, focus_word: str, word_list: list[str]) -> ValidationResult:
-    message = process_claude_response(preprocessed_message)
+def process_and_validate_message(preprocessed_message: str, focus_words: list[str], word_list: list[str]) -> ValidationResult:
+    message = parse_claude_response(preprocessed_message)
 
     pprint("message:\n")
     pprint(message)
@@ -266,23 +273,23 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
     tokens_list = analyze_and_add_roots(input_str=message, language="German")
     for token in tokens_list:
       # if token isn't punctuation
-      if token["id"] is not None:
+      if token.id is not None:
         # either there are no root words
-        if len(token["root_words"]) == 0:
-          print(f'couldnt identify roots for: {token["token"]}')
+        if len(token.root_words) == 0:
+          print(f'couldnt identify roots for: {token.token}')
           invalid_words.append(token)
         else: 
           # make sure that some word in token["root_words"] is in the word_list, else add the token to invalid words
-          if any(root_word in word_list for root_word in token["root_words"]):
+          if any(root_word in word_list for root_word in token.root_words):
             continue
           else:
-            print(f'no root word of {token["token"]} found in word list')
+            print(f'no root word of {token.token} found in word list')
             print(token)
             invalid_words.append(token)
     # print('data:\n')
     # pprint(tokens_list)
     
-    root_words = [token["root_words"] for token in tokens_list]
+    root_words_lists = [token.root_words for token in tokens_list]
     
     # pprint('root words:')
     # print(root_words)
@@ -294,16 +301,23 @@ def process_and_validate_message(preprocessed_message: str, focus_word: str, wor
         pprint(invalid_words)
         return ValidationResult(is_valid=False, reason="words not on word_list found", invalid_words=invalid_words)
     
-    # Validate that at least one of the random words is used
-    found = any(focus_word in root_word_list for root_word_list in root_words)
-    if not found:
-        return ValidationResult(is_valid=False, reason="focus_word missing")
+    # Validate that both focus words are used
+    found_words = set()
+    for focus_word in focus_words:
+        for root_word_list in root_words_lists:
+            if focus_word in root_word_list:
+                found_words.add(focus_word)
+                break
+    
+    if len(found_words) < len(focus_words):
+        missing_words = set(focus_words) - found_words
+        return ValidationResult(is_valid=False, reason=f"focus_words missing")
 
       
-    return ValidationResult(is_valid=True, messageData=MessageData(message=message, data=tokens_list))
+    return ValidationResult(is_valid=True, messageData=MessageData(message=message, data=tokens_list, focus_words=focus_words))
 
 
-def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messages=None) -> MessageData:
+def generate_with_retries(word_list, focus_words: list[str], max_tries=5, attempts=0, messages=None) -> MessageData:
   print(f"[red]Attempt #{attempts} to generate valid sentence...[/red]")
   
   if attempts >= max_tries:
@@ -314,7 +328,7 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
             {"role": "user", 
              "content": [{
                 "type": "text",
-                "text": f"Generate a sentence using only words from the list and the focus word: {focus_word}.",
+                "text": f"Generate a sentence using only words from the list and the focus words: {' and '.join(focus_words)}.",
                 "cache_control": {"type": "ephemeral"}
           }]}
         ]
@@ -326,7 +340,7 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
       max_tokens=1024,
       temperature=1,
       system=[{
-        "text": create_system_prompt(focus_word=focus_word, word_list=word_list),
+        "text": create_system_prompt(focus_word=focus_words, word_list=word_list),
         "type": "text",
         "cache_control": {"type": "ephemeral"}
         }],
@@ -352,7 +366,7 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
   
 
 
-  result = process_and_validate_message(preprocessed_message, focus_word, word_list)
+  result = process_and_validate_message(preprocessed_message, focus_words, word_list)
   
   if result.is_valid:
     return result.messageData
@@ -364,22 +378,22 @@ def generate_with_retries(word_list, focus_word, max_tries=5, attempts=0, messag
           f.seek(0); json.dump(counts, f, indent=2); f.truncate()
         add_svp_message = any(invalid_word.is_svp for invalid_word in result.invalid_words)
         messages.append({"role": "user", "content": f"Unfortunately, you used: {', '.join([invalid_word.full_svp_word if invalid_word.full_svp_word else invalid_word.token for invalid_word in result.invalid_words])} which are not on the list. {'If the word you were assigned is also a separable prefix, make sure to use it in a context that it is not a separable prefix.' if add_svp_message else ''} "})
-    elif result.reason == "focus_word missing":
-      messages.append({"role": "user", "content": f"Unfortunately, the focus word was missing. Make sure to use {focus_word} in the response!"})
+    elif result.reason == "focus_words missing":
+      messages.append({"role": "user", "content": f"Unfortunately, the focus words are missing. Make sure to use {' and '.join(focus_words)} in the response!"})
     else:
       raise Exception(f"An unaccounted for reason occurred: {result.reason}")
     
-    return generate_with_retries(word_list=word_list, focus_word=focus_word, attempts=attempts+1, messages=messages)
+    return generate_with_retries(word_list=word_list, focus_words=focus_words, attempts=attempts+1, messages=messages)
 
 def generate_sentence():
     # Load data
-    focus_word = get_focus_word()
+    focus_words = get_focus_words()
     word_list = load_allowed_word_list()
-    word_list.append(focus_word)
-    print(focus_word)
+    word_list.extend(focus_words)
+    print(focus_words)
     
     # Generate sentence using OpenAI
-    messageData = generate_with_retries(word_list, focus_word)
+    messageData = generate_with_retries(word_list, focus_words)
     print("[blue]final message: [/blue]")
     print(messageData.message)
     return messageData
