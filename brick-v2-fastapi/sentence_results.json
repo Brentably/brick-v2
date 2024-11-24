@@ -415,5 +415,464 @@
         "english_translation": "The child landed safely in the new country.\n\nToday we land in Germany, a country with a lot of history.",
         "user_translation": "THe child lands secure in the new country. We arrive today in germany, a coutnry with a lot of history.",
         "is_correct": false
+    },
+    {
+        "sentence": "Die Alten wissen mehr als die alte Frau.",
+        "clicked_words": [],
+        "focus_words": [
+            "Alte",
+            "alt"
+        ],
+        "english_translation": "The old people know more than the old woman.",
+        "user_translation": "afasdfdsf\n",
+        "word_validations": {
+            "Alte": true,
+            "alt": true
+        }
+    },
+    {
+        "sentence": "Ich zeige dir halt das neue Haus, wenn du Zeit hast.",
+        "clicked_words": [
+            "halt"
+        ],
+        "focus_words": [
+            "zeigen",
+            "halt"
+        ],
+        "english_translation": "I'll show you the new house when you have time.",
+        "user_translation": "I'll show you stop the new house, if you have time.",
+        "word_validations": {
+            "zeigen": true,
+            "halt": false
+        }
+    },
+    {
+        "sentence": "Der Gr\u00fcne sieht hinaus \u00fcber die Stadt.",
+        "clicked_words": [],
+        "focus_words": [
+            "hinaus",
+            "Gr\u00fcne"
+        ],
+        "english_translation": "The green man looks out over the city.",
+        "user_translation": "The greens see out over the city.",
+        "word_validations": {
+            "hinaus": true,
+            "Gr\u00fcne": false
+        }
+    },
+    {
+        "sentence": "Das gr\u00fcne Land zwischen den Bergen ist besonders sch\u00f6n im Sommer.",
+        "clicked_words": [],
+        "focus_words": [
+            "gr\u00fcn",
+            "Land"
+        ],
+        "english_translation": "",
+        "user_translation": "The green land between the mountaind is",
+        "word_validations": {
+            "gr\u00fcn": false,
+            "Land": false
+        }
+    },
+    {
+        "sentence": "Die Chance zu gewinnen ist noch vorhanden.",
+        "clicked_words": [],
+        "focus_words": [
+            "gewinnen",
+            "vorhanden"
+        ],
+        "english_translation": "The chance to win is still there.",
+        "user_translation": "There is no chance to win",
+        "word_validations": {
+            "gewinnen": true,
+            "vorhanden": true
+        }
+    },
+    {
+        "sentence": "Die wichtige Diskussion \u00fcber das neue Gesetz landete heute in einer ganz anderen Richtung.",
+        "clicked_words": [
+            "Richtung"
+        ],
+        "focus_words": [
+            "landen",
+            "Diskussion"
+        ],
+        "english_translation": "The important discussion about the new law ended up in a completely different direction today.",
+        "user_translation": "The important discussion about the new law landed today in an entirely different direction",
+        "word_validations": {
+            "landen": false,
+            "Diskussion": true
+        }
+    },
+    {
+        "sentence": "In der Moderne stehen leider immer weniger B\u00e4ume in unserer Stadt.",
+        "clicked_words": [],
+        "focus_words": [
+            "Moderne",
+            "Baum"
+        ],
+        "english_translation": "In modern times, unfortunately, there are fewer and fewer trees in our city.",
+        "user_translation": "In the modern era, there's unfortunately always less trees in our city.",
+        "word_validations": {
+            "Moderne": true,
+            "Baum": true
+        }
+    },
+    {
+        "sentence": "Der Professor zeigt mit dem Finger auf die richtige L\u00f6sung an der Wand.",
+        "clicked_words": [],
+        "focus_words": [
+            "Finger",
+            "L\u00f6sung"
+        ],
+        "english_translation": "The professor points to the correct solution on the wall.",
+        "user_translation": "The professors points with his finger to the correct solution on the wall",
+        "word_validations": {
+            "Finger": true,
+            "L\u00f6sung": true
+        }
+    },
+    {
+        "sentence": "Die Polizei ist bei der Suche nach den Opfern des Krieges.",
+        "clicked_words": [],
+        "focus_words": [
+            "Suche",
+            "Opfer"
+        ],
+        "english_translation": "The police are searching for the victims of the war.",
+        "user_translation": "The police are searching for the victims of the war.",
+        "word_validations": {
+            "Suche": true,
+            "Opfer": true
+        }
+    },
+    {
+        "sentence": "Die Frage lautet ganz einfach, die Antwort hingegen ist sehr komplex.",
+        "clicked_words": [],
+        "focus_words": [
+            "lauten",
+            "hingegen"
+        ],
+        "english_translation": "The question is very simple, but the answer is very complex.",
+        "user_translation": "The question is actually quite easy, but the answer is very complex",
+        "word_validations": {
+            "lauten": true,
+            "hingegen": true
+        }
+    },
+    {
+        "sentence": "Die moderne Kunst ist interessant, die klassische Kunst wiederum ist sch\u00f6n.",
+        "clicked_words": [],
+        "focus_words": [
+            "Kunst",
+            "wiederum"
+        ],
+        "english_translation": "Modern art is interesting, while classical art is beautiful.",
+        "user_translation": "Modern art is interesting, but classical are it beautiful",
+        "word_validations": {
+            "Kunst": true,
+            "wiederum": true
+        }
+    },
+    {
+        "sentence": "Bei diesem gro\u00dfen Abstand zwischen den Menschen haben wir keine M\u00f6glichkeit, gut miteinander zu reden.",
+        "clicked_words": [],
+        "focus_words": [
+            "Abstand",
+            "M\u00f6glichkeit"
+        ],
+        "english_translation": "With this great distance between people, we have no opportunity to talk to each other properly.",
+        "user_translation": "With this big distance between people, we have no possibility to talk to each other well.",
+        "word_validations": {
+            "Abstand": true,
+            "M\u00f6glichkeit": true
+        }
+    },
+    {
+        "sentence": "Das neue Spiel gibt es erst seit zwei Monaten in Deutschland.",
+        "clicked_words": [],
+        "focus_words": [
+            "geben",
+            "Spiel"
+        ],
+        "english_translation": "The new game has only been available in Germany for two months.",
+        "user_translation": "there has been a new game in germany for 2 months.",
+        "word_validations": {
+            "geben": true,
+            "Spiel": true
+        }
+    },
+    {
+        "sentence": "Die Fl\u00fcchtlinge k\u00f6nnen jetzt in Deutschland arbeiten.",
+        "clicked_words": [],
+        "focus_words": [
+            "arbeiten",
+            "Fl\u00fcchtling"
+        ],
+        "english_translation": "The refugees can now work in Germany.",
+        "user_translation": "The refugees can now work in germany",
+        "word_validations": {
+            "arbeiten": true,
+            "Fl\u00fcchtling": true
+        }
+    },
+    {
+        "sentence": "Der junge Spieler gewann erfolgreich seinen ersten Titel in diesem Jahr.",
+        "clicked_words": [],
+        "focus_words": [
+            "erfolgreich",
+            "Titel"
+        ],
+        "english_translation": "The young player successfully won his first title this year.",
+        "user_translation": "The young player successful won his first title this year",
+        "word_validations": {
+            "erfolgreich": true,
+            "Titel": true
+        }
+    },
+    {
+        "sentence": "Die Bedeutung dieser Entscheidung ist f\u00fcr mich total klar.",
+        "clicked_words": [
+            "Bedeutung"
+        ],
+        "focus_words": [
+            "Bedeutung",
+            "total"
+        ],
+        "english_translation": "The significance of this decision is absolutely clear to me.",
+        "user_translation": "For me, the purpose of this decision is totally clear",
+        "word_validations": {
+            "Bedeutung": false,
+            "total": true
+        }
+    },
+    {
+        "sentence": "Das moderne Haus macht einen guten Eindruck.",
+        "clicked_words": [],
+        "focus_words": [
+            "modern",
+            "Eindruck"
+        ],
+        "english_translation": "The modern house makes a good impression.",
+        "user_translation": "The modern house makes a good impression",
+        "word_validations": {
+            "modern": true,
+            "Eindruck": true
+        }
+    },
+    {
+        "sentence": "Der Student macht einen kurzen Halt vor dem Haus der Universit\u00e4t.",
+        "clicked_words": [],
+        "focus_words": [
+            "Student",
+            "Halt"
+        ],
+        "english_translation": "The student makes a brief stop in front of the university building.",
+        "user_translation": "The student makes a quick stop at the university house",
+        "word_validations": {
+            "Student": true,
+            "Halt": true
+        }
+    },
+    {
+        "sentence": "Im Westen liegen drei gro\u00dfe St\u00e4dte, und dazu kommen noch zwei kleine.",
+        "clicked_words": [
+            "dazu",
+            "kleine"
+        ],
+        "focus_words": [
+            "Westen, West-",
+            "dazu"
+        ],
+        "english_translation": "There are three large cities in the west, plus two smaller ones.",
+        "user_translation": "In the west are three big cities, and there are 2 small rivers there too",
+        "word_validations": {
+            "Westen, West-": true,
+            "dazu": false
+        }
+    },
+    {
+        "sentence": "Die Bev\u00f6lkerung in Deutschland steigt, und der Gewinn der Unternehmen w\u00e4chst dadurch.",
+        "clicked_words": [],
+        "focus_words": [
+            "Bev\u00f6lkerung",
+            "Gewinn"
+        ],
+        "english_translation": "The population in Germany is growing, and companies' profits are increasing as a result.",
+        "user_translation": "The population of germany increases, and the ",
+        "word_validations": {
+            "Bev\u00f6lkerung": true,
+            "Gewinn": true
+        }
+    },
+    {
+        "sentence": "Die Macht ist sehr unterschiedlich zwischen den L\u00e4ndern in Europa.",
+        "clicked_words": [],
+        "focus_words": [
+            "unterschiedlich",
+            "Macht"
+        ],
+        "english_translation": "Power varies greatly between countries in Europe.",
+        "user_translation": "Power is very different between countries in europe",
+        "word_validations": {
+            "unterschiedlich": true,
+            "Macht": true
+        }
+    },
+    {
+        "sentence": "In gro\u00dfen St\u00e4dten gibt es immer mehr Stra\u00dfen als in kleinen D\u00f6rfern.",
+        "clicked_words": [],
+        "focus_words": [
+            "mehr",
+            "Stra\u00dfe"
+        ],
+        "english_translation": "There are always more roads in large cities than in small villages.",
+        "user_translation": "In bigger cities there is always more streets than in smaller villages.",
+        "word_validations": {
+            "mehr": true,
+            "Stra\u00dfe": true
+        }
+    },
+    {
+        "sentence": "Der Mann sichert halt sein Haus, um die Familie zu sch\u00fctzen.",
+        "clicked_words": [],
+        "focus_words": [
+            "sichern",
+            "halt"
+        ],
+        "english_translation": "The man simply secures his house to protect his family.",
+        "user_translation": "The man secures his house, in order to protect his family",
+        "word_validations": {
+            "sichern": true,
+            "halt": false
+        }
+    },
+    {
+        "sentence": "Die Gr\u00fcnen sprechen heute \u00fcber gr\u00fcne W\u00e4lder in Deutschland.",
+        "clicked_words": [],
+        "focus_words": [
+            "Gr\u00fcne",
+            "gr\u00fcn"
+        ],
+        "english_translation": "The Greens are talking about green forests in Germany today.",
+        "user_translation": "The greens speak today about green forests in Germany",
+        "word_validations": {
+            "Gr\u00fcne": true,
+            "gr\u00fcn": true
+        }
+    },
+    {
+        "sentence": "Wir landen in einem Land im Westen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Land",
+            "landen"
+        ],
+        "english_translation": "We land in a country in the west.",
+        "user_translation": "We going to a country in the west",
+        "word_validations": {
+            "Land": true,
+            "landen": false
+        }
+    },
+    {
+        "sentence": "Spiele spielen eine gro\u00dfe Bedeutung im Leben der Kinder.",
+        "clicked_words": [],
+        "focus_words": [
+            "spielen",
+            "Bedeutung"
+        ],
+        "english_translation": "Games play a major role in children's lives.",
+        "user_translation": "Players have a big meaning in the life of kids",
+        "word_validations": {
+            "spielen": true,
+            "Bedeutung": true
+        }
+    },
+    {
+        "sentence": "Das ist halt so, dazu kann man nichts sagen.",
+        "clicked_words": [],
+        "focus_words": [
+            "dazu",
+            "halt"
+        ],
+        "english_translation": "That's just the way it is, you can't say anything about it.",
+        "user_translation": "that is just so, one can't say about it",
+        "word_validations": {
+            "dazu": false,
+            "halt": false
+        }
+    },
+    {
+        "sentence": "Seine Hand landete auf meiner Schulter und blieb dort.",
+        "clicked_words": [],
+        "focus_words": [
+            "landen",
+            "Schulter"
+        ],
+        "english_translation": "His hand landed on my shoulder and stayed there.",
+        "user_translation": "his hand landed on my shoulder and stays there",
+        "word_validations": {
+            "landen": true,
+            "Schulter": true
+        }
+    },
+    {
+        "sentence": "Ich sage dazu halt nein, weil es nicht gut ist.",
+        "clicked_words": [],
+        "focus_words": [
+            "dazu",
+            "halt"
+        ],
+        "english_translation": "I just say no because it's not good.",
+        "user_translation": "I say just about nothing, because it's not good",
+        "word_validations": {
+            "dazu": false,
+            "halt": false
+        }
+    },
+    {
+        "sentence": "Es tut gut, die schwache Schulter zu bewegen.\n```",
+        "clicked_words": [],
+        "focus_words": [
+            "Schulter",
+            "es"
+        ],
+        "english_translation": "It's good to move the weak shoulder.\n```",
+        "user_translation": "It feels good to encounter the weak shoulder",
+        "word_validations": {
+            "Schulter": true,
+            "es": true
+        }
+    },
+    {
+        "sentence": "Ich halte dazu eine andere Meinung, aber ich m\u00f6chte nicht dar\u00fcber reden.",
+        "clicked_words": [],
+        "focus_words": [
+            "halten",
+            "dazu"
+        ],
+        "english_translation": "I have a different opinion on this, but I don't want to talk about it.",
+        "user_translation": "I have a different opinion about it, but don't want to talk about it",
+        "word_validations": {
+            "halten": true,
+            "dazu": true
+        }
+    },
+    {
+        "sentence": "Die Arbeit ist halt schwer, aber ich arbeite gern.",
+        "clicked_words": [
+            "halt"
+        ],
+        "focus_words": [
+            "halt",
+            "Arbeit"
+        ],
+        "english_translation": "The work is hard, but I like working.",
+        "user_translation": "Work is just hard, but I like it",
+        "word_validations": {
+            "halt": true,
+            "Arbeit": true
+        }
     }
 ]

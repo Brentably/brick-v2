@@ -20,8 +20,8 @@ export default async function handler(
 
     const result = await translator.translateText(message, null, "en-US", {context});
 
-    console.log("result:");
-    console.log(result);
+    // console.log("result:");
+    // console.log(result);
 
     res.status(200).json({
       englishTranslation: Array.isArray(result) ? result[0].text : result.text,

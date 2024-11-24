@@ -39,23 +39,3 @@ def calc_total_proficiency():
                 proficiency_sum += retrivability
     print(f"count: {count} / {len(full_word_list)}")
     return float((proficiency_sum / len(full_word_list)).real)
-
-from fsrs.models import SchedulingCards
-
-scheduling_cards = SchedulingCards(card=Card(), weight=1)
-scheduling_cards.test_calculate_due()
-
-
-card = Card()
-card, rl = fsrs.review_card(card, Rating.Good)
-print(card.due)
-
-card2, rl = fsrs.review_card(card, Rating.Good, now=card.due+timedelta(days=1))
-card2_weighted, rl = fsrs.review_card(card, Rating.Good, now=card.due+timedelta(days=1), weight=0.2)
-print(card2.due)
-print(card2_weighted.due)
-
-card3, rl = fsrs.review_card(card2, Rating.Again)
-card3_weighted, rl = fsrs.review_card(card2, Rating.Again, weight=0.2)
-print(card3.due)
-print(card3_weighted.due)

@@ -14,4 +14,5 @@ interface TokenInfo {
 interface MessageData {
   message: string;
   data: TokenInfo[];
+  focus_words: string[]
 }

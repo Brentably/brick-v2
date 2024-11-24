@@ -18,7 +18,7 @@ const Sentence: React.FC<SentenceProps> = ({ sentenceToTranslateData, setSentenc
           ? { ...token, isClicked: true, translationLoading: true }
           : token
       );
-      return { message: data.message, data: newData };
+      return { message: data.message, data: newData, focus_words: data.focus_words };
     });
 
     const translation = await getTranslationForToken(id);
@@ -31,7 +31,7 @@ const Sentence: React.FC<SentenceProps> = ({ sentenceToTranslateData, setSentenc
           ? { ...token, isClicked: true, translationLoading: false, translationInContext: translation }
           : token
       );
-      return { message: data.message, data: newData };
+      return { message: data.message, data: newData, focus_words: data.focus_words };
     });
   };
 

@@ -149,6 +149,7 @@ def get_focus_words(number_of_words: int = 2):
                 for word in full_word_list:
                     if word not in words_data and word not in words:
                         words.append(word)
+                        break
         if len(words) < number_of_words:
             raise Exception(f"Not enough words to meet focus_words requirement. Requested {number_of_words} words, but only found {len(words)} words.")
         
@@ -201,6 +202,10 @@ def parse_claude_response(resp: str):
         answer = resp[start_idx + len(start_tag):].strip()
     else:
         answer = resp[start_idx + len(start_tag):end_idx].strip()
+        
+    # Remove trailing backticks if present
+    if answer.endswith('```'):
+        answer = answer[:-3]
     
     return answer
   

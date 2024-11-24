@@ -29,25 +29,49 @@ export default function Home() {
   const [englishTranslationPromise, setEnglishTranslationPromise] = useState<Promise<string> | null>(null)
   const [englishTranslation, setEnglishTranslation] = useState<string>("")
   const [userTranslation, setUserTranslation] = useState<string>("")
+  const [wordValidations, setWordValidations] = useState<Record<string, boolean>>({});
   const isUserValidating = useRef<boolean>(false)
+
+function handleKey(isEnter: boolean) {
+  console.log('handleKey() called')
+  // if sentence is loading, then do nothing
+  // if user is not validating, and sentence is not loading, then handleSend
+  // if user is validating, then mark incorrect / correct things
+  if(sentenceLoading) return  
+
+  if (isUserValidating.current === false && userTranslation.trim() !== '' && isEnter) {
+    handleSend(userTranslation)
+  } else if (isUserValidating.current === true && Object.keys(wordValidations).length === sentenceToTranslateData?.focus_words.length && isEnter) {
+    handleValidation()
+  } else if (isUserValidating.current === true) {
+    // find the next unvalidated word and mark it as correct / incorrect
+    const nextUnvalidatedWord = sentenceToTranslateData?.focus_words.find(word => !(word in wordValidations));
+    if (nextUnvalidatedWord) {
+        setWordValidations(prev => ({
+          ...prev,
+          [nextUnvalidatedWord]: isEnter
+        }));
+      }
+    } else {
+      console.log('no unvalidated words')
+    }
+  }
+
 
   useEffect(() => {
     const handleKeyDown = (e: globalThis.KeyboardEvent) => {
-      if (e.key === 'Enter' && isUserValidating.current) {
-        handleValidation(true);
-      } else if ((e.key === 'Backspace' || e.key === 'Delete') && isUserValidating.current) {
-        handleValidation(false);
+      if (e.key === 'Enter') {
+        handleKey(true)
+      } else if ((e.key === 'Backspace' || e.key === 'Delete')) {
+        handleKey(false)
       }
     };
-
     document.body.addEventListener('keydown', handleKeyDown);
 
     return () => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, [handleValidation]);
-
-
 
   async function obtainAndSetSentence() {
     console.log('oASS() called')
@@ -72,20 +96,25 @@ export default function Home() {
 
   // this should handle allowing the user to determine whether or not they've answered correctly or not
   async function enterValidateState(germanTargetSentence: string, userSentence: string, englishTranslationPromise: Promise<string>) {
-    const englishTranslation = await englishTranslationPromise
-    isUserValidating.current = true
-    setEnglishTranslation(englishTranslation)
-    console.log(`validateSentence(targetSentence: ${germanTargetSentence}, userSentence: ${userSentence}, englishTranslation: ${englishTranslation})`)
+    const englishTranslation = await englishTranslationPromise;
+    isUserValidating.current = true;
+    setEnglishTranslation(englishTranslation);
+    
+    setWordValidations({})
 
+    console.log(`validateSentence(targetSentence: ${germanTargetSentence}, userSentence: ${userSentence}, englishTranslation: ${englishTranslation})`)
   }
 
-  function handleValidation(isCorrect: boolean) {
-    // Here you can implement logic to track user's performance if needed
-    console.log(`User's translation was ${isCorrect ? 'correct' : 'incorrect'}`)
-    const translation = userTranslation
-    setUserTranslation("")
-    isUserValidating.current = false
-    setSentenceLoading(true)
+  // 
+  function handleValidation() {
+    if (sentenceToTranslateData === null) throw new Error('Cannot handle validation because sentenceToTranslateData is null');
+    
+    console.log(`User's word validations:`, wordValidations);
+    const translation = userTranslation;
+    setUserTranslation("");
+    isUserValidating.current = false;
+    setSentenceLoading(true);
+    
     fetch("http://localhost:8000/sentence_result", {
       method: "POST",
       headers: {
@@ -94,16 +123,20 @@ export default function Home() {
       body: JSON.stringify({
         sentenceData: sentenceToTranslateData,
         englishTranslation: englishTranslation,
-        userTranslation: translation, // b/c already set user translation to blank
-        isCorrect: isCorrect
+        userTranslation: translation,
+        wordValidations: wordValidations, // Include per-word validations
+        focus_words: sentenceToTranslateData.focus_words
       })
-    }).then(obtainAndSetSentence) // wait until data updates to get next sentence
+    }).then(obtainAndSetSentence).catch(error => {
+      console.error('Error:', error);
+      setSentenceLoading(false);
+    });
   }
 
-  function handleSend(e: KeyboardEvent<HTMLTextAreaElement>) {
-    if (englishTranslationPromise === null) throw new Error('cant handle because no english translation promise')
-    setUserTranslation((e.target as HTMLTextAreaElement).value)
-    enterValidateState(sentenceToTranslate, (e.target as HTMLTextAreaElement).value, englishTranslationPromise)
+  function handleSend(userTranslation: string) {
+    if (englishTranslationPromise === null) throw new Error('Cannot handle because no english translation promise')
+    setUserTranslation(userTranslation)
+    enterValidateState(sentenceToTranslate, userTranslation, englishTranslationPromise)
   }
 
   function handleStart() {
@@ -135,21 +168,57 @@ export default function Home() {
 
             </div>
 
-            <Input handleSend={handleSend} disabled={sentenceLoading} value={userTranslation} setInput={setUserTranslation} displayMode={isUserValidating.current} />
+            <Input disabled={sentenceLoading} value={userTranslation} setInput={setUserTranslation} displayMode={isUserValidating.current} />
 
             {isUserValidating.current ?
               <>
                 <div className="text-center text-md mt-4">Correct translation:</div>
                 <Input disabled={true} value={englishTranslation} displayMode={true} />
-                {/* <div className="text-center text-lg font-medium mt-4">{englishTranslation}</div> */}
-                <div className="flex justify-center space-x-4 mt-4">
-                  <Button onClick={() => handleValidation(false)} className="bg-red-500 hover:bg-red-600">
-                    <XCircle className="mr-2 h-4 w-4" /> Incorrect
-                  </Button>
-                  <Button onClick={() => handleValidation(true)} className="bg-green-500 hover:bg-green-600">
-                    <CheckCircle className="mr-2 h-4 w-4" /> Correct
-                  </Button>
+                
+                <div className="mt-4">
+                  {sentenceToTranslateData?.focus_words.map(word => (
+                    <div key={word} className="flex items-center mb-2">
+                      <span className="w-24 mr-2">{word}</span>
+                      <Button
+                        onClick={() => setWordValidations(prev => ({
+                          ...prev,
+                          [word]: true
+                        }))}
+                        className={`w-32 justify-center mr-2 ${
+                          wordValidations?.[word] === true 
+                            ? 'bg-green-700' 
+                            : 'bg-green-100 hover:bg-green-200 text-green-700'
+                        }`}
+                      >
+                        <CheckCircle className="mr-2 h-4 w-4" />
+                        Correct
+                      </Button>
+                      <Button
+                        onClick={() => setWordValidations(prev => ({
+                          ...prev,
+                          [word]: false
+                        }))}
+                        className={`w-32 justify-center ${
+                          wordValidations?.[word] === false
+                            ? 'bg-red-700'
+                            : 'bg-red-100 hover:bg-red-200 text-red-700'
+                        }`}
+                      >
+                        <XCircle className="mr-2 h-4 w-4" />
+                        Incorrect
+                      </Button>
+                    </div>
+                  ))}
                 </div>
+                
+                <Button 
+                  onClick={handleValidation} 
+                  className="mt-4"
+                  disabled={Object.keys(wordValidations).length !== sentenceToTranslateData?.focus_words.length}
+                >
+                  Submit Validation
+                </Button>
+                
                 <div className="mt-4 text-sm text-center">
                   (As long as it's roughly correct, that's ok. That is: the meaning is conveyed.)
                 </div>
@@ -165,4 +234,6 @@ export default function Home() {
       </div>
     </div>
   );
+
 }
+

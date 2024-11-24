@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 interface InputProps {
   handleSend?: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
@@ -19,6 +19,12 @@ const Input: React.FC<InputProps> = ({ handleSend, disabled, value, setInput, di
     setInput?.(e.target.value)
   };
 
+  useEffect(() => {
+    if (!displayMode && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [displayMode, disabled]);
+
   return (
     <div ref={textareaContainerRef} className='relative flex flex-grow items-end mt-4'>
       <textarea
@@ -28,13 +34,6 @@ const Input: React.FC<InputProps> = ({ handleSend, disabled, value, setInput, di
         rows={1}
         className={`text-base chatbot-input flex-1 outline-none rounded-md p-2 resize-none m-0 w-full overflow-hidden md:min-w-96 ${displayMode ? 'bg-gray-100 cursor-default' : ''}`}
         placeholder='Enter your translation'
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' && !e.shiftKey && value.trim() !== '' && !disabled && !displayMode) {
-            e.preventDefault();
-            e.stopPropagation() // prevents event from immediately being marked as correct
-            handleSend?.(e)
-          }
-        }}
         style={{ height: '2.5rem' }}
         disabled={disabled || displayMode}
         readOnly={displayMode}
