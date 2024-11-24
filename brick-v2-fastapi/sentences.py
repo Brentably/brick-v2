@@ -131,7 +131,7 @@ full_lookup_table: dict[str, list[str]] = load_lookup_table()
 # get a random sample of words from the words that are due soon
 def get_focus_words(): 
     NUMBER_OF_WORDS = 2
-    NUMBER_OF_SAMPLE_WORDS = NUMBER_OF_WORDS * 2
+    NUMBER_OF_SAMPLE_WORDS = NUMBER_OF_WORDS * 4
     
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)

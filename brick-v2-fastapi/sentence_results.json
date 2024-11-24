@@ -1628,5 +1628,2133 @@
             "Definition": true,
             "dick": true
         }
+    },
+    {
+        "sentence": "Die Stadt ist zwar klein, aber sie ist wirklich sch\u00f6n.",
+        "clicked_words": [
+            "zwar",
+            "klein"
+        ],
+        "focus_words": [
+            "Stadt",
+            "zwar"
+        ],
+        "english_translation": "The city may be small, but it is really beautiful.",
+        "user_translation": "The state is not clean, but it is still good",
+        "word_validations": {
+            "Stadt": false,
+            "zwar": false
+        }
+    },
+    {
+        "sentence": "Sie steht zwischen zwei gro\u00dfen Menschen.",
+        "clicked_words": [
+            "steht",
+            "zwischen",
+            "gro\u00dfen",
+            "Menschen"
+        ],
+        "focus_words": [
+            "zwischen"
+        ],
+        "english_translation": "She stands between two great people.",
+        "user_translation": "she stands between two big men",
+        "word_validations": {
+            "zwischen": false
+        }
+    },
+    {
+        "sentence": "Sie ist gegen alle anderen Menschen hier, aber ich will f\u00fcr sie da sein.",
+        "clicked_words": [
+            "gegen",
+            "alle",
+            "anderen",
+            "will",
+            "f\u00fcr",
+            "sein"
+        ],
+        "focus_words": [
+            "gegen"
+        ],
+        "english_translation": "She is against all the other people here, but I want to be there for her.",
+        "user_translation": "she is against all other people here, but i will be there for her",
+        "word_validations": {
+            "gegen": false
+        }
+    },
+    {
+        "sentence": "Er ist zwischen zwei gro\u00dfen Menschen.",
+        "clicked_words": [],
+        "focus_words": [
+            "zwischen"
+        ],
+        "english_translation": "He is between two great people.",
+        "user_translation": "he is between two great people",
+        "word_validations": {
+            "zwischen": true
+        }
+    },
+    {
+        "sentence": "Ich bin gegen alles, was sie sagen und machen.",
+        "clicked_words": [],
+        "focus_words": [
+            "gegen"
+        ],
+        "english_translation": "I am against everything they say and do.",
+        "user_translation": "i am against everything she says and does",
+        "word_validations": {
+            "gegen": true
+        }
+    },
+    {
+        "sentence": "Die Menschen liegen hier unter uns.",
+        "clicked_words": [
+            "liegen",
+            "uns"
+        ],
+        "focus_words": [
+            "liegen"
+        ],
+        "english_translation": "The people here lie beneath us.",
+        "user_translation": "the people lay here under us",
+        "word_validations": {
+            "liegen": true
+        }
+    },
+    {
+        "sentence": "Ich sehe drei Menschen, die hier bei uns leben.",
+        "clicked_words": [
+            "bei",
+            "leben"
+        ],
+        "focus_words": [
+            "drei"
+        ],
+        "english_translation": "I see three people who live here with us.",
+        "user_translation": "i see two people, who live here",
+        "word_validations": {
+            "drei": false
+        }
+    },
+    {
+        "sentence": "Ich habe nichts und will auch nix mehr haben.",
+        "clicked_words": [
+            "nix"
+        ],
+        "focus_words": [
+            "nichts, nix"
+        ],
+        "english_translation": "I have nothing and don't want anything more.",
+        "user_translation": "i don't have and will also never have it",
+        "word_validations": {
+            "nichts, nix": false
+        }
+    },
+    {
+        "sentence": "Wo leben die Menschen, die ich sehen will?",
+        "clicked_words": [
+            "Wo",
+            "leben",
+            "sehen",
+            "will"
+        ],
+        "focus_words": [
+            "wo"
+        ],
+        "english_translation": "Where do the people I want to see live?",
+        "user_translation": "where do the people live, that i will see?",
+        "word_validations": {
+            "wo": true
+        }
+    },
+    {
+        "sentence": "Ich habe nichts und will auch nix mehr haben.",
+        "clicked_words": [
+            "will"
+        ],
+        "focus_words": [
+            "nichts, nix"
+        ],
+        "english_translation": "I have nothing and don't want anything more.",
+        "user_translation": "i have nothing and i will also have nothing",
+        "word_validations": {
+            "nichts, nix": true
+        }
+    },
+    {
+        "sentence": "Die drei gro\u00dfen Menschen kommen immer noch nicht zu uns.",
+        "clicked_words": [
+            "immer",
+            "noch",
+            "zu"
+        ],
+        "focus_words": [
+            "drei"
+        ],
+        "english_translation": "The three big people still don't come to us.",
+        "user_translation": "the three great people never come to us at night",
+        "word_validations": {
+            "drei": true
+        }
+    },
+    {
+        "sentence": "Der Tag ist sehr lang und gut.\n",
+        "clicked_words": [],
+        "focus_words": [
+            "Tag"
+        ],
+        "english_translation": "The day is very long and good.\n",
+        "user_translation": "the day is very long and good",
+        "word_validations": {
+            "Tag": true
+        }
+    },
+    {
+        "sentence": "Sie ist eine deutsche Frau und ich bin auch deutsch.\n",
+        "clicked_words": [],
+        "focus_words": [
+            "deutsch"
+        ],
+        "english_translation": "She is a German woman and I am also German.\n",
+        "user_translation": "she is a german woman and i am also german",
+        "word_validations": {
+            "deutsch": true
+        }
+    },
+    {
+        "sentence": "Ich bleibe hier, weil es so gut ist.\n",
+        "clicked_words": [
+            "bleibe",
+            "weil"
+        ],
+        "focus_words": [
+            "bleiben"
+        ],
+        "english_translation": "I stay here because it's so good.\n",
+        "user_translation": "i stay here because it is so good",
+        "word_validations": {
+            "bleiben": false
+        }
+    },
+    {
+        "sentence": "Die kleine Frau ist sehr gut im Leben.\n",
+        "clicked_words": [
+            "kleine",
+            "im"
+        ],
+        "focus_words": [
+            "klein"
+        ],
+        "english_translation": "The little woman is very good at life.\n",
+        "user_translation": "the young woman is very good in life",
+        "word_validations": {
+            "klein": false
+        }
+    },
+    {
+        "sentence": "Wir liegen hier unter den Menschen.",
+        "clicked_words": [
+            "unter"
+        ],
+        "focus_words": [
+            "liegen"
+        ],
+        "english_translation": "We lie here among the people.",
+        "user_translation": "we lie here under the people",
+        "word_validations": {
+            "liegen": true
+        }
+    },
+    {
+        "sentence": "Ich will hier bleiben, weil es so gut ist.",
+        "clicked_words": [
+            "bleiben"
+        ],
+        "focus_words": [
+            "bleiben"
+        ],
+        "english_translation": "I want to stay here because it's so good.",
+        "user_translation": "i want to stay here, because it's so good",
+        "word_validations": {
+            "bleiben": false
+        }
+    },
+    {
+        "sentence": "Die Frau ist sehr klein.\n",
+        "clicked_words": [],
+        "focus_words": [
+            "klein"
+        ],
+        "english_translation": "The woman is very small.\n",
+        "user_translation": "the woman is very small",
+        "word_validations": {
+            "klein": true
+        }
+    },
+    {
+        "sentence": "Ich will nicht gehen, sondern hier bei dir sein.",
+        "clicked_words": [
+            "sondern",
+            "bei",
+            "dir"
+        ],
+        "focus_words": [
+            "sondern"
+        ],
+        "english_translation": "I don't want to leave, I want to be here with you.",
+        "user_translation": "i don't want to go, but to be here",
+        "word_validations": {
+            "sondern": false
+        }
+    },
+    {
+        "sentence": "Nun, ich komme auch nicht mehr zu ihr, da sie bei uns nicht sein will.",
+        "clicked_words": [
+            "Nun",
+            "mehr",
+            "bei"
+        ],
+        "focus_words": [
+            "nun, nu"
+        ],
+        "english_translation": "Well, I don't come to her anymore either, because she doesn't want to be with us.",
+        "user_translation": "Now, i no longer come to him, she does not want us to be",
+        "word_validations": {
+            "nun, nu": false
+        }
+    },
+    {
+        "sentence": "Er ist nicht gro\u00df, sondern sehr lang.",
+        "clicked_words": [],
+        "focus_words": [
+            "sondern"
+        ],
+        "english_translation": "It is not large, but very long.",
+        "user_translation": "He is not big, but very long",
+        "word_validations": {
+            "sondern": true
+        }
+    },
+    {
+        "sentence": "Wo ist er jetzt?",
+        "clicked_words": [
+            "jetzt"
+        ],
+        "focus_words": [
+            "wo"
+        ],
+        "english_translation": "Where is he now?",
+        "user_translation": "where is he now?",
+        "word_validations": {
+            "wo": true
+        }
+    },
+    {
+        "sentence": "Ich will hier bleiben, weil es so gut ist.",
+        "clicked_words": [],
+        "focus_words": [
+            "bleiben"
+        ],
+        "english_translation": "I want to stay here because it's so good.",
+        "user_translation": "i want to stay here, because it is so good",
+        "word_validations": {
+            "bleiben": true
+        }
+    },
+    {
+        "sentence": "Der Tag ist immer so gut.",
+        "clicked_words": [],
+        "focus_words": [
+            "Tag"
+        ],
+        "english_translation": "The day is always so good.",
+        "user_translation": "the day is always so good",
+        "word_validations": {
+            "Tag": true
+        }
+    },
+    {
+        "sentence": "Die deutsche Frau ist sehr gut und ganz neu hier.",
+        "clicked_words": [
+            "ganz"
+        ],
+        "focus_words": [
+            "deutsch"
+        ],
+        "english_translation": "The German woman is very good and brand new here.",
+        "user_translation": "the german woman is very good and is quite new here",
+        "word_validations": {
+            "deutsch": true
+        }
+    },
+    {
+        "sentence": "Heute ist es sehr gut, dass ich hier bin.",
+        "clicked_words": [],
+        "focus_words": [
+            "heute"
+        ],
+        "english_translation": "Today it is very good that I am here.",
+        "user_translation": "it is very good that i am here today",
+        "word_validations": {
+            "heute": true
+        }
+    },
+    {
+        "sentence": "Nun ja, also ich werde es mal so machen.",
+        "clicked_words": [
+            "werde",
+            "mal"
+        ],
+        "focus_words": [
+            "nun, nu"
+        ],
+        "english_translation": "Well, that's what I'm going to do.",
+        "user_translation": "well yes, so i will make it bad",
+        "word_validations": {
+            "nun, nu": true
+        }
+    },
+    {
+        "sentence": "Beide Frauen kommen und gehen immer wieder.",
+        "clicked_words": [
+            "Beide",
+            "immer",
+            "wieder"
+        ],
+        "focus_words": [
+            "beide"
+        ],
+        "english_translation": "Both women come and go again and again.",
+        "user_translation": "both women always come and go",
+        "word_validations": {
+            "beide": false
+        }
+    },
+    {
+        "sentence": "Die Menschen stehen sehr hoch \u00fcber uns.\n",
+        "clicked_words": [
+            "stehen",
+            "hoch"
+        ],
+        "focus_words": [
+            "hoch"
+        ],
+        "english_translation": "People are very high above us.\n",
+        "user_translation": "the people stand very high above us",
+        "word_validations": {
+            "hoch": false
+        }
+    },
+    {
+        "sentence": "Der Mensch kann nicht ohne Zeit leben.\n",
+        "clicked_words": [
+            "ohne",
+            "Zeit"
+        ],
+        "focus_words": [
+            "ohne"
+        ],
+        "english_translation": "Man cannot live without time.\n",
+        "user_translation": "men cannot live without time",
+        "word_validations": {
+            "ohne": false
+        }
+    },
+    {
+        "sentence": "Beide Frauen sind gut und ganz gro\u00df.\n",
+        "clicked_words": [
+            "ganz"
+        ],
+        "focus_words": [
+            "beide"
+        ],
+        "english_translation": "Both women are good and great.\n",
+        "user_translation": "both women are good and entirely big",
+        "word_validations": {
+            "beide": true
+        }
+    },
+    {
+        "sentence": "Sie m\u00fcssen das wissen, damit wir hier etwas machen k\u00f6nnen.",
+        "clicked_words": [
+            "Sie",
+            "wissen",
+            "damit",
+            "etwas"
+        ],
+        "focus_words": [
+            "damit"
+        ],
+        "english_translation": "You need to know this so that we can do something about it.",
+        "user_translation": "she must know that, so we can make something here",
+        "word_validations": {
+            "damit": false
+        }
+    },
+    {
+        "sentence": "Ich kann nicht ohne sie leben.",
+        "clicked_words": [
+            "ohne"
+        ],
+        "focus_words": [
+            "ohne"
+        ],
+        "english_translation": "I can't live without them.",
+        "user_translation": "i can not stay here without them",
+        "word_validations": {
+            "ohne": false
+        }
+    },
+    {
+        "sentence": "Der Mensch steht sehr hoch und kann alles sehen.",
+        "clicked_words": [
+            "Mensch",
+            "hoch",
+            "alles",
+            "sehen"
+        ],
+        "focus_words": [
+            "hoch"
+        ],
+        "english_translation": "People stand very high and can see everything.",
+        "user_translation": "the men stand very high and can all see",
+        "word_validations": {
+            "hoch": false
+        }
+    },
+    {
+        "sentence": "Ich muss viel machen, damit ich gut sein kann.",
+        "clicked_words": [],
+        "focus_words": [
+            "damit"
+        ],
+        "english_translation": "I have to do a lot so that I can be good.",
+        "user_translation": "i must do a lot, so that i can be good",
+        "word_validations": {
+            "damit": true
+        }
+    },
+    {
+        "sentence": "Welcher Mensch kommt hier zu uns?",
+        "clicked_words": [],
+        "focus_words": [
+            "welch, -e, -er, -es"
+        ],
+        "english_translation": "Which person comes to us here?",
+        "user_translation": "which people are coming to us?",
+        "word_validations": {
+            "welch, -e, -er, -es": true
+        }
+    },
+    {
+        "sentence": "Was k\u00f6nnen wir f\u00fcr Sie tun?",
+        "clicked_words": [
+            "tun"
+        ],
+        "focus_words": [
+            "tun"
+        ],
+        "english_translation": "What can we do for you?",
+        "user_translation": "what can we do for them?",
+        "word_validations": {
+            "tun": false
+        }
+    },
+    {
+        "sentence": "Heute gehen wir nicht mehr, denn es ist schon zu lang.",
+        "clicked_words": [
+            "Heute",
+            "gehen",
+            "mehr",
+            "denn",
+            "schon"
+        ],
+        "focus_words": [
+            "heute"
+        ],
+        "english_translation": "We're not going today because it's already too long.",
+        "user_translation": "today we are no longer walking, because it is too long",
+        "word_validations": {
+            "heute": true
+        }
+    },
+    {
+        "sentence": "Was m\u00fcssen wir noch tun?",
+        "clicked_words": [
+            "noch",
+            "tun"
+        ],
+        "focus_words": [
+            "tun"
+        ],
+        "english_translation": "What else do we need to do?",
+        "user_translation": "what do we still have to do?",
+        "word_validations": {
+            "tun": true
+        }
+    },
+    {
+        "sentence": "Der Mann ist sehr gut und ganz neu in der Zeit hier bei uns.",
+        "clicked_words": [
+            "ganz",
+            "Zeit",
+            "bei"
+        ],
+        "focus_words": [
+            "Mann"
+        ],
+        "english_translation": "The man is very good and brand new here with us.",
+        "user_translation": "the person is very good and entirely new to us this time",
+        "word_validations": {
+            "Mann": false
+        }
+    },
+    {
+        "sentence": "Ein Mensch ohne Zeit kann nicht mehr leben.",
+        "clicked_words": [
+            "ohne",
+            "Zeit",
+            "mehr"
+        ],
+        "focus_words": [
+            "ohne"
+        ],
+        "english_translation": "A person without time can no longer live.",
+        "user_translation": "a person without time can not live",
+        "word_validations": {
+            "ohne": false
+        }
+    },
+    {
+        "sentence": "Der neue Mensch ist sehr hoch.\n",
+        "clicked_words": [
+            "Mensch"
+        ],
+        "focus_words": [
+            "hoch"
+        ],
+        "english_translation": "The new man is very high.\n",
+        "user_translation": "the new person is very high",
+        "word_validations": {
+            "hoch": true
+        }
+    },
+    {
+        "sentence": "Ich habe sie nur einmal gesehen.",
+        "clicked_words": [
+            "nur",
+            "einmal",
+            "gesehen"
+        ],
+        "focus_words": [
+            "einmal"
+        ],
+        "english_translation": "I've only seen them once.",
+        "user_translation": "i have seen them one other time",
+        "word_validations": {
+            "einmal": false
+        }
+    },
+    {
+        "sentence": "Ich sage ihnen, dass ich auch mit ihnen gehen will.",
+        "clicked_words": [
+            "sage",
+            "ihnen",
+            "ihnen",
+            "gehen"
+        ],
+        "focus_words": [
+            "ihnen"
+        ],
+        "english_translation": "I tell them that I want to go with them too.",
+        "user_translation": "i know them, that is also want to go to them",
+        "word_validations": {
+            "ihnen": false
+        }
+    },
+    {
+        "sentence": "Einmal war ich hier, und dann sind viele Menschen gekommen.",
+        "clicked_words": [
+            "Einmal",
+            "war",
+            "viele"
+        ],
+        "focus_words": [
+            "einmal"
+        ],
+        "english_translation": "I was here once, and then lots of people came.",
+        "user_translation": "once i was here, and then many people came",
+        "word_validations": {
+            "einmal": false
+        }
+    },
+    {
+        "sentence": "Ich geben ihnen mehr Zeit f\u00fcr das Leben mit den Menschen.\n",
+        "clicked_words": [
+            "geben",
+            "ihnen",
+            "mehr",
+            "Zeit"
+        ],
+        "focus_words": [
+            "ihnen"
+        ],
+        "english_translation": "I give them more time for life with people.\n",
+        "user_translation": "i give them my time for living with people",
+        "word_validations": {
+            "ihnen": false
+        }
+    },
+    {
+        "sentence": "Der Mensch kann ohne andere Menschen nicht gut leben.",
+        "clicked_words": [
+            "andere"
+        ],
+        "focus_words": [
+            "ohne"
+        ],
+        "english_translation": "People cannot live well without other people.",
+        "user_translation": "people can not live well without other people",
+        "word_validations": {
+            "ohne": true
+        }
+    },
+    {
+        "sentence": "Welchen Menschen sehen Sie hier bei der Frau?\n",
+        "clicked_words": [
+            "sehen"
+        ],
+        "focus_words": [
+            "welch, -e, -er, -es"
+        ],
+        "english_translation": "What kind of person do you see here with the woman?\n",
+        "user_translation": "which people see them here by the woman",
+        "word_validations": {
+            "welch, -e, -er, -es": true
+        }
+    },
+    {
+        "sentence": "Der Mann ist sehr gro\u00df und gut, aber er will nicht mit anderen Menschen leben.",
+        "clicked_words": [],
+        "focus_words": [
+            "Mann"
+        ],
+        "english_translation": "The man is very tall and good, but he doesn't want to live with other people.",
+        "user_translation": "the man is very big and good, but he doesn't want to live with other people",
+        "word_validations": {
+            "Mann": true
+        }
+    },
+    {
+        "sentence": "Ich hei\u00dfe Mensch, und sie hei\u00dfen Frau.",
+        "clicked_words": [],
+        "focus_words": [
+            "hei\u00dfen"
+        ],
+        "english_translation": "My name is human and theirs is woman.",
+        "user_translation": "i am a man, and she is a woman",
+        "word_validations": {
+            "hei\u00dfen": false
+        }
+    },
+    {
+        "sentence": "Ich denke, dass sie eine sehr gute Frau ist.",
+        "clicked_words": [],
+        "focus_words": [
+            "denken"
+        ],
+        "english_translation": "I think she is a very good woman.",
+        "user_translation": "i think that she is a very good woman",
+        "word_validations": {
+            "denken": true
+        }
+    },
+    {
+        "sentence": "Ich wei\u00df nicht, ob sie kommen werden.",
+        "clicked_words": [
+            "ob"
+        ],
+        "focus_words": [
+            "ob"
+        ],
+        "english_translation": "I don't know if they will come.",
+        "user_translation": "i don't know if she will come",
+        "word_validations": {
+            "ob": true
+        }
+    },
+    {
+        "sentence": "Ich sage es dir nur einmal.",
+        "clicked_words": [
+            "sage",
+            "dir",
+            "nur",
+            "einmal"
+        ],
+        "focus_words": [
+            "einmal"
+        ],
+        "english_translation": "I'll only tell you once.",
+        "user_translation": "i said it once",
+        "word_validations": {
+            "einmal": false
+        }
+    },
+    {
+        "sentence": "Ich hei\u00dfe Beispiel und wie hei\u00dft du?",
+        "clicked_words": [
+            "Beispiel"
+        ],
+        "focus_words": [
+            "hei\u00dfen"
+        ],
+        "english_translation": "My name is Example and what is your name?",
+        "user_translation": "my name is example and what is your name?",
+        "word_validations": {
+            "hei\u00dfen": true
+        }
+    },
+    {
+        "sentence": "Ich sage ihnen, dass sie sehr gut deutsch k\u00f6nnen.",
+        "clicked_words": [
+            "ihnen"
+        ],
+        "focus_words": [
+            "ihnen"
+        ],
+        "english_translation": "I tell them that they can speak German very well.",
+        "user_translation": "i will say this, that they can very good german",
+        "word_validations": {
+            "ihnen": false
+        }
+    },
+    {
+        "sentence": "Ich bin auch dabei, wenn alle anderen dabei sind.",
+        "clicked_words": [
+            "dabei"
+        ],
+        "focus_words": [
+            "dabei"
+        ],
+        "english_translation": "I'll be there when everyone else is.",
+        "user_translation": "i am also in, when they are all in",
+        "word_validations": {
+            "dabei": false
+        }
+    },
+    {
+        "sentence": "Es ist einfach zu sehen, dass ich das nicht machen will.",
+        "clicked_words": [
+            "einfach",
+            "sehen"
+        ],
+        "focus_words": [
+            "einfach"
+        ],
+        "english_translation": "It's easy to see that I don't want to do that.",
+        "user_translation": "it is easy to see, that i do not want to do it",
+        "word_validations": {
+            "einfach": false
+        }
+    },
+    {
+        "sentence": "Ich komme erst jetzt, weil ich noch etwas machen muss.",
+        "clicked_words": [
+            "erst",
+            "jetzt",
+            "weil",
+            "noch",
+            "etwas"
+        ],
+        "focus_words": [
+            "erst"
+        ],
+        "english_translation": "I'm only coming now because I have to do something.",
+        "user_translation": "i'm coming now, because i still have to make something",
+        "word_validations": {
+            "erst": false
+        }
+    },
+    {
+        "sentence": "Ich bin auch dabei, wenn alle anderen kommen.",
+        "clicked_words": [
+            "dabei"
+        ],
+        "focus_words": [
+            "dabei"
+        ],
+        "english_translation": "I'll be there when everyone else is.",
+        "user_translation": "i will also be there when everyone else comes",
+        "word_validations": {
+            "dabei": true
+        }
+    },
+    {
+        "sentence": "Das Leben ist nicht immer einfach, aber man muss es einfach machen.",
+        "clicked_words": [
+            "einfach"
+        ],
+        "focus_words": [
+            "einfach"
+        ],
+        "english_translation": "Life is not always easy, but you just have to do it.",
+        "user_translation": "life is no longer easy, but we must make it easy",
+        "word_validations": {
+            "einfach": false
+        }
+    },
+    {
+        "sentence": "Ich wei\u00df erst jetzt, was ich will.",
+        "clicked_words": [
+            "wei\u00df",
+            "erst",
+            "jetzt"
+        ],
+        "focus_words": [
+            "erst"
+        ],
+        "english_translation": "I only know what I want now.",
+        "user_translation": "i only know now what i want",
+        "word_validations": {
+            "erst": false
+        }
+    },
+    {
+        "sentence": "Ich will nur einmal sagen, dass ich das nicht mehr machen kann.",
+        "clicked_words": [
+            "nur",
+            "einmal"
+        ],
+        "focus_words": [
+            "einmal"
+        ],
+        "english_translation": "I just want to say once that I can no longer do this.",
+        "user_translation": "i want to say something, that i can not do that",
+        "word_validations": {
+            "einmal": false
+        }
+    },
+    {
+        "sentence": "Seit zwei Jahren leben wir hier.",
+        "clicked_words": [
+            "Seit",
+            "zwei",
+            "Jahren"
+        ],
+        "focus_words": [
+            "seit"
+        ],
+        "english_translation": "We have been living here for two years.",
+        "user_translation": "we have lived here for three years",
+        "word_validations": {
+            "seit": true
+        }
+    },
+    {
+        "sentence": "Ich sage ihnen, dass ich nicht kommen kann.\n",
+        "clicked_words": [],
+        "focus_words": [
+            "ihnen"
+        ],
+        "english_translation": "I tell them I can't come.\n",
+        "user_translation": "i tell them that i can not come",
+        "word_validations": {
+            "ihnen": true
+        }
+    },
+    {
+        "sentence": "Dies ist ein gro\u00dfes Land, und viele Menschen leben in dem Land.",
+        "clicked_words": [],
+        "focus_words": [
+            "Land"
+        ],
+        "english_translation": "This is a large country and many people live in it.",
+        "user_translation": "this is a big place, and many people live in this place",
+        "word_validations": {
+            "Land": false
+        }
+    },
+    {
+        "sentence": "Das kleine Kind lebt mit zwei anderen Kindern bei der Frau, und sie sind sehr gut.",
+        "clicked_words": [
+            "lebt",
+            "anderen",
+            "Kindern"
+        ],
+        "focus_words": [
+            "Kind"
+        ],
+        "english_translation": "The small child lives with the woman with two other children, and they are very good.",
+        "user_translation": "the small child has lived for two years with the woman's other children, and they are very good",
+        "word_validations": {
+            "Kind": true
+        }
+    },
+    {
+        "sentence": "Ich wisse nicht, ob sie heute kommen will.",
+        "clicked_words": [
+            "wisse"
+        ],
+        "focus_words": [
+            "ob"
+        ],
+        "english_translation": "I don't know if she wants to come today.",
+        "user_translation": "i don't know if they want to come today",
+        "word_validations": {
+            "ob": true
+        }
+    },
+    {
+        "sentence": "Das deutsche Land ist gro\u00df, und viele Menschen leben hier.",
+        "clicked_words": [],
+        "focus_words": [
+            "Land"
+        ],
+        "english_translation": "Germany is a large country and many people live here.",
+        "user_translation": "the german country is big, and many people live here",
+        "word_validations": {
+            "Land": true
+        }
+    },
+    {
+        "sentence": "Das Leben ist nicht immer einfach, aber es wird wieder gut sein.",
+        "clicked_words": [
+            "immer",
+            "wird",
+            "wieder"
+        ],
+        "focus_words": [
+            "einfach"
+        ],
+        "english_translation": "Life is not always easy, but it will be good again.",
+        "user_translation": "life is not always easy, but it will be good again",
+        "word_validations": {
+            "einfach": true
+        }
+    },
+    {
+        "sentence": "Ich denke, dass sie gut und ganz neu in der Zeit ist.",
+        "clicked_words": [
+            "ganz",
+            "Zeit"
+        ],
+        "focus_words": [
+            "denken"
+        ],
+        "english_translation": "I think it is good and quite new in time.",
+        "user_translation": "i think that she is good and quite new this time",
+        "word_validations": {
+            "denken": true
+        }
+    },
+    {
+        "sentence": "Das organische Leben in der Natur macht die Menschen gl\u00fccklich.",
+        "clicked_words": [],
+        "focus_words": [
+            "gl\u00fccklich",
+            "organisch"
+        ],
+        "english_translation": "Organic life in nature makes people happy.",
+        "user_translation": "Organic life in nature makes people happy",
+        "word_validations": {
+            "gl\u00fccklich": true,
+            "organisch": true
+        }
+    },
+    {
+        "sentence": "Der Rest des Tages bleiben wir zu Hause, weil mein einziger Wunsch Ruhe ist.",
+        "clicked_words": [],
+        "focus_words": [
+            "Rest",
+            "Wunsch"
+        ],
+        "english_translation": "The rest of the day we stay at home because my only wish is peace and quiet.",
+        "user_translation": "The rest of the day we stay at the house, because my only wish is peace",
+        "word_validations": {
+            "Rest": true,
+            "Wunsch": true
+        }
+    },
+    {
+        "sentence": "Der dicke Mann liest ein Buch.",
+        "clicked_words": [
+            "dicke",
+            "Mann"
+        ],
+        "focus_words": [
+            "dick",
+            "der"
+        ],
+        "english_translation": "The fat man is reading a book.",
+        "user_translation": "The thick man reads a book",
+        "word_validations": {
+            "dick": true,
+            "der": true
+        }
+    },
+    {
+        "sentence": "Die Regierung beschlie\u00dft, die Zukunft der Kinder durch neue Schulen zu sichern.",
+        "clicked_words": [],
+        "focus_words": [
+            "sichern",
+            "beschlie\u00dfen"
+        ],
+        "english_translation": "The government decides to secure the children's future with new schools.",
+        "user_translation": "The government decide to secure the future of children through new schools",
+        "word_validations": {
+            "sichern": true,
+            "beschlie\u00dfen": true
+        }
+    },
+    {
+        "sentence": "Die Gr\u00fcne steht im gr\u00fcn Wald.",
+        "clicked_words": [],
+        "focus_words": [
+            "gr\u00fcn",
+            "Gr\u00fcne"
+        ],
+        "english_translation": "The green one stands in the green forest.",
+        "user_translation": "The Green stand in a green forest",
+        "word_validations": {
+            "gr\u00fcn": true,
+            "Gr\u00fcne": true
+        }
+    },
+    {
+        "sentence": "Wir landen in einem neuen Land.",
+        "clicked_words": [],
+        "focus_words": [
+            "landen",
+            "Land"
+        ],
+        "english_translation": "We land in a new country.",
+        "user_translation": "We land in a new country",
+        "word_validations": {
+            "landen": true,
+            "Land": true
+        }
+    },
+    {
+        "sentence": "Einer der Lehrer braucht mehr Zeit als die anderen.",
+        "clicked_words": [],
+        "focus_words": [
+            "mehr",
+            "einer"
+        ],
+        "english_translation": "One of the teachers needs more time than the others.",
+        "user_translation": "Of the the teachers need more time than the others",
+        "word_validations": {
+            "mehr": true,
+            "einer": true
+        }
+    },
+    {
+        "sentence": "Das neue Museum in der Stadt ist riesig.",
+        "clicked_words": [],
+        "focus_words": [
+            "Museum",
+            "riesig"
+        ],
+        "english_translation": "The new museum in the city is huge.",
+        "user_translation": "THe new musuem in the city is smelly",
+        "word_validations": {
+            "Museum": true,
+            "riesig": false
+        }
+    },
+    {
+        "sentence": "Die Farbe per Internet zu schicken ist schwierig.",
+        "clicked_words": [
+            "per"
+        ],
+        "focus_words": [
+            "Farbe",
+            "per"
+        ],
+        "english_translation": "Sending the color via the Internet is difficult.",
+        "user_translation": "the color is difficult to send on the internet",
+        "word_validations": {
+            "Farbe": true,
+            "per": true
+        }
+    },
+    {
+        "sentence": "Die heutige Vorlesung beginnt regelm\u00e4\u00dfig um acht.",
+        "clicked_words": [],
+        "focus_words": [
+            "regelm\u00e4\u00dfig",
+            "heutig"
+        ],
+        "english_translation": "Today's lecture starts regularly at eight.",
+        "user_translation": "The daily lecture begins regularly at eight",
+        "word_validations": {
+            "regelm\u00e4\u00dfig": true,
+            "heutig": true
+        }
+    },
+    {
+        "sentence": "Die neue Theorie von her ist sehr gut.",
+        "clicked_words": [],
+        "focus_words": [
+            "Theorie",
+            "her"
+        ],
+        "english_translation": "The new theory from her is very good.",
+        "user_translation": "The new theory from you is very good",
+        "word_validations": {
+            "Theorie": true,
+            "her": false
+        }
+    },
+    {
+        "sentence": "Im Theater sagt sie \"hallo\" und l\u00e4chelt.",
+        "clicked_words": [],
+        "focus_words": [
+            "Theater",
+            "hallo"
+        ],
+        "english_translation": "In the theater, she says \"hello\" and smiles.",
+        "user_translation": " in theater she said hello and smiled",
+        "word_validations": {
+            "Theater": true,
+            "hallo": true
+        }
+    },
+    {
+        "sentence": "Der Mann hatte zw\u00f6lf Ohren, zwei am Kopf und zehn an den H\u00e4nden.",
+        "clicked_words": [],
+        "focus_words": [
+            "zw\u00f6lf",
+            "Ohr"
+        ],
+        "english_translation": "The man had twelve ears, two on his head and ten on his hands.",
+        "user_translation": "The mann has twelve ears, 2 on his head and 10 in his hands",
+        "word_validations": {
+            "zw\u00f6lf": true,
+            "Ohr": true
+        }
+    },
+    {
+        "sentence": "Der K\u00f6nig musste das Land wechseln.",
+        "clicked_words": [
+            "wechseln"
+        ],
+        "focus_words": [
+            "wechseln",
+            "K\u00f6nig"
+        ],
+        "english_translation": "The king had to change country.",
+        "user_translation": "The king had to change the country",
+        "word_validations": {
+            "wechseln": true,
+            "K\u00f6nig": true
+        }
+    },
+    {
+        "sentence": "Das neue Unternehmen stellt viele Mitarbeiter f\u00fcr den Aufbau des Teams ein.",
+        "clicked_words": [],
+        "focus_words": [
+            "einstellen",
+            "Aufbau"
+        ],
+        "english_translation": "The new company hires many employees to build up the team.",
+        "user_translation": "The new business employed many employees for the team construction",
+        "word_validations": {
+            "einstellen": true,
+            "Aufbau": false
+        }
+    },
+    {
+        "sentence": "Im Februar m\u00fcssen wir den ersten Beitrag f\u00fcr das neue Museum zahlen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Beitrag",
+            "Februar"
+        ],
+        "english_translation": "In February, we have to pay the first contribution for the new museum.",
+        "user_translation": "In february, we must pay the first contribution for the new museam",
+        "word_validations": {
+            "Beitrag": true,
+            "Februar": true
+        }
+    },
+    {
+        "sentence": "Der riesige Mann steht da her zwischen den Menschen.",
+        "clicked_words": [
+            "riesige",
+            "her"
+        ],
+        "focus_words": [
+            "riesig",
+            "her"
+        ],
+        "english_translation": "The huge man stands there among the people.",
+        "user_translation": "The giant man stands there between people",
+        "word_validations": {
+            "riesig": false,
+            "her": true
+        }
+    },
+    {
+        "sentence": "Mir ist gestern eine neue Idee eingefallen, wie wir junge K\u00fcnstler in Deutschland f\u00f6rdern k\u00f6nnen.",
+        "clicked_words": [
+            "eingefallen",
+            "f\u00f6rdern"
+        ],
+        "focus_words": [
+            "f\u00f6rdern",
+            "einfallen"
+        ],
+        "english_translation": "Yesterday I came up with a new idea for how we can promote young artists in Germany.",
+        "user_translation": "A new idea occured to me yesterday, how we can fund young artists in germany",
+        "word_validations": {
+            "f\u00f6rdern": false,
+            "einfallen": false
+        }
+    },
+    {
+        "sentence": "Die Kontrolle \u00fcber den Aufbau eines neuen Systems ist besonders wichtig f\u00fcr gro\u00dfe Unternehmen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Kontrolle",
+            "Aufbau"
+        ],
+        "english_translation": "Control over the development of a new system is particularly important for large companies.",
+        "user_translation": "The control of construction a new system is especially important for big busineess",
+        "word_validations": {
+            "Kontrolle": true,
+            "Aufbau": true
+        }
+    },
+    {
+        "sentence": "Der Mannschaft fiel eine neue Idee f\u00fcr das Spiel ein.",
+        "clicked_words": [],
+        "focus_words": [
+            "Mannschaft",
+            "einfallen"
+        ],
+        "english_translation": "The team came up with a new idea for the game.",
+        "user_translation": "The team came up with a new idea for the game",
+        "word_validations": {
+            "Mannschaft": true,
+            "einfallen": true
+        }
+    },
+    {
+        "sentence": "Die Universit\u00e4t f\u00fchrt neue Projekte durch, um Studenten zu f\u00f6rdern.",
+        "clicked_words": [],
+        "focus_words": [
+            "durchf\u00fchren",
+            "f\u00f6rdern"
+        ],
+        "english_translation": "The university is implementing new projects to support students.",
+        "user_translation": "The university conducted a new project to promote students",
+        "word_validations": {
+            "durchf\u00fchren": false,
+            "f\u00f6rdern": false
+        }
+    },
+    {
+        "sentence": "Er behauptet, dass seine Hoffnung auf bessere Zeiten nie stirbt.",
+        "clicked_words": [],
+        "focus_words": [
+            "behaupten",
+            "Hoffnung"
+        ],
+        "english_translation": "He claims that his hope for better times never dies.",
+        "user_translation": "He claimed, that his hope for better times never dies",
+        "word_validations": {
+            "behaupten": true,
+            "Hoffnung": true
+        }
+    },
+    {
+        "sentence": "Entweder verletzt er sich beim Spiel, oder er bleibt zu Hause.",
+        "clicked_words": [],
+        "focus_words": [
+            "entweder",
+            "verletzen"
+        ],
+        "english_translation": "Either he gets injured during the game or he stays at home.",
+        "user_translation": "Either he injures himself at the game, or he stays at the house",
+        "word_validations": {
+            "entweder": true,
+            "verletzen": true
+        }
+    },
+    {
+        "sentence": "Die wissenschaftliche Untersuchung wird per Internet durchgef\u00fchrt.",
+        "clicked_words": [],
+        "focus_words": [
+            "durchf\u00fchren",
+            "per"
+        ],
+        "english_translation": "The scientific study is conducted via the Internet.",
+        "user_translation": "Th scientific experiemnt is conducted via the internet",
+        "word_validations": {
+            "durchf\u00fchren": true,
+            "per": true
+        }
+    },
+    {
+        "sentence": "Er wechselt regelm\u00e4\u00dfig die Farbe der Wand.",
+        "clicked_words": [],
+        "focus_words": [
+            "Farbe",
+            "regelm\u00e4\u00dfig"
+        ],
+        "english_translation": "He regularly changes the color of the wall.",
+        "user_translation": "He changes regularly the color of the wall",
+        "word_validations": {
+            "Farbe": true,
+            "regelm\u00e4\u00dfig": true
+        }
+    },
+    {
+        "sentence": "Die Theorie des Theaters ist besonders interessant f\u00fcr die Geschichte der kulturellen Entwicklung.",
+        "clicked_words": [],
+        "focus_words": [
+            "Theater",
+            "Theorie"
+        ],
+        "english_translation": "The theory of theater is particularly interesting for the history of cultural development.",
+        "user_translation": "The theory of theater is especially interesting for the history of cultural development",
+        "word_validations": {
+            "Theater": true,
+            "Theorie": true
+        }
+    },
+    {
+        "sentence": "Die zw\u00f6lf riesigen H\u00e4user stehen seit Jahren neben der Kirche.",
+        "clicked_words": [],
+        "focus_words": [
+            "zw\u00f6lf",
+            "riesig"
+        ],
+        "english_translation": "The twelve huge houses have been standing next to the church for years.",
+        "user_translation": "The 12 huge houses stand next to the church for years",
+        "word_validations": {
+            "zw\u00f6lf": true,
+            "riesig": true
+        }
+    },
+    {
+        "sentence": "Das heutige Problem mit meinem rechten Ohr ist wirklich schlimm.",
+        "clicked_words": [],
+        "focus_words": [
+            "heutig",
+            "Ohr"
+        ],
+        "english_translation": "Today's problem with my right ear is really bad.",
+        "user_translation": "The daily problem with my right ear is really bad",
+        "word_validations": {
+            "heutig": false,
+            "Ohr": true
+        }
+    },
+    {
+        "sentence": "Das Unternehmen muss neue Mitarbeiter einstellen und alte Systeme wechseln.",
+        "clicked_words": [],
+        "focus_words": [
+            "einstellen",
+            "wechseln"
+        ],
+        "english_translation": "The company has to hire new employees and change old systems.",
+        "user_translation": "The business must employ new workers and change the old system",
+        "word_validations": {
+            "einstellen": true,
+            "wechseln": true
+        }
+    },
+    {
+        "sentence": "Der K\u00f6nig lebt seit Februar in dem kalten Land im Westen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Februar",
+            "K\u00f6nig"
+        ],
+        "english_translation": "The king has been living in the cold country in the west since February.",
+        "user_translation": "The king lives in the cold land in the west since february",
+        "word_validations": {
+            "Februar": true,
+            "K\u00f6nig": true
+        }
+    },
+    {
+        "sentence": "Der Staat f\u00f6rdert das neue Museum in der Stadt.",
+        "clicked_words": [],
+        "focus_words": [
+            "Museum",
+            "f\u00f6rdern"
+        ],
+        "english_translation": "The state supports the new museum in the city.",
+        "user_translation": "The state promotes the new musuem in the city",
+        "word_validations": {
+            "Museum": true,
+            "f\u00f6rdern": true
+        }
+    },
+    {
+        "sentence": "Der elektrische Beitrag f\u00fcr das neue System war sehr wichtig f\u00fcr die Entwicklung des Projekts.",
+        "clicked_words": [
+            "Beitrag"
+        ],
+        "focus_words": [
+            "Beitrag",
+            "elektrisch"
+        ],
+        "english_translation": "The electrical contribution to the new system was very important for the development of the project.",
+        "user_translation": "The electrical contribution for the new system was very important for the development of the project",
+        "word_validations": {
+            "Beitrag": false,
+            "elektrisch": true
+        }
+    },
+    {
+        "sentence": "Ich warte gern auf Besuch, andererseits bleibe ich auch gerne allein zu Hause.",
+        "clicked_words": [
+            "Besuch"
+        ],
+        "focus_words": [
+            "andererseits",
+            "Besuch"
+        ],
+        "english_translation": "I like to wait for visitors, but I also like to stay at home alone.",
+        "user_translation": "I enjoy waiting on vacation, but on the other hand I also enjoy staying alone at home",
+        "word_validations": {
+            "andererseits": true,
+            "Besuch": false
+        }
+    },
+    {
+        "sentence": "Es ist typisch f\u00fcr Kinder, dass sie schreien, wenn sie nicht bekommen, was sie wollen.",
+        "clicked_words": [],
+        "focus_words": [
+            "typisch",
+            "schreien"
+        ],
+        "english_translation": "It is typical for children to scream when they don't get what they want.",
+        "user_translation": "it is typical for kids, to cry, if they can't get what they want",
+        "word_validations": {
+            "typisch": true,
+            "schreien": true
+        }
+    },
+    {
+        "sentence": "In diesem Gebiet tragen wir eine gro\u00dfe Verantwortung f\u00fcr die Entwicklung der Natur.",
+        "clicked_words": [],
+        "focus_words": [
+            "Gebiet",
+            "Verantwortung"
+        ],
+        "english_translation": "In this area, we bear great responsibility for the development of nature.",
+        "user_translation": "In this area, we carry a big responsiblity for the development of nature",
+        "word_validations": {
+            "Gebiet": true,
+            "Verantwortung": true
+        }
+    },
+    {
+        "sentence": "Der Mann sagt hundert Mal \"hallo\" an diesem Tag.",
+        "clicked_words": [],
+        "focus_words": [
+            "hundert",
+            "hallo"
+        ],
+        "english_translation": "The man says \"hello\" a hundred times that day.",
+        "user_translation": "The man said hello a hundred time on this day",
+        "word_validations": {
+            "hundert": true,
+            "hallo": true
+        }
+    },
+    {
+        "sentence": "Die Mannschaft hatte die Kontrolle \u00fcber das Spiel und konnte den Sieg gewinnen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Mannschaft",
+            "Kontrolle"
+        ],
+        "english_translation": "The team was in control of the game and managed to win.",
+        "user_translation": "The team had control over the game and could have won the victory",
+        "word_validations": {
+            "Mannschaft": true,
+            "Kontrolle": true
+        }
+    },
+    {
+        "sentence": "Die Beh\u00f6rde behauptet, dass sie die Entscheidung nicht \u00e4ndern kann.",
+        "clicked_words": [],
+        "focus_words": [
+            "behaupten",
+            "Beh\u00f6rde"
+        ],
+        "english_translation": "The authority claims that it cannot change the decision.",
+        "user_translation": "The authorities claim, that they can't change the decision",
+        "word_validations": {
+            "behaupten": true,
+            "Beh\u00f6rde": true
+        }
+    },
+    {
+        "sentence": "Am Samstag haben wir die Hoffnung nicht verloren, obwohl das Spiel sehr schwer war.",
+        "clicked_words": [],
+        "focus_words": [
+            "Hoffnung",
+            "Samstag"
+        ],
+        "english_translation": "We didn't lose hope on Saturday, even though the game was very tough.",
+        "user_translation": "On saturday we have not lost hope, although tha game was hard. ",
+        "word_validations": {
+            "Hoffnung": true,
+            "Samstag": true
+        }
+    },
+    {
+        "sentence": "Die Quelle muss entweder richtig oder falsch sein.",
+        "clicked_words": [],
+        "focus_words": [
+            "Quelle",
+            "entweder"
+        ],
+        "english_translation": "The source must be either correct or incorrect.",
+        "user_translation": "The source must either be true or false",
+        "word_validations": {
+            "Quelle": true,
+            "entweder": true
+        }
+    },
+    {
+        "sentence": "Die heutige Summe der Kosten liegt \u00fcber der erwarteten Zahl.",
+        "clicked_words": [],
+        "focus_words": [
+            "heutig",
+            "Summe"
+        ],
+        "english_translation": "The current total costs are higher than the expected figure.",
+        "user_translation": "Todays sum of costs is over the expected number",
+        "word_validations": {
+            "heutig": true,
+            "Summe": true
+        }
+    },
+    {
+        "sentence": "Das Geld aus dem Job reicht nicht aus, um gut zu leben.",
+        "clicked_words": [
+            "reicht",
+            "aus"
+        ],
+        "focus_words": [
+            "ausreichen",
+            "Job"
+        ],
+        "english_translation": "The money from the job is not enough to live well.",
+        "user_translation": "The money from the job isn't enough to live well",
+        "word_validations": {
+            "ausreichen": true,
+            "Job": true
+        }
+    },
+    {
+        "sentence": "Die Organisation des Besuchs in der Stadt war nicht einfach, aber am Ende ist alles gut gelungen.",
+        "clicked_words": [
+            "gelungen"
+        ],
+        "focus_words": [
+            "Organisation",
+            "Besuch"
+        ],
+        "english_translation": "Organizing the visit to the city was not easy, but in the end everything went well.",
+        "user_translation": "The organization of visitors in the city wasn't easy, but in the end everything turns out find",
+        "word_validations": {
+            "Organisation": true,
+            "Besuch": true
+        }
+    },
+    {
+        "sentence": "Wenn es drau\u00dfen zehn Grad ist, benutzen wir immer das Auto.",
+        "clicked_words": [],
+        "focus_words": [
+            "Grad",
+            "benutzen"
+        ],
+        "english_translation": "When it's ten degrees outside, we always use the car.",
+        "user_translation": "If it is 10 degrees outside, we'll always use the car",
+        "word_validations": {
+            "Grad": true,
+            "benutzen": true
+        }
+    },
+    {
+        "sentence": "In dem Haus liegt irgendeines der elektrischen Probleme vor.",
+        "clicked_words": [
+            "liegt",
+            "irgendeines",
+            "vor"
+        ],
+        "focus_words": [
+            "irgendein",
+            "elektrisch"
+        ],
+        "english_translation": "There is one of the electrical problems in the house.",
+        "user_translation": "In the house someone is present for the elctrical problem",
+        "word_validations": {
+            "irgendein": false,
+            "elektrisch": true
+        }
+    },
+    {
+        "sentence": "Das Kind war sehr ruhig, andererseits schrie der Mann immer laut.",
+        "clicked_words": [],
+        "focus_words": [
+            "andererseits",
+            "schreien"
+        ],
+        "english_translation": "The child was very quiet, but the man was always shouting loudly.",
+        "user_translation": "The child was very calm, but on the other hand the man cried ver louder",
+        "word_validations": {
+            "andererseits": true,
+            "schreien": true
+        }
+    },
+    {
+        "sentence": "Es ist typisch, dass sich Kinder beim Spielen verletzen.",
+        "clicked_words": [],
+        "focus_words": [
+            "verletzen",
+            "typisch"
+        ],
+        "english_translation": "It is typical for children to injure themselves while playing.",
+        "user_translation": "It is typical, that the kids injure themselves by playing",
+        "word_validations": {
+            "verletzen": true,
+            "typisch": true
+        }
+    },
+    {
+        "sentence": "Von den hundert Studenten kommen teilweise nur zehn zur Vorlesung.",
+        "clicked_words": [
+            "teilweise"
+        ],
+        "focus_words": [
+            "hundert",
+            "teilweise"
+        ],
+        "english_translation": "Of the hundred students, sometimes only ten come to the lecture.",
+        "user_translation": "from the hundren student",
+        "word_validations": {
+            "hundert": true,
+            "teilweise": false
+        }
+    },
+    {
+        "sentence": "Die Beh\u00f6rde ist f\u00fcr das neue Gebiet verantwortlich.",
+        "clicked_words": [],
+        "focus_words": [
+            "Gebiet",
+            "Beh\u00f6rde"
+        ],
+        "english_translation": "The authority is responsible for the new area.",
+        "user_translation": "The authority is responsible for the new area",
+        "word_validations": {
+            "Gebiet": true,
+            "Beh\u00f6rde": true
+        }
+    },
+    {
+        "sentence": "Irgendeine Organisation muss ausreichen, um die Probleme zu l\u00f6sen.",
+        "clicked_words": [],
+        "focus_words": [
+            "irgendein",
+            "ausreichen",
+            "Organisation"
+        ],
+        "english_translation": "Some kind of organization must be sufficient to solve the problems.",
+        "user_translation": "Some organizaiton must be suffic",
+        "word_validations": {
+            "irgendein": true,
+            "ausreichen": true,
+            "Organisation": true
+        }
+    },
+    {
+        "sentence": "Am Samstag habe ich in dieser Quelle irgendetwas Interessantes gefunden.",
+        "clicked_words": [],
+        "focus_words": [
+            "Quelle",
+            "irgendetwas, irgendwas",
+            "Samstag"
+        ],
+        "english_translation": "On Saturday I found something interesting in this source.",
+        "user_translation": "On saturday I found something interesting in this source",
+        "word_validations": {
+            "Quelle": true,
+            "irgendetwas, irgendwas": true,
+            "Samstag": true
+        }
+    },
+    {
+        "sentence": "Sie benutzen den Beitrag unmittelbar f\u00fcr ihre wichtige Arbeit an der Universit\u00e4t.",
+        "clicked_words": [
+            "unmittelbar"
+        ],
+        "focus_words": [
+            "benutzen",
+            "Beitrag",
+            "unmittelbar"
+        ],
+        "english_translation": "They use the contribution directly for their important work at the university.",
+        "user_translation": "They use an amount indirectly for their import work at university",
+        "word_validations": {
+            "benutzen": true,
+            "Beitrag": true,
+            "unmittelbar": false
+        }
+    },
+    {
+        "sentence": "Das Merkmal des Jahrzehnt war, dass die Temperatur um zwei Grad gestiegen ist.",
+        "clicked_words": [
+            "Jahrzehnt"
+        ],
+        "focus_words": [
+            "Merkmal",
+            "Jahrzehnt",
+            "Grad"
+        ],
+        "english_translation": "The feature of the decade was that the temperature rose by two degrees.",
+        "user_translation": "The feature of the decade was, that the temperature increase about 2 degrees",
+        "word_validations": {
+            "Merkmal": true,
+            "Jahrzehnt": true,
+            "Grad": true
+        }
+    },
+    {
+        "sentence": "Papa ist teilweise extrem stark, wenn er im Haus arbeitet.",
+        "clicked_words": [
+            "teilweise"
+        ],
+        "focus_words": [
+            "teilweise",
+            "extrem",
+            "Papa"
+        ],
+        "english_translation": "Dad is sometimes extremely strong when he's working around the house.",
+        "user_translation": "Papa is partly extreemely strong, if he works in the house",
+        "word_validations": {
+            "teilweise": false,
+            "extrem": true,
+            "Papa": true
+        }
+    },
+    {
+        "sentence": "Man muss die theoretischen Voraussetzungen f\u00fcr das Projekt erst ermitteln.",
+        "clicked_words": [
+            "Voraussetzungen",
+            "ermitteln"
+        ],
+        "focus_words": [
+            "theoretisch",
+            "ermitteln",
+            "Voraussetzung"
+        ],
+        "english_translation": "The theoretical requirements for the project must first be determined.",
+        "user_translation": "One must first determine the theoretical challenges for the project",
+        "word_validations": {
+            "theoretisch": true,
+            "ermitteln": false,
+            "Voraussetzung": false
+        }
+    },
+    {
+        "sentence": "Der Patient muss dem Arzt vertrauen, wenn die neue Substanz bei der Krankheit helfen soll.",
+        "clicked_words": [],
+        "focus_words": [
+            "Krankheit",
+            "vertrauen",
+            "Substanz"
+        ],
+        "english_translation": "The patient must trust the doctor if the new substance is to help with the disease.",
+        "user_translation": "The patient must trust the doctor, if the new substance is going to help with their health",
+        "word_validations": {
+            "Krankheit": true,
+            "vertrauen": true,
+            "Substanz": true
+        }
+    },
+    {
+        "sentence": "Ich muss meinen Job jetzt zu diesem Zeitpunkt neu formulieren.",
+        "clicked_words": [],
+        "focus_words": [
+            "formulieren",
+            "Job",
+            "Zeitpunkt"
+        ],
+        "english_translation": "I have to reformulate my job at this point.",
+        "user_translation": "I must my job now this moment new formulate",
+        "word_validations": {
+            "formulieren": true,
+            "Job": true,
+            "Zeitpunkt": true
+        }
+    },
+    {
+        "sentence": "Die Polizei ermittelt die Verantwortung der Firma, w\u00e4hrend die Mitarbeiter Unterst\u00fctzung bekommen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Verantwortung",
+            "Unterst\u00fctzung",
+            "ermitteln"
+        ],
+        "english_translation": "The police investigate the company's responsibility, while the employees receive support.",
+        "user_translation": "The police determine die responsiblility for the business, while the employees recieve support",
+        "word_validations": {
+            "Verantwortung": true,
+            "Unterst\u00fctzung": true,
+            "ermitteln": false
+        }
+    },
+    {
+        "sentence": "Der Wind ist eine wichtige Voraussetzung, aber wenigstens haben wir heute einen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Voraussetzung",
+            "Wind",
+            "wenigstens"
+        ],
+        "english_translation": "The wind is an important prerequisite, but at least we have one today.",
+        "user_translation": "The wind is an important requirement, but we have little today",
+        "word_validations": {
+            "Voraussetzung": true,
+            "Wind": true,
+            "wenigstens": false
+        }
+    },
+    {
+        "sentence": "Die Summe von f\u00fcnf Euro wurde teilweise bezahlt.",
+        "clicked_words": [],
+        "focus_words": [
+            "teilweise",
+            "Summe"
+        ],
+        "english_translation": "The sum of five euros was partially paid.",
+        "user_translation": "The sum of 5 euros was partially payed",
+        "word_validations": {
+            "teilweise": true,
+            "Summe": true
+        }
+    },
+    {
+        "sentence": "Der Politiker versucht wenigstens die Menschen in der Stadt zu unterst\u00fctzen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Politiker",
+            "wenigstens"
+        ],
+        "english_translation": "The politician is at least trying to support the people in the city.",
+        "user_translation": "the politician attempts to support at least the people in the city",
+        "word_validations": {
+            "Politiker": true,
+            "wenigstens": true
+        }
+    },
+    {
+        "sentence": "Mein Papa hat ein besonderes Merkmal - er lacht immer.\n",
+        "clicked_words": [],
+        "focus_words": [
+            "Papa",
+            "Merkmal"
+        ],
+        "english_translation": "My dad has a special characteristic - he always laughs.\n",
+        "user_translation": "My farther has a special feature, he constantly laughs",
+        "word_validations": {
+            "Papa": true,
+            "Merkmal": true
+        }
+    },
+    {
+        "sentence": "Unmittelbar nachdem der Mann das Tier get\u00f6tet hatte, f\u00fchlte er die Gefahr.",
+        "clicked_words": [
+            "Gefahr"
+        ],
+        "focus_words": [
+            "t\u00f6ten",
+            "unmittelbar"
+        ],
+        "english_translation": "Immediately after the man had killed the animal, he felt the danger.",
+        "user_translation": "Directly after the man's animal had died, he felt fear",
+        "word_validations": {
+            "t\u00f6ten": true,
+            "unmittelbar": true
+        }
+    },
+    {
+        "sentence": "Seit einem Jahrzehnt bestimmt der Bund die politische Entwicklung in Deutschland.",
+        "clicked_words": [
+            "bestimmt",
+            "Bund"
+        ],
+        "focus_words": [
+            "Bund",
+            "Jahrzehnt"
+        ],
+        "english_translation": "The federal government has been determining political developments in Germany for a decade.",
+        "user_translation": "For a decade, the band determined the political developments in germany",
+        "word_validations": {
+            "Bund": false,
+            "Jahrzehnt": true
+        }
+    },
+    {
+        "sentence": "Die Menschen vertrauen in die Substanz der neuen Methode.",
+        "clicked_words": [],
+        "focus_words": [
+            "vertrauen",
+            "Substanz"
+        ],
+        "english_translation": "People trust in the substance of the new method.",
+        "user_translation": "People trust in the substand of the new method",
+        "word_validations": {
+            "vertrauen": true,
+            "Substanz": true
+        }
+    },
+    {
+        "sentence": "Theoretisch kann man irgendetwas lernen, wenn man es verstehen will.",
+        "clicked_words": [],
+        "focus_words": [
+            "irgendetwas, irgendwas",
+            "theoretisch"
+        ],
+        "english_translation": "Theoretically, you can learn anything if you want to understand it.",
+        "user_translation": "Theoretically, one can learn anything, if we wants to understand it",
+        "word_validations": {
+            "irgendetwas, irgendwas": true,
+            "theoretisch": true
+        }
+    },
+    {
+        "sentence": "Hey, kannst du mir sagen, was f\u00fcr eine Krankheit du hast?",
+        "clicked_words": [],
+        "focus_words": [
+            "Krankheit",
+            "hey"
+        ],
+        "english_translation": "Hey, can you tell me what kind of illness you have?",
+        "user_translation": "Hey, can you tell me, how healthy you are",
+        "word_validations": {
+            "Krankheit": false,
+            "hey": true
+        }
+    },
+    {
+        "sentence": "Der Bund fasst eine wichtige Entscheidung f\u00fcr Deutschland.",
+        "clicked_words": [
+            "fasst"
+        ],
+        "focus_words": [
+            "Bund",
+            "fassen"
+        ],
+        "english_translation": "The federal government makes an important decision for Germany.",
+        "user_translation": "The federal government makes an important decision for germany",
+        "word_validations": {
+            "Bund": true,
+            "fassen": false
+        }
+    },
+    {
+        "sentence": "Wir m\u00fcssen erst das Problem ermitteln, bevor wir eine Antwort formulieren k\u00f6nnen.",
+        "clicked_words": [
+            "ermitteln"
+        ],
+        "focus_words": [
+            "formulieren",
+            "ermitteln"
+        ],
+        "english_translation": "We must first identify the problem before we can formulate an answer.",
+        "user_translation": "We must first identify the problem, before we can formualte an answer",
+        "word_validations": {
+            "formulieren": true,
+            "ermitteln": true
+        }
+    },
+    {
+        "sentence": "Der Gang war extrem eng, und ich konnte kaum gehen.",
+        "clicked_words": [
+            "extrem"
+        ],
+        "focus_words": [
+            "Gang",
+            "extrem"
+        ],
+        "english_translation": "The corridor was extremely narrow and I could hardly walk.",
+        "user_translation": "The gang was extremely close, and i could hardly go",
+        "word_validations": {
+            "Gang": false,
+            "extrem": true
+        }
+    },
+    {
+        "sentence": "Im Juni konnten wir endlich fassen, dass der Sommer bereits da war.",
+        "clicked_words": [
+            "fassen"
+        ],
+        "focus_words": [
+            "Juni",
+            "fassen"
+        ],
+        "english_translation": "In June, we finally realized that summer was already here.",
+        "user_translation": "In june we could finally understand, that the summer was here",
+        "word_validations": {
+            "Juni": true,
+            "fassen": false
+        }
+    },
+    {
+        "sentence": "Die Unterst\u00fctzung der Familie brach nie.",
+        "clicked_words": [
+            "brach"
+        ],
+        "focus_words": [
+            "brechen",
+            "Unterst\u00fctzung"
+        ],
+        "english_translation": "The family's support never wavered.",
+        "user_translation": "The support of family ",
+        "word_validations": {
+            "brechen": false,
+            "Unterst\u00fctzung": true
+        }
+    },
+    {
+        "sentence": "Der kalte Wind entfernte das Haar aus ihrem Gesicht.",
+        "clicked_words": [
+            "entfernte"
+        ],
+        "focus_words": [
+            "Wind",
+            "entfernen"
+        ],
+        "english_translation": "The cold wind removed the hair from her face.",
+        "user_translation": "The cold wind removed the hair from their faces",
+        "word_validations": {
+            "Wind": true,
+            "entfernen": false
+        }
+    },
+    {
+        "sentence": "Das neue Zentrum f\u00fcr Haut behandelt hundert Patienten am Tag.",
+        "clicked_words": [],
+        "focus_words": [
+            "Haut",
+            "Zentrum"
+        ],
+        "english_translation": "The new skin center treats a hundred patients a day.",
+        "user_translation": "The new center for skin treats a hundred patients a day",
+        "word_validations": {
+            "Haut": true,
+            "Zentrum": true
+        }
     }
 ]

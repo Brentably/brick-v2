@@ -1,11 +1,13 @@
 import json
 
+# PYTHONPATH=. python3 scripts/propogateDbWithWordList.py
+
 # Load words from the word list file
 with open("5009_word_and_scraped_cd.json", "r") as word_list_file:
     word_list = json.load(word_list_file)
 
 # We only need the first 1000 words
-words_to_add = word_list[:1000]
+words_to_add = word_list[:100]
 
 # Load the current database
 with open("./db.json", "r+") as db_file:

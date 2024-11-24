@@ -2,15 +2,15 @@
     "user": {
         "words": {
             "der": {
-                "due": "2024-11-24T20:09:40.275455+00:00",
-                "stability": 0.004362433692072409,
-                "difficulty": 10,
-                "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 116,
+                "due": "2024-11-25T22:02:37.608845+00:00",
+                "stability": 0.006071543571525325,
+                "difficulty": 9.842818841986166,
+                "elapsed_days": 1,
+                "scheduled_days": 1,
+                "reps": 117,
                 "lapses": 2,
-                "state": 3,
-                "last_review": "2024-11-23T20:37:06.913196+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:02:37.608845+00:00"
             },
             "und": {
                 "due": "2024-12-01T00:25:17.161796+00:00",
@@ -574,15 +574,15 @@
                 "last_review": "2025-02-03T15:19:00.016401+00:00"
             },
             "mehr": {
-                "due": "2024-11-24T21:43:21.895088+00:00",
-                "stability": 0.8292072807870915,
-                "difficulty": 9.842818841986166,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 11,
+                "due": "2024-11-26T22:05:00.214048+00:00",
+                "stability": 1.5010081662818964,
+                "difficulty": 9.689315723069855,
+                "elapsed_days": 1,
+                "scheduled_days": 2,
+                "reps": 12,
                 "lapses": 1,
                 "state": 2,
-                "last_review": "2024-11-23T21:43:21.895088+00:00"
+                "last_review": "2024-11-24T22:05:00.214048+00:00"
             },
             "Jahr": {
                 "due": "2025-04-14T08:31:05.236488+00:00",
@@ -849,15 +849,15 @@
                 "last_review": "2024-11-22T22:32:05.537682+00:00"
             },
             "einer": {
-                "due": "2024-11-24T20:36:30.372140+00:00",
-                "stability": 0.7248872348063914,
-                "difficulty": 8.25569174099334,
-                "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 19,
-                "lapses": 1.0454545454545454,
-                "state": 3,
-                "last_review": "2024-11-23T20:37:06.915859+00:00"
+                "due": "2024-11-25T22:05:00.214664+00:00",
+                "stability": 1.0088828257877078,
+                "difficulty": 8.139327396240262,
+                "elapsed_days": 1,
+                "scheduled_days": 1,
+                "reps": 20,
+                "lapses": 1,
+                "state": 2,
+                "last_review": "2024-11-24T22:05:00.214664+00:00"
             },
             "sehr": {
                 "due": "2025-02-19T01:07:58.454050+00:00",
@@ -1432,15 +1432,15 @@
                 "last_review": "2024-11-23T20:37:06.912011+00:00"
             },
             "Land": {
-                "due": "2024-11-24T21:45:41.139845+00:00",
-                "stability": 0.13118091888076017,
-                "difficulty": 9.842818841986166,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 13,
+                "due": "2024-11-26T22:04:16.958754+00:00",
+                "stability": 0.6995525587939262,
+                "difficulty": 9.689315723069855,
+                "elapsed_days": 1,
+                "scheduled_days": 2,
+                "reps": 14,
                 "lapses": 1,
                 "state": 2,
-                "last_review": "2024-11-23T21:45:41.139845+00:00"
+                "last_review": "2024-11-24T22:04:16.958754+00:00"
             },
             "stellen": {
                 "due": "2025-06-26T05:46:00.760369+00:00",
@@ -7438,15 +7438,15 @@
                 "last_review": "2025-01-22T05:35:53.292963+00:00"
             },
             "gr\u00fcn": {
-                "due": "2024-11-24T21:45:09.929520+00:00",
-                "stability": 0.8914749254621793,
-                "difficulty": 8.894011477390452,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 10,
+                "due": "2024-11-26T22:03:55.023557+00:00",
+                "stability": 2.1103167353663976,
+                "difficulty": 8.762710450805681,
+                "elapsed_days": 1,
+                "scheduled_days": 2,
+                "reps": 11,
                 "lapses": 2,
                 "state": 2,
-                "last_review": "2024-11-23T21:45:09.929520+00:00"
+                "last_review": "2024-11-24T22:03:55.023557+00:00"
             },
             "B\u00fcrger": {
                 "due": "2025-07-20T18:20:52.917982+00:00",
@@ -11156,15 +11156,15 @@
                 "last_review": "2024-11-23T21:26:05.772444+00:00"
             },
             "Gr\u00fcne": {
-                "due": "2024-11-24T21:45:09.928725+00:00",
-                "stability": 0.9477286533724256,
-                "difficulty": 9.100356397496329,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 5,
+                "due": "2024-11-26T22:03:55.023907+00:00",
+                "stability": 2.043851456766539,
+                "difficulty": 8.96422689978108,
+                "elapsed_days": 1,
+                "scheduled_days": 2,
+                "reps": 6,
                 "lapses": 1,
                 "state": 2,
-                "last_review": "2024-11-23T21:45:09.928725+00:00"
+                "last_review": "2024-11-24T22:03:55.023907+00:00"
             },
             "Diskussion": {
                 "due": "2024-11-28T21:20:47.722090+00:00",
@@ -11211,15 +11211,15 @@
                 "last_review": "2024-11-23T21:42:02.241600+00:00"
             },
             "landen": {
-                "due": "2024-11-24T21:54:58.645999+00:00",
-                "stability": 0.03223272144965744,
-                "difficulty": 9.842818841986166,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 10,
+                "due": "2024-11-26T22:04:16.958431+00:00",
+                "stability": 0.35963657012963746,
+                "difficulty": 9.689315723069855,
+                "elapsed_days": 1,
+                "scheduled_days": 2,
+                "reps": 11,
                 "lapses": 0,
                 "state": 2,
-                "last_review": "2024-11-23T21:54:58.645999+00:00"
+                "last_review": "2024-11-24T22:04:16.958431+00:00"
             },
             "Finger": {
                 "due": "2024-11-28T21:24:48.635283+00:00",
@@ -11277,15 +11277,15 @@
                 "last_review": "2024-11-23T21:31:54.044108+00:00"
             },
             "sichern": {
-                "due": "2024-11-24T21:44:44.699478+00:00",
-                "stability": 0.5667324060003331,
-                "difficulty": 7.118300161986166,
-                "elapsed_days": 0,
-                "scheduled_days": 1,
-                "reps": 2,
+                "due": "2024-11-27T22:03:18.661230+00:00",
+                "stability": 2.8366865541672803,
+                "difficulty": 7.028550780181856,
+                "elapsed_days": 1,
+                "scheduled_days": 3,
+                "reps": 3,
                 "lapses": 0,
                 "state": 2,
-                "last_review": "2024-11-23T21:44:44.699478+00:00"
+                "last_review": "2024-11-24T22:03:18.661230+00:00"
             },
             "Schulter": {
                 "due": "2024-11-28T04:26:13.378849+00:00",
@@ -11772,15 +11772,15 @@
                 "last_review": "2024-11-24T17:18:25.502779+00:00"
             },
             "organisch": {
-                "due": "2024-11-24T17:25:58.655485+00:00",
-                "stability": 3.1262,
-                "difficulty": 5.314577829570867,
+                "due": "2024-11-28T22:01:01.617554+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
                 "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 1,
+                "scheduled_days": 4,
+                "reps": 2,
                 "lapses": 0,
-                "state": 1,
-                "last_review": "2024-11-24T17:15:58.655485+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:01:01.617554+00:00"
             },
             "Definition": {
                 "due": "2024-11-28T17:28:21.144379+00:00",
@@ -11794,51 +11794,711 @@
                 "last_review": "2024-11-24T17:28:21.144379+00:00"
             },
             "Rest": {
-                "due": "2024-11-24T17:28:48.463396+00:00",
-                "stability": 3.1262,
-                "difficulty": 5.314577829570867,
+                "due": "2024-11-28T22:02:10.969730+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
                 "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 1,
+                "scheduled_days": 4,
+                "reps": 2,
                 "lapses": 0,
-                "state": 1,
-                "last_review": "2024-11-24T17:18:48.463396+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:02:10.969730+00:00"
             },
             "gl\u00fccklich": {
-                "due": "2024-11-24T17:28:48.463654+00:00",
-                "stability": 3.1262,
-                "difficulty": 5.314577829570867,
+                "due": "2024-11-28T22:01:01.617096+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
                 "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 1,
+                "scheduled_days": 4,
+                "reps": 2,
                 "lapses": 0,
-                "state": 1,
-                "last_review": "2024-11-24T17:18:48.463654+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:01:01.617096+00:00"
             },
             "beschlie\u00dfen": {
-                "due": "2024-11-24T17:32:00.996427+00:00",
-                "stability": 3.1262,
-                "difficulty": 5.314577829570867,
+                "due": "2024-11-28T22:03:18.661601+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
                 "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 1,
+                "scheduled_days": 4,
+                "reps": 2,
                 "lapses": 0,
-                "state": 1,
-                "last_review": "2024-11-24T17:22:00.996427+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:03:18.661601+00:00"
             },
             "Wunsch": {
-                "due": "2024-11-24T17:32:00.996693+00:00",
-                "stability": 3.1262,
-                "difficulty": 5.314577829570867,
+                "due": "2024-11-28T22:02:10.970062+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
                 "elapsed_days": 0,
-                "scheduled_days": 0,
-                "reps": 1,
+                "scheduled_days": 4,
+                "reps": 2,
                 "lapses": 0,
-                "state": 1,
-                "last_review": "2024-11-24T17:22:00.996693+00:00"
+                "state": 2,
+                "last_review": "2024-11-24T22:02:10.970062+00:00"
             },
             "dick": {
-                "due": "2024-11-24T17:38:21.144660+00:00",
+                "due": "2024-11-28T22:02:37.608504+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:02:37.608504+00:00"
+            },
+            "Museum": {
+                "due": "2024-11-28T22:22:16.902987+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:22:16.902987+00:00"
+            },
+            "riesig": {
+                "due": "2024-11-25T22:20:29.872897+00:00",
+                "stability": 0.28820442150346737,
+                "difficulty": 9.060223832493856,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:20:29.872897+00:00"
+            },
+            "Farbe": {
+                "due": "2024-11-28T22:19:10.856384+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:19:10.856384+00:00"
+            },
+            "per": {
+                "due": "2024-11-28T22:18:33.554017+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:18:33.554017+00:00"
+            },
+            "regelm\u00e4\u00dfig": {
+                "due": "2024-11-28T22:19:10.856701+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:19:10.856701+00:00"
+            },
+            "heutig": {
+                "due": "2024-11-26T22:29:31.791095+00:00",
+                "stability": 2.2126342399414036,
+                "difficulty": 7.252278812765166,
+                "elapsed_days": 0,
+                "scheduled_days": 2,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:29:31.791095+00:00"
+            },
+            "Theorie": {
+                "due": "2024-11-28T22:19:51.414434+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:19:51.414434+00:00"
+            },
+            "her": {
+                "due": "2024-11-25T22:12:03.692912+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:12:03.692912+00:00"
+            },
+            "Theater": {
+                "due": "2024-11-28T22:19:51.414118+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:19:51.414118+00:00"
+            },
+            "hallo": {
+                "due": "2024-11-28T22:25:34.112896+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:25:34.112896+00:00"
+            },
+            "zw\u00f6lf": {
+                "due": "2024-11-28T22:20:29.872566+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:20:29.872566+00:00"
+            },
+            "Ohr": {
+                "due": "2024-11-28T22:20:59.843862+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:20:59.843862+00:00"
+            },
+            "wechseln": {
+                "due": "2024-11-28T22:21:37.645113+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:21:37.645113+00:00"
+            },
+            "K\u00f6nig": {
+                "due": "2024-11-28T22:21:57.218458+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:21:57.218458+00:00"
+            },
+            "einstellen": {
+                "due": "2024-11-28T22:21:37.644788+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:21:37.644788+00:00"
+            },
+            "Aufbau": {
+                "due": "2024-11-25T22:14:35.589754+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:14:35.589754+00:00"
+            },
+            "Beitrag": {
+                "due": "2024-11-26T22:57:59.273943+00:00",
+                "stability": 2.2126342399414036,
+                "difficulty": 7.252278812765166,
+                "elapsed_days": 0,
+                "scheduled_days": 2,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:57:59.273943+00:00"
+            },
+            "Februar": {
+                "due": "2024-11-28T22:21:57.217956+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:21:57.217956+00:00"
+            },
+            "f\u00f6rdern": {
+                "due": "2024-11-25T22:22:16.903417+00:00",
+                "stability": 0.28820442150346737,
+                "difficulty": 9.060223832493856,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:22:16.903417+00:00"
+            },
+            "einfallen": {
+                "due": "2024-11-25T22:15:01.753602+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:15:01.753602+00:00"
+            },
+            "Kontrolle": {
+                "due": "2024-11-28T22:26:41.279362+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:26:41.279362+00:00"
+            },
+            "Mannschaft": {
+                "due": "2024-11-28T22:26:41.278884+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:26:41.278884+00:00"
+            },
+            "durchf\u00fchren": {
+                "due": "2024-11-25T22:18:33.553591+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:18:33.553591+00:00"
+            },
+            "behaupten": {
+                "due": "2024-11-28T22:27:17.992997+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:27:17.992997+00:00"
+            },
+            "Hoffnung": {
+                "due": "2024-11-28T22:28:17.921013+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:28:17.921013+00:00"
+            },
+            "entweder": {
+                "due": "2024-11-28T22:28:46.925385+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:28:46.925385+00:00"
+            },
+            "verletzen": {
+                "due": "2024-11-28T22:35:51.019156+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:35:51.019156+00:00"
+            },
+            "elektrisch": {
+                "due": "2024-11-28T22:34:55.025511+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:34:55.025511+00:00"
+            },
+            "andererseits": {
+                "due": "2024-11-28T22:35:25.563031+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:35:25.563031+00:00"
+            },
+            "Besuch": {
+                "due": "2024-11-25T22:33:21.019970+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:33:21.019970+00:00"
+            },
+            "typisch": {
+                "due": "2024-11-28T22:35:51.019563+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:35:51.019563+00:00"
+            },
+            "schreien": {
+                "due": "2024-11-28T22:35:25.563362+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:35:25.563362+00:00"
+            },
+            "Gebiet": {
+                "due": "2024-11-28T22:38:10.839331+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:38:10.839331+00:00"
+            },
+            "Verantwortung": {
+                "due": "2024-11-28T23:04:47.542460+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:04:47.542460+00:00"
+            },
+            "hundert": {
+                "due": "2024-11-28T22:37:48.794079+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:37:48.794079+00:00"
+            },
+            "Beh\u00f6rde": {
+                "due": "2024-11-28T22:38:10.839859+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:38:10.839859+00:00"
+            },
+            "Samstag": {
+                "due": "2024-11-28T22:55:34.027163+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:55:34.027163+00:00"
+            },
+            "Quelle": {
+                "due": "2024-11-28T22:55:34.026106+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:55:34.026106+00:00"
+            },
+            "Summe": {
+                "due": "2024-11-28T23:08:19.510262+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:08:19.510262+00:00"
+            },
+            "ausreichen": {
+                "due": "2024-11-28T22:54:52.378761+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:54:52.378761+00:00"
+            },
+            "Job": {
+                "due": "2024-11-28T23:03:45.683068+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:03:45.683068+00:00"
+            },
+            "Organisation": {
+                "due": "2024-11-28T22:54:52.379065+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:54:52.379065+00:00"
+            },
+            "Grad": {
+                "due": "2024-11-28T22:58:51.960878+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:58:51.960878+00:00"
+            },
+            "benutzen": {
+                "due": "2024-11-28T22:57:59.273429+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:57:59.273429+00:00"
+            },
+            "irgendein": {
+                "due": "2024-11-25T22:54:52.378143+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T22:54:52.378143+00:00"
+            },
+            "teilweise": {
+                "due": "2024-11-25T23:08:19.509742+00:00",
+                "stability": 0.28820442150346737,
+                "difficulty": 9.060223832493856,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:08:19.509742+00:00"
+            },
+            "irgendetwas, irgendwas": {
+                "due": "2024-11-28T23:13:58.029403+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:13:58.029403+00:00"
+            },
+            "unmittelbar": {
+                "due": "2024-11-25T23:11:31.817886+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:11:31.817886+00:00"
+            },
+            "Merkmal": {
+                "due": "2024-11-28T23:10:39.343099+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:10:39.343099+00:00"
+            },
+            "Jahrzehnt": {
+                "due": "2024-11-28T23:13:01.553600+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:13:01.553600+00:00"
+            },
+            "extrem": {
+                "due": "2024-11-28T23:16:59.285581+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:16:59.285581+00:00"
+            },
+            "Papa": {
+                "due": "2024-11-28T23:10:39.342736+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:10:39.342736+00:00"
+            },
+            "theoretisch": {
+                "due": "2024-11-28T23:13:58.029734+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:13:58.029734+00:00"
+            },
+            "ermitteln": {
+                "due": "2024-11-25T23:15:51.785242+00:00",
+                "stability": 0.28820442150346737,
+                "difficulty": 9.060223832493856,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 3,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:15:51.785242+00:00"
+            },
+            "Voraussetzung": {
+                "due": "2024-11-25T23:07:01.464038+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:07:01.464038+00:00"
+            },
+            "Krankheit": {
+                "due": "2024-11-24T23:19:37.566328+00:00",
+                "stability": 1.5897885015306676,
+                "difficulty": 7.347388870345075,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 2,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:14:37.566328+00:00"
+            },
+            "vertrauen": {
+                "due": "2024-11-28T23:13:31.362420+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:13:31.362420+00:00"
+            },
+            "Substanz": {
+                "due": "2024-11-28T23:13:31.362754+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:13:31.362754+00:00"
+            },
+            "formulieren": {
+                "due": "2024-11-28T23:15:51.784925+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:15:51.784925+00:00"
+            },
+            "Zeitpunkt": {
+                "due": "2024-11-24T23:13:45.683302+00:00",
                 "stability": 3.1262,
                 "difficulty": 5.314577829570867,
                 "elapsed_days": 0,
@@ -11846,7 +12506,161 @@
                 "reps": 1,
                 "lapses": 0,
                 "state": 1,
-                "last_review": "2024-11-24T17:28:21.144660+00:00"
+                "last_review": "2024-11-24T23:03:45.683302+00:00"
+            },
+            "Unterst\u00fctzung": {
+                "due": "2024-11-28T23:18:18.503299+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:18:18.503299+00:00"
+            },
+            "Wind": {
+                "due": "2024-11-28T23:19:26.886259+00:00",
+                "stability": 4.350979488306093,
+                "difficulty": 5.267035550345074,
+                "elapsed_days": 0,
+                "scheduled_days": 4,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:19:26.886259+00:00"
+            },
+            "wenigstens": {
+                "due": "2024-11-25T23:10:20.030764+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:10:20.030764+00:00"
+            },
+            "Politiker": {
+                "due": "2024-11-24T23:20:20.030240+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:10:20.030240+00:00"
+            },
+            "t\u00f6ten": {
+                "due": "2024-11-24T23:21:31.817482+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:11:31.817482+00:00"
+            },
+            "Bund": {
+                "due": "2024-11-25T23:15:22.967507+00:00",
+                "stability": 0.5667324060003331,
+                "difficulty": 7.118300161986166,
+                "elapsed_days": 0,
+                "scheduled_days": 1,
+                "reps": 2,
+                "lapses": 0,
+                "state": 2,
+                "last_review": "2024-11-24T23:15:22.967507+00:00"
+            },
+            "hey": {
+                "due": "2024-11-24T23:24:37.566857+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:14:37.566857+00:00"
+            },
+            "fassen": {
+                "due": "2024-11-24T23:22:41.488641+00:00",
+                "stability": 0.2070762836105457,
+                "difficulty": 9.198653481986167,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 2,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:17:41.488641+00:00"
+            },
+            "Gang": {
+                "due": "2024-11-24T23:17:59.285263+00:00",
+                "stability": 0.4072,
+                "difficulty": 7.2102,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:16:59.285263+00:00"
+            },
+            "Juni": {
+                "due": "2024-11-24T23:27:41.488327+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:17:41.488327+00:00"
+            },
+            "brechen": {
+                "due": "2024-11-24T23:19:18.502928+00:00",
+                "stability": 0.4072,
+                "difficulty": 7.2102,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:18:18.502928+00:00"
+            },
+            "entfernen": {
+                "due": "2024-11-24T23:20:26.886583+00:00",
+                "stability": 0.4072,
+                "difficulty": 7.2102,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:19:26.886583+00:00"
+            },
+            "Haut": {
+                "due": "2024-11-24T23:30:09.524810+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:20:09.524810+00:00"
+            },
+            "Zentrum": {
+                "due": "2024-11-24T23:30:09.525114+00:00",
+                "stability": 3.1262,
+                "difficulty": 5.314577829570867,
+                "elapsed_days": 0,
+                "scheduled_days": 0,
+                "reps": 1,
+                "lapses": 0,
+                "state": 1,
+                "last_review": "2024-11-24T23:20:09.525114+00:00"
             }
         }
     }
