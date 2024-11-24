@@ -874,5 +874,759 @@
             "halt": true,
             "Arbeit": true
         }
+    },
+    {
+        "sentence": "Der Erste hat nicht viel Zeit f\u00fcr die Frage.\n```",
+        "clicked_words": [],
+        "focus_words": [
+            "Erste",
+            "viel"
+        ],
+        "english_translation": "The first one doesn't have much time for the question.\n```",
+        "user_translation": "The first doesn't have a lot of time for the question",
+        "word_validations": {
+            "Erste": true,
+            "viel": true
+        }
+    },
+    {
+        "sentence": "Das Problem wird zu gro\u00df, um es zu verstehen.",
+        "clicked_words": [],
+        "focus_words": [
+            "zu",
+            "werden"
+        ],
+        "english_translation": "The problem is becoming too big to understand.",
+        "user_translation": "The problem is becoming to big to understand",
+        "word_validations": {
+            "zu": true,
+            "werden": true
+        }
+    },
+    {
+        "sentence": "Wir m\u00fcssen diese wichtige Ma\u00dfnahme heute buchen.",
+        "clicked_words": [
+            "buchen"
+        ],
+        "focus_words": [
+            "buchen",
+            "Ma\u00dfnahme"
+        ],
+        "english_translation": "We need to book this important measure today.",
+        "user_translation": "We must book the important measures today",
+        "word_validations": {
+            "buchen": true,
+            "Ma\u00dfnahme": true
+        }
+    },
+    {
+        "sentence": "Die Band spielt gut, und darunter sitzen viele Menschen.",
+        "clicked_words": [
+            "darunter"
+        ],
+        "focus_words": [
+            "Band",
+            "darunter"
+        ],
+        "english_translation": "The band plays well, and there are lots of people sitting underneath.",
+        "user_translation": "The band plays well, and many people sit around them",
+        "word_validations": {
+            "Band": true,
+            "darunter": true
+        }
+    },
+    {
+        "sentence": "Derjenige Wald ist sehr gro\u00df, in dem wir heute gehen.",
+        "clicked_words": [],
+        "focus_words": [
+            "derjenige, diejenige, dasjenige",
+            "Wald"
+        ],
+        "english_translation": "The forest we are walking through today is very large.",
+        "user_translation": "One of the forests is very big, and we're going to it today",
+        "word_validations": {
+            "derjenige, diejenige, dasjenige": true,
+            "Wald": true
+        }
+    },
+    {
+        "sentence": "Am Schluss unserer Reise haben wir die kleine Insel verlassen.",
+        "clicked_words": [
+            "Am",
+            "Schluss"
+        ],
+        "focus_words": [
+            "Insel",
+            "Schluss"
+        ],
+        "english_translation": "We left the small island at the end of our trip.",
+        "user_translation": "At the river on our trip we missed the small island",
+        "word_validations": {
+            "Insel": true,
+            "Schluss": false
+        }
+    },
+    {
+        "sentence": "Das deutsche Volk h\u00f6rte die Rede des Pr\u00e4sidenten, und anschlie\u00dfend sprachen die Menschen \u00fcber die politische Entwicklung.",
+        "clicked_words": [
+            "anschlie\u00dfend"
+        ],
+        "focus_words": [
+            "anschlie\u00dfend",
+            "Volk"
+        ],
+        "english_translation": "The German people listened to the President's speech, and afterwards people talked about political developments.",
+        "user_translation": "German people heard the presidents talk, and afterwards the people spoke about the political developments",
+        "word_validations": {
+            "anschlie\u00dfend": false,
+            "Volk": true
+        }
+    },
+    {
+        "sentence": "Am Schluss des kulturellen Programms sind viele G\u00e4ste in der Stadt zusammen geblieben.",
+        "clicked_words": [],
+        "focus_words": [
+            "Schluss",
+            "kulturell"
+        ],
+        "english_translation": "At the end of the cultural program, many guests stayed together in the city.",
+        "user_translation": "At the end of the cultural program, many guests remain together in the city",
+        "word_validations": {
+            "Schluss": true,
+            "kulturell": true
+        }
+    },
+    {
+        "sentence": "Die neue Ma\u00dfnahme der Stadt gegen die laute Band kam bei den Leuten nicht gut an.",
+        "clicked_words": [],
+        "focus_words": [
+            "Ma\u00dfnahme",
+            "Band"
+        ],
+        "english_translation": "The city's new measure against the loud band was not well received by the people.",
+        "user_translation": "The new measure of the city against loud band didn't arrive well to people",
+        "word_validations": {
+            "Ma\u00dfnahme": true,
+            "Band": true
+        }
+    },
+    {
+        "sentence": "Er kaufte zehn neue B\u00fccher, darunter drei deutsche Texte, und anschlie\u00dfend las er sie im Haus.",
+        "clicked_words": [
+            "las"
+        ],
+        "focus_words": [
+            "darunter",
+            "anschlie\u00dfend"
+        ],
+        "english_translation": "He bought ten new books, including three German texts, and then read them in the house.",
+        "user_translation": "He bought ten new books, over three german texts, and finally left her in the house",
+        "word_validations": {
+            "darunter": false,
+            "anschlie\u00dfend": true
+        }
+    },
+    {
+        "sentence": "Derjenige, der in dem Wald wohnt, kennt alle Wege und B\u00e4ume gut.",
+        "clicked_words": [],
+        "focus_words": [
+            "derjenige, diejenige, dasjenige",
+            "Wald"
+        ],
+        "english_translation": "The person who lives in the forest knows all the paths and trees well.",
+        "user_translation": "The one who lives in the forest knows all the paths and trees well",
+        "word_validations": {
+            "derjenige, diejenige, dasjenige": true,
+            "Wald": true
+        }
+    },
+    {
+        "sentence": "Der Professor muss im September den Begriff neu definieren.",
+        "clicked_words": [
+            "Begriff"
+        ],
+        "focus_words": [
+            "definieren",
+            "September"
+        ],
+        "english_translation": "The professor will have to redefine the term in September.",
+        "user_translation": "The professor must define the new term in september",
+        "word_validations": {
+            "definieren": true,
+            "September": true
+        }
+    },
+    {
+        "sentence": "Der neue Ansatz in meinem Beruf ist wirklich interessant.",
+        "clicked_words": [],
+        "focus_words": [
+            "Beruf",
+            "Ansatz"
+        ],
+        "english_translation": "The new approach to my job is really interesting.",
+        "user_translation": "The new project at my job is really interesting",
+        "word_validations": {
+            "Beruf": true,
+            "Ansatz": false
+        }
+    },
+    {
+        "sentence": "Wenn Angst herrscht, ist es n\u00f6tig, dass die Menschen zusammen bleiben.",
+        "clicked_words": [
+            "herrscht"
+        ],
+        "focus_words": [
+            "n\u00f6tig",
+            "herrschen"
+        ],
+        "english_translation": "When there is fear, it is necessary for people to stay together.",
+        "user_translation": "When fear originals, it is necessary , that people stay together",
+        "word_validations": {
+            "n\u00f6tig": true,
+            "herrschen": true
+        }
+    },
+    {
+        "sentence": "Der gro\u00dfe Sieg wurde in der K\u00fcche mit Freunden gefeiert.",
+        "clicked_words": [
+            "Sieg"
+        ],
+        "focus_words": [
+            "Sieg",
+            "K\u00fcche"
+        ],
+        "english_translation": "The big victory was celebrated in the kitchen with friends.",
+        "user_translation": "The big victory beca",
+        "word_validations": {
+            "Sieg": false,
+            "K\u00fcche": true
+        }
+    },
+    {
+        "sentence": "Die Regierung hat einen neuen Ansatz f\u00fcr die kleine Insel.",
+        "clicked_words": [],
+        "focus_words": [
+            "Ansatz",
+            "Insel"
+        ],
+        "english_translation": "The government has a new approach for the small island.",
+        "user_translation": "The government at a new approach for the small island",
+        "word_validations": {
+            "Ansatz": true,
+            "Insel": true
+        }
+    },
+    {
+        "sentence": "Das deutsche Volk lebt in verschiedenen St\u00e4dten, und darunter sind gro\u00dfe und kleine Orte.",
+        "clicked_words": [],
+        "focus_words": [
+            "Volk",
+            "darunter"
+        ],
+        "english_translation": "The German people live in different cities, and among them are large and small towns.",
+        "user_translation": "The german people live in various cities, and they are big and small cities",
+        "word_validations": {
+            "Volk": true,
+            "darunter": true
+        }
+    },
+    {
+        "sentence": "Der kulturelle Sieg in Europa ist f\u00fcr die Kunst besonders wichtig.",
+        "clicked_words": [],
+        "focus_words": [
+            "kulturell",
+            "Sieg"
+        ],
+        "english_translation": "The cultural victory in Europe is particularly important for art.",
+        "user_translation": "The cultural victory in europe is very important for art",
+        "word_validations": {
+            "kulturell": true,
+            "Sieg": true
+        }
+    },
+    {
+        "sentence": "Der Professor definiert im September neue Grundlagen f\u00fcr die erste Vorlesung.",
+        "clicked_words": [
+            "Grundlagen",
+            "Vorlesung"
+        ],
+        "focus_words": [
+            "definieren",
+            "September"
+        ],
+        "english_translation": "The professor defines new principles for the first lecture in September.",
+        "user_translation": "The professor defines new fundamentals for the first lecture in september",
+        "word_validations": {
+            "definieren": true,
+            "September": true
+        }
+    },
+    {
+        "sentence": "F\u00fcr meinen Beruf ist viel Erfahrung n\u00f6tig.",
+        "clicked_words": [],
+        "focus_words": [
+            "Beruf",
+            "n\u00f6tig"
+        ],
+        "english_translation": "My job requires a lot of experience.",
+        "user_translation": "a lot of experience is needed for my job",
+        "word_validations": {
+            "Beruf": true,
+            "n\u00f6tig": true
+        }
+    },
+    {
+        "sentence": "In unserer K\u00fcche herrscht immer eine gute Ordnung.",
+        "clicked_words": [
+            "Ordnung"
+        ],
+        "focus_words": [
+            "herrschen",
+            "K\u00fcche"
+        ],
+        "english_translation": "Our kitchen is always well organized.",
+        "user_translation": "In our kitchen there's always good tidiness",
+        "word_validations": {
+            "herrschen": true,
+            "K\u00fcche": true
+        }
+    },
+    {
+        "sentence": "Er geht t\u00e4glich in die neue Firma und arbeitet dort sehr gern.",
+        "clicked_words": [],
+        "focus_words": [
+            "t\u00e4glich",
+            "Firma"
+        ],
+        "english_translation": "He goes to the new company every day and really enjoys working there.",
+        "user_translation": "He goes daily to the new business and greatly enjoys workiing there",
+        "word_validations": {
+            "t\u00e4glich": true,
+            "Firma": true
+        }
+    },
+    {
+        "sentence": "Die Kinder haben viel Spa\u00df in der neuen Schule.",
+        "clicked_words": [],
+        "focus_words": [
+            "Spa\u00df",
+            "in"
+        ],
+        "english_translation": "The children have a lot of fun at the new school.",
+        "user_translation": "The children have a lot of fun at their new school",
+        "word_validations": {
+            "Spa\u00df": true,
+            "in": true
+        }
+    },
+    {
+        "sentence": "Die Firma stellt am Montag neue Produkte her.",
+        "clicked_words": [],
+        "focus_words": [
+            "herstellen",
+            "Montag"
+        ],
+        "english_translation": "The company manufactures new products on Monday.",
+        "user_translation": "The business produces new products on monday",
+        "word_validations": {
+            "herstellen": true,
+            "Montag": true
+        }
+    },
+    {
+        "sentence": "Das neue Programm umfasst alle wichtigen Projekte bis Mai.",
+        "clicked_words": [
+            "umfasst"
+        ],
+        "focus_words": [
+            "umfassen",
+            "Mai"
+        ],
+        "english_translation": "The new program includes all important projects until May.",
+        "user_translation": "The new program includes all important projects until may",
+        "word_validations": {
+            "umfassen": false,
+            "Mai": true
+        }
+    },
+    {
+        "sentence": "Ich \u00fcberlege, ob dieser neue Roman wirklich so interessant ist, wie alle sagen.",
+        "clicked_words": [
+            "\u00fcberlege"
+        ],
+        "focus_words": [
+            "\u00fcberlegen",
+            "Roman"
+        ],
+        "english_translation": "I'm wondering whether this new novel is really as interesting as everyone says.",
+        "user_translation": "I consider, whether this new novel is really interesting, like everyone says",
+        "word_validations": {
+            "\u00fcberlegen": true,
+            "Roman": true
+        }
+    },
+    {
+        "sentence": "Im Januar wird die Situation an der Universit\u00e4t besonders ernst.",
+        "clicked_words": [],
+        "focus_words": [
+            "Januar",
+            "ernst"
+        ],
+        "english_translation": "The situation at the university becomes particularly serious in January.",
+        "user_translation": "In january, the the situation at the university is becoming especially serious",
+        "word_validations": {
+            "Januar": true,
+            "ernst": true
+        }
+    },
+    {
+        "sentence": "Die Firma stellt t\u00e4glich neue Autos her.",
+        "clicked_words": [],
+        "focus_words": [
+            "t\u00e4glich",
+            "herstellen"
+        ],
+        "english_translation": "The company produces new cars every day.",
+        "user_translation": "The business produces new cars daily ",
+        "word_validations": {
+            "t\u00e4glich": true,
+            "herstellen": true
+        }
+    },
+    {
+        "sentence": "Am Montag haben wir viel Spa\u00df in der Schule.",
+        "clicked_words": [],
+        "focus_words": [
+            "Spa\u00df",
+            "Montag"
+        ],
+        "english_translation": "We have a lot of fun at school on Monday.",
+        "user_translation": "On monday we have a lot fun in school",
+        "word_validations": {
+            "Spa\u00df": true,
+            "Montag": true
+        }
+    },
+    {
+        "sentence": "Ich \u00fcberlege, ob ich den neuen Roman lesen soll.",
+        "clicked_words": [],
+        "focus_words": [
+            "\u00fcberlegen",
+            "Roman"
+        ],
+        "english_translation": "I'm thinking about reading the new novel.",
+        "user_translation": "I'm considering, whether I should read the new novel",
+        "word_validations": {
+            "\u00fcberlegen": true,
+            "Roman": true
+        }
+    },
+    {
+        "sentence": "Der Mai umfasst vier Wochen und zwei Tage.",
+        "clicked_words": [],
+        "focus_words": [
+            "umfassen",
+            "Mai"
+        ],
+        "english_translation": "May comprises four weeks and two days.",
+        "user_translation": "May contains 4 weeks and 2 days",
+        "word_validations": {
+            "umfassen": true,
+            "Mai": true
+        }
+    },
+    {
+        "sentence": "Die jeweiligen Gruppen k\u00e4mpfen f\u00fcr ihre eigenen Interessen.",
+        "clicked_words": [],
+        "focus_words": [
+            "k\u00e4mpfen",
+            "jeweilig"
+        ],
+        "english_translation": "The respective groups fight for their own interests.",
+        "user_translation": "Each one the groups fight for their interests",
+        "word_validations": {
+            "k\u00e4mpfen": true,
+            "jeweilig": true
+        }
+    },
+    {
+        "sentence": "Ich verspreche dir, dass ich f\u00fcr das neue Projekt verantwortlich sein werde.",
+        "clicked_words": [],
+        "focus_words": [
+            "verantwortlich",
+            "versprechen"
+        ],
+        "english_translation": "I promise you that I will be responsible for the new project.",
+        "user_translation": "I promise you, that I will become responsible for the new project",
+        "word_validations": {
+            "verantwortlich": true,
+            "versprechen": true
+        }
+    },
+    {
+        "sentence": "Die neun Aufgaben sind vollst\u00e4ndig gel\u00f6st.",
+        "clicked_words": [
+            "Aufgaben",
+            "gel\u00f6st"
+        ],
+        "focus_words": [
+            "neun",
+            "vollst\u00e4ndig"
+        ],
+        "english_translation": "The nine tasks are completely solved.",
+        "user_translation": "The new problems are completely solved",
+        "word_validations": {
+            "neun": false,
+            "vollst\u00e4ndig": true
+        }
+    },
+    {
+        "sentence": "Mit einem schwachen R\u00fccken k\u00f6nnen wir nicht schwere Sachen heben.",
+        "clicked_words": [
+            "R\u00fccken"
+        ],
+        "focus_words": [
+            "R\u00fccken",
+            "heben"
+        ],
+        "english_translation": "We can't lift heavy things with a weak back.",
+        "user_translation": "With a weak back, we can't lift heavy things",
+        "word_validations": {
+            "R\u00fccken": false,
+            "heben": true
+        }
+    },
+    {
+        "sentence": "In der Natur existieren viele Tiere, die sch\u00f6n singen k\u00f6nnen.",
+        "clicked_words": [],
+        "focus_words": [
+            "existieren",
+            "singen"
+        ],
+        "english_translation": "There are many animals in nature that can sing beautifully.",
+        "user_translation": "In nature, there exist many animans that can sing beautifully",
+        "word_validations": {
+            "existieren": true,
+            "singen": true
+        }
+    },
+    {
+        "sentence": "Die neun unterschiedlichen Molek\u00fcle haben eine gro\u00dfe Masse.",
+        "clicked_words": [],
+        "focus_words": [
+            "neun",
+            "Masse"
+        ],
+        "english_translation": "The nine different molecules have a large mass.",
+        "user_translation": "The nine different molecules have a big mass",
+        "word_validations": {
+            "neun": true,
+            "Masse": true
+        }
+    },
+    {
+        "sentence": "Der Inhalt liegt auf seinem R\u00fccken.",
+        "clicked_words": [
+            "Inhalt"
+        ],
+        "focus_words": [
+            "R\u00fccken",
+            "Inhalt"
+        ],
+        "english_translation": "The contents are on his back.",
+        "user_translation": "The contents lay on his back",
+        "word_validations": {
+            "R\u00fccken": true,
+            "Inhalt": false
+        }
+    },
+    {
+        "sentence": "Das wichtige Ereignis scheiterte, weil die Menschen nicht kommen konnten.",
+        "clicked_words": [
+            "Ereignis",
+            "scheiterte"
+        ],
+        "focus_words": [
+            "scheitern",
+            "Ereignis"
+        ],
+        "english_translation": "The important event failed because the people could not come.",
+        "user_translation": "The important event failed, because people couldn't come",
+        "word_validations": {
+            "scheitern": false,
+            "Ereignis": false
+        }
+    },
+    {
+        "sentence": "Der Professor spricht lediglich \u00fcber organische Chemie.",
+        "clicked_words": [
+            "lediglich"
+        ],
+        "focus_words": [
+            "lediglich",
+            "organisch"
+        ],
+        "english_translation": "The professor only talks about organic chemistry.",
+        "user_translation": "The professor merely speaks about organic chemistry",
+        "word_validations": {
+            "lediglich": false,
+            "organisch": true
+        }
+    },
+    {
+        "sentence": "Die Definition unterscheidet sich von dem Inhalt, aber beide geh\u00f6ren zum Text.",
+        "clicked_words": [
+            "aber"
+        ],
+        "focus_words": [
+            "Inhalt",
+            "Definition"
+        ],
+        "english_translation": "The definition differs from the content, but both are part of the text.",
+        "user_translation": "The different definition ",
+        "word_validations": {
+            "Inhalt": true,
+            "Definition": true
+        }
+    },
+    {
+        "sentence": "Das Projekt ist ernst, aber wir scheitern nicht.",
+        "clicked_words": [],
+        "focus_words": [
+            "scheitern",
+            "ernst"
+        ],
+        "english_translation": "The project is serious, but we are not failing.",
+        "user_translation": "The project is serious, but we won't fail.",
+        "word_validations": {
+            "scheitern": true,
+            "ernst": true
+        }
+    },
+    {
+        "sentence": "Das wichtige Ereignis haben lediglich zwei Menschen gesehen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Ereignis",
+            "lediglich"
+        ],
+        "english_translation": "Only two people saw this important event.",
+        "user_translation": "ONly two people saw the important event",
+        "word_validations": {
+            "Ereignis": true,
+            "lediglich": true
+        }
+    },
+    {
+        "sentence": "Der Rest des Tages war ich sehr gl\u00fccklich.",
+        "clicked_words": [],
+        "focus_words": [
+            "Rest",
+            "gl\u00fccklich"
+        ],
+        "english_translation": "The rest of the day I was very happy.",
+        "user_translation": "The rest of the days I was very happy",
+        "word_validations": {
+            "Rest": true,
+            "gl\u00fccklich": true
+        }
+    },
+    {
+        "sentence": "Ich beschlie\u00dfe heute, meinen Wunsch nach Freiheit zu erf\u00fcllen.",
+        "clicked_words": [],
+        "focus_words": [
+            "beschlie\u00dfen",
+            "Wunsch"
+        ],
+        "english_translation": "Today I decide to fulfill my desire for freedom.",
+        "user_translation": "I decide today, to fulfill my wish in my freetime",
+        "word_validations": {
+            "beschlie\u00dfen": true,
+            "Wunsch": true
+        }
+    },
+    {
+        "sentence": "Die verantwortlichen Menschen k\u00e4mpfen f\u00fcr ihre Rechte in Deutschland.",
+        "clicked_words": [],
+        "focus_words": [
+            "k\u00e4mpfen",
+            "verantwortlich"
+        ],
+        "english_translation": "The people responsible are fighting for their rights in Germany.",
+        "user_translation": "The responsible people fight for their rights in germany",
+        "word_validations": {
+            "k\u00e4mpfen": true,
+            "verantwortlich": true
+        }
+    },
+    {
+        "sentence": "Im Januar hat er mir versprochen, ein neues Auto zu kaufen.",
+        "clicked_words": [],
+        "focus_words": [
+            "versprechen",
+            "Januar"
+        ],
+        "english_translation": "In January, he promised to buy me a new car.",
+        "user_translation": "In january he promised me, to be a new car",
+        "word_validations": {
+            "versprechen": true,
+            "Januar": true
+        }
+    },
+    {
+        "sentence": "Die vollst\u00e4ndig neue Welt, die wir uns vorstellen, kann nur in unseren Tr\u00e4umen existieren.",
+        "clicked_words": [],
+        "focus_words": [
+            "existieren",
+            "vollst\u00e4ndig"
+        ],
+        "english_translation": "The completely new world that we imagine can only exist in our dreams.",
+        "user_translation": "The completely new world, that we imagine, can only exist in our dreams",
+        "word_validations": {
+            "existieren": true,
+            "vollst\u00e4ndig": true
+        }
+    },
+    {
+        "sentence": "Die gro\u00dfe Masse k\u00f6nnen wir nur zusammen heben.",
+        "clicked_words": [],
+        "focus_words": [
+            "Masse",
+            "heben"
+        ],
+        "english_translation": "We can only lift the large mass together.",
+        "user_translation": "We can only life the big mass together",
+        "word_validations": {
+            "Masse": true,
+            "heben": true
+        }
+    },
+    {
+        "sentence": "Die Sch\u00fcler singen in ihrer jeweiligen Klasse.",
+        "clicked_words": [],
+        "focus_words": [
+            "singen",
+            "jeweilig"
+        ],
+        "english_translation": "The pupils sing in their respective classes.",
+        "user_translation": "The school kids sing in ",
+        "word_validations": {
+            "singen": true,
+            "jeweilig": true
+        }
+    },
+    {
+        "sentence": "Das dicke Buch enth\u00e4lt viele wichtige Definitionen f\u00fcr die Studenten.",
+        "clicked_words": [],
+        "focus_words": [
+            "Definition",
+            "dick"
+        ],
+        "english_translation": "The thick book contains many important definitions for students.",
+        "user_translation": "The thick book contains many important definitions for students",
+        "word_validations": {
+            "Definition": true,
+            "dick": true
+        }
     }
 ]

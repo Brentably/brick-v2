@@ -38,9 +38,17 @@ const Sentence: React.FC<SentenceProps> = ({ sentenceToTranslateData, setSentenc
   const getTranslationForToken = async (id: number) => {
     const tokens = sentenceToTranslateData.data.filter((token) => token.id === id);
     let wordToTranslate = '';
-    if (tokens.length === 1) wordToTranslate = tokens[0].token;
-    if (tokens.length === 2) wordToTranslate = tokens[1].token + tokens[0].token;
-    if (tokens.length > 2) {
+    if (tokens.length === 1) {
+      wordToTranslate = tokens[0].token;
+    } else if (tokens.length === 2) {
+      // Ensure tokens are concatenated in the correct order based on their original positions
+      const sortedTokens = tokens.sort((a, b) => {
+        const aIndex = sentenceToTranslateData.data.findIndex(t => t === a);
+        const bIndex = sentenceToTranslateData.data.findIndex(t => t === b);
+        return aIndex - bIndex;
+      });
+      wordToTranslate = sortedTokens.map(t => t.token).join('');
+    } else if (tokens.length > 2) {
       throw new Error(`>2 tokens with same id. id is ${id}. tokens: ${JSON.stringify(sentenceToTranslateData.data)}`);
     }
     return await getEnglishTranslation(wordToTranslate, sentenceToTranslateData.message);
@@ -62,7 +70,7 @@ const Sentence: React.FC<SentenceProps> = ({ sentenceToTranslateData, setSentenc
           tokenInfo={tokenInfo}
           handleTokenClick={handleTokenClick}
           isHovered={tokenInfo.id === hoveredId && hoveredId !== null}
-          onMouseEnter={() => handleMouseEnter(tokenInfo.id!)}
+          onMouseEnter={() => tokenInfo.id !== null && tokenInfo.id !== undefined && handleMouseEnter(tokenInfo.id)}
           onMouseLeave={handleMouseLeave}
         />
       ))}
@@ -81,7 +89,8 @@ interface TokenProps {
 }
 
 const Token: React.FC<TokenProps> = ({ tokenInfo, handleTokenClick, isHovered, onMouseEnter, onMouseLeave }) => {
-  const isGrammarToken = !tokenInfo.id;
+  // Fix: Properly check if id is null or undefined to determine if it's a grammar token
+  const isGrammarToken = tokenInfo.id === null || tokenInfo.id === undefined;
   const baseClass = isGrammarToken ? '' : 'cursor-pointer';
   const hoverClass = isHovered ? 'bg-lime-100' : '';
 

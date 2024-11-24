@@ -128,7 +128,11 @@ def load_lookup_table():
 full_lookup_table: dict[str, list[str]] = load_lookup_table()
 
 
-def get_focus_words(number_of_words: int = 2): 
+# get a random sample of words from the words that are due soon
+def get_focus_words(): 
+    NUMBER_OF_WORDS = 2
+    NUMBER_OF_SAMPLE_WORDS = NUMBER_OF_WORDS * 2
+    
     with open("db.json", "r") as db_file:
         db_data = json.load(db_file)
         words_data = db_data.get("user", {}).get("words", {})
@@ -138,22 +142,21 @@ def get_focus_words(number_of_words: int = 2):
         print('sorted words')
         print(sorted_words[:10])
         
-        
-        words = []
-        for _ in range(number_of_words):
+        words_to_sample_from = []
+        for _ in range(NUMBER_OF_SAMPLE_WORDS):
             # Choose the word with the soonest due date
-            if datetime.fromisoformat(sorted_words[len(words)][1]["due"]) < datetime.now(timezone.utc):
-                words.append(sorted_words[len(words)][0])
+            if datetime.fromisoformat(sorted_words[len(words_to_sample_from)][1]["due"]) < datetime.now(timezone.utc):
+                words_to_sample_from.append(sorted_words[len(words_to_sample_from)][0])
             else:
                 # or the next word in the full list
                 for word in full_word_list:
-                    if word not in words_data and word not in words:
-                        words.append(word)
+                    if word not in words_data and word not in words_to_sample_from:
+                        words_to_sample_from.append(word)
                         break
-        if len(words) < number_of_words:
-            raise Exception(f"Not enough words to meet focus_words requirement. Requested {number_of_words} words, but only found {len(words)} words.")
+        if len(words_to_sample_from) < NUMBER_OF_WORDS:
+            raise Exception(f"Not enough words to meet focus_words requirement. Requested {NUMBER_OF_WORDS} words, but only found {len(words_to_sample_from)} words.")
         
-        return words
+        return random.sample(words_to_sample_from, NUMBER_OF_WORDS)
             
     
         
