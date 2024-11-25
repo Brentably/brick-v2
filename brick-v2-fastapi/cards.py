@@ -27,6 +27,7 @@ def create_new_review_card_multiple_times(times=5):
 # a quick average of the estimated retrivability of all words
 def calc_total_proficiency():
     proficiency_sum = 0
+    due_cards_count = 0
     full_word_list = load_full_word_list()
     count = 0 
     for word in full_word_list:
@@ -34,8 +35,11 @@ def calc_total_proficiency():
             db_data = json.load(db_file).get("user", {}).get("words", {})
             if word in db_data:
                 count += 1
-                retrivability = fsrs.approximate_retrievability(Card.from_dict(db_data[word]))
-                # print(f"{word}: {retrivability}")
+                card = Card.from_dict(db_data[word])
+                retrivability = fsrs.approximate_retrievability(card)
                 proficiency_sum += retrivability
+                if card.due <= datetime.now(timezone.utc):
+                    due_cards_count += 1
     print(f"count: {count} / {len(full_word_list)}")
+    print(f"Due cards count: {due_cards_count}")
     return float((proficiency_sum / len(full_word_list)).real)

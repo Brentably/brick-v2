@@ -3756,5 +3756,554 @@
             "Haut": true,
             "Zentrum": true
         }
+    },
+    {
+        "sentence": "Ich kann nicht fassen, warum Menschen andere Menschen t\u00f6ten.",
+        "clicked_words": [],
+        "focus_words": [
+            "t\u00f6ten",
+            "fassen"
+        ],
+        "english_translation": "I can't understand why people kill other people.",
+        "user_translation": "I can't understand why people kill other people",
+        "word_validations": {
+            "t\u00f6ten": true,
+            "fassen": true
+        }
+    },
+    {
+        "sentence": "Hey, das Glas ist gebrochen!",
+        "clicked_words": [],
+        "focus_words": [
+            "brechen",
+            "hey"
+        ],
+        "english_translation": "Hey, the glass is broken!",
+        "user_translation": "Hey the glass is broken",
+        "word_validations": {
+            "brechen": true,
+            "hey": true
+        }
+    },
+    {
+        "sentence": "Das neue medizinische Zentrum behandelt Probleme mit der Haut.",
+        "clicked_words": [],
+        "focus_words": [
+            "Haut",
+            "Zentrum"
+        ],
+        "english_translation": "The new medical center treats skin problems.",
+        "user_translation": "The new medicine center treats problems with skin",
+        "word_validations": {
+            "Haut": true,
+            "Zentrum": true
+        }
+    },
+    {
+        "sentence": "Die Politiker m\u00fcssen sich von der Partei entfernen.",
+        "clicked_words": [],
+        "focus_words": [
+            "Politiker",
+            "entfernen"
+        ],
+        "english_translation": "Politicians must distance themselves from the party.",
+        "user_translation": "The poltician must leave his party",
+        "word_validations": {
+            "Politiker": true,
+            "entfernen": false
+        }
+    },
+    {
+        "sentence": "Im Juni treffen wir uns um drei Uhr in der Stadt.",
+        "clicked_words": [],
+        "focus_words": [
+            "um",
+            "Juni"
+        ],
+        "english_translation": "In June, we meet in the city at three o'clock.",
+        "user_translation": "In june, we meet at 3 o clock in the city",
+        "word_validations": {
+            "um": true,
+            "Juni": true
+        }
+    },
+    {
+        "sentence": "Er kauft sich ein neues Auto.",
+        "clicked_words": [],
+        "focus_words": [
+            "ein",
+            "neu"
+        ],
+        "english_translation": "He buys a new car.",
+        "user_translation": "He bought a new car",
+        "word_validations": {
+            "ein": true,
+            "neu": true
+        }
+    },
+    {
+        "sentence": "Der Mann geht durch den dunklen Gang und anschlie\u00dfend bleibt er vor einer T\u00fcr stehen.",
+        "clicked_words": [
+            "anschlie\u00dfend"
+        ],
+        "focus_words": [
+            "anschlie\u00dfend",
+            "Gang"
+        ],
+        "english_translation": "The man walks through the dark corridor and then stops in front of a door.",
+        "user_translation": "The man goes through the dark corridor and finally he stands in front of a dor",
+        "word_validations": {
+            "anschlie\u00dfend": true,
+            "Gang": true
+        }
+    },
+    {
+        "sentence": "Ich lerne viel und brauche dazu sehr viel Zeit.",
+        "clicked_words": [],
+        "focus_words": [
+            "viel",
+            "dazu"
+        ],
+        "english_translation": "I learn a lot and need a lot of time to do so.",
+        "user_translation": "I learn a lot and need a lot of time for it",
+        "word_validations": {
+            "viel": true,
+            "dazu": true
+        }
+    },
+    {
+        "sentence": "Der Sieg \u00fcber die schwere Krankheit gab dem Menschen neue Kraft und Hoffnung.",
+        "clicked_words": [],
+        "focus_words": [
+            "Krankheit",
+            "Sieg"
+        ],
+        "english_translation": "The victory over the serious illness gave the person new strength and hope.",
+        "user_translation": "The victory over the difficult illness gave people new strength and hope",
+        "word_validations": {
+            "Krankheit": true,
+            "Sieg": true
+        }
+    },
+    {
+        "sentence": "Das ist halt der richtige Zeitpunkt.",
+        "clicked_words": [],
+        "focus_words": [
+            "halt",
+            "Zeitpunkt"
+        ],
+        "english_translation": "This is just the right time.",
+        "user_translation": "This is just the right time",
+        "word_validations": {
+            "halt": true,
+            "Zeitpunkt": true
+        }
+    },
+    {
+        "sentence": "Der neue Ansatz beginnt um neun Uhr morgen.",
+        "clicked_words": [
+            "Ansatz"
+        ],
+        "focus_words": [
+            "Ansatz",
+            "neun"
+        ],
+        "english_translation": "The new approach starts at nine o'clock in the morning.",
+        "user_translation": "The new attempt begins at nine in the morning",
+        "word_validations": {
+            "Ansatz": false,
+            "neun": true
+        }
+    },
+    {
+        "sentence": "Nach dem wichtigen Ereignis kam der Schluss des Abends viel zu schnell.",
+        "clicked_words": [],
+        "focus_words": [
+            "Ereignis",
+            "Schluss"
+        ],
+        "english_translation": "After this important event, the end of the evening came all too quickly.",
+        "user_translation": "After the important even, the end of the night came too quickly",
+        "word_validations": {
+            "Ereignis": true,
+            "Schluss": true
+        }
+    },
+    {
+        "sentence": "Der neue wissenschaftliche Ansatz macht den Inhalt des Buchs besonders interessant.",
+        "clicked_words": [],
+        "focus_words": [
+            "Ansatz",
+            "Inhalt"
+        ],
+        "english_translation": "The new scientific approach makes the content of the book particularly interesting.",
+        "user_translation": "The new scientific approach makes the content of the book e",
+        "word_validations": {
+            "Ansatz": true,
+            "Inhalt": true
+        }
+    },
+    {
+        "sentence": "Die Gruppe umfasst heute nur noch zehn Menschen, nachdem sich drei Mitglieder entfernt haben.",
+        "clicked_words": [
+            "umfasst"
+        ],
+        "focus_words": [
+            "umfassen",
+            "entfernen"
+        ],
+        "english_translation": "The group now comprises just ten people after three members left.",
+        "user_translation": "The group contains only 10 people today, after three members were removed",
+        "word_validations": {
+            "umfassen": false,
+            "entfernen": false
+        }
+    },
+    {
+        "sentence": "Die Polizei verfolgt den Mann in der dunklen Stra\u00dfe.",
+        "clicked_words": [
+            "verfolgt"
+        ],
+        "focus_words": [
+            "in",
+            "verfolgen"
+        ],
+        "english_translation": "The police pursue the man in the dark street.",
+        "user_translation": "The police pursued the man in the dark street",
+        "word_validations": {
+            "in": true,
+            "verfolgen": false
+        }
+    },
+    {
+        "sentence": "Der gesellschaftliche Schutz der Kinder ist besonders wichtig f\u00fcr unsere Zukunft.",
+        "clicked_words": [],
+        "focus_words": [
+            "gesellschaftlich",
+            "Schutz"
+        ],
+        "english_translation": "The social protection of children is particularly important for our future.",
+        "user_translation": "Community protection of children is especilly importan",
+        "word_validations": {
+            "gesellschaftlich": false,
+            "Schutz": true
+        }
+    },
+    {
+        "sentence": "Er sagt lediglich die Wahrheit, wenn man ihn direkt fragt.",
+        "clicked_words": [],
+        "focus_words": [
+            "Wahrheit",
+            "lediglich"
+        ],
+        "english_translation": "He only tells the truth if you ask him directly.",
+        "user_translation": "Er merely said the true, ",
+        "word_validations": {
+            "Wahrheit": true,
+            "lediglich": true
+        }
+    },
+    {
+        "sentence": "Die chinesischen Zeichen sind sehr schwer zu lernen.",
+        "clicked_words": [
+            "Zeichen"
+        ],
+        "focus_words": [
+            "Zeichen",
+            "chinesisch"
+        ],
+        "english_translation": "The Chinese characters are very difficult to learn.",
+        "user_translation": "The chinese signs are very difficult to learn",
+        "word_validations": {
+            "Zeichen": true,
+            "chinesisch": true
+        }
+    },
+    {
+        "sentence": "Die neue Generation hat einen starken R\u00fccken.",
+        "clicked_words": [],
+        "focus_words": [
+            "Generation",
+            "R\u00fccken"
+        ],
+        "english_translation": "The new generation has a strong back.",
+        "user_translation": "The new generation has a strong back ",
+        "word_validations": {
+            "Generation": true,
+            "R\u00fccken": true
+        }
+    },
+    {
+        "sentence": "Die gesellschaftlichen Ver\u00e4nderungen finden auch hinten im Land statt.",
+        "clicked_words": [],
+        "focus_words": [
+            "gesellschaftlich",
+            "hinten"
+        ],
+        "english_translation": "Social changes are also taking place at the back of the country.",
+        "user_translation": "The social changes, ",
+        "word_validations": {
+            "gesellschaftlich": true,
+            "hinten": true
+        }
+    },
+    {
+        "sentence": "Er scheiterte daran, den alten Garten wieder sch\u00f6n zu machen.",
+        "clicked_words": [],
+        "focus_words": [
+            "scheitern",
+            "Garten"
+        ],
+        "english_translation": "He failed to make the old garden beautiful again.",
+        "user_translation": "He failed to make the old garden pretty again",
+        "word_validations": {
+            "scheitern": true,
+            "Garten": true
+        }
+    },
+    {
+        "sentence": "Der Student verfolgt die physikalischen Prozesse mit gro\u00dfem Interesse.",
+        "clicked_words": [],
+        "focus_words": [
+            "physikalisch",
+            "verfolgen"
+        ],
+        "english_translation": "The student follows the physical processes with great interest.",
+        "user_translation": "The student pursues the physical process with great interest",
+        "word_validations": {
+            "physikalisch": true,
+            "verfolgen": true
+        }
+    },
+    {
+        "sentence": "Angesichts der schweren Zeit leben viele Haushalte heute anders.",
+        "clicked_words": [
+            "Angesichts"
+        ],
+        "focus_words": [
+            "Haushalt",
+            "angesichts"
+        ],
+        "english_translation": "In view of the difficult times, many households live differently today.",
+        "user_translation": "In view of these difficult times, many households live differently",
+        "word_validations": {
+            "Haushalt": true,
+            "angesichts": true
+        }
+    },
+    {
+        "sentence": "Die neue Studie umfasst zwei Bereiche, die einen deutlichen Gegensatz bilden.",
+        "clicked_words": [
+            "Gegensatz"
+        ],
+        "focus_words": [
+            "Gegensatz",
+            "umfassen"
+        ],
+        "english_translation": "The new study covers two areas that form a clear contrast.",
+        "user_translation": "The new studies icnludes to areas, that clearly contrast each other",
+        "word_validations": {
+            "Gegensatz": false,
+            "umfassen": true
+        }
+    },
+    {
+        "sentence": "Der Student fiel mir sofort auf, als er sich von der Schule entfernte.",
+        "clicked_words": [],
+        "focus_words": [
+            "entfernen",
+            "auffallen"
+        ],
+        "english_translation": "I noticed the student as soon as he left the school.",
+        "user_translation": "The student failed me immediately, as he left the school",
+        "word_validations": {
+            "entfernen": true,
+            "auffallen": false
+        }
+    },
+    {
+        "sentence": "Der Lehrer wird die neuen B\u00fccher vermutlich morgen in der Klasse verteilen.",
+        "clicked_words": [
+            "vermutlich",
+            "verteilen"
+        ],
+        "focus_words": [
+            "vermutlich",
+            "verteilen"
+        ],
+        "english_translation": "The teacher will probably distribute the new books in class tomorrow.",
+        "user_translation": "The teacher is probably going to distribute the new books in class tomorrow",
+        "word_validations": {
+            "vermutlich": true,
+            "verteilen": true
+        }
+    },
+    {
+        "sentence": "Im Gegensatz zu gestern kann ich heute meine Mutter nicht anrufen.",
+        "clicked_words": [],
+        "focus_words": [
+            "anrufen",
+            "Gegensatz"
+        ],
+        "english_translation": "Unlike yesterday, I can't call my mother today.",
+        "user_translation": "In contrast to yesterday, I can't c",
+        "word_validations": {
+            "anrufen": true,
+            "Gegensatz": true
+        }
+    },
+    {
+        "sentence": "Falls du die Antwort eindeutig wei\u00dft, kannst du sie sagen.",
+        "clicked_words": [],
+        "focus_words": [
+            "eindeutig",
+            "falls"
+        ],
+        "english_translation": "If you know the answer clearly, you can say it.",
+        "user_translation": "If you clearly know the answer, can you say it",
+        "word_validations": {
+            "eindeutig": true,
+            "falls": true
+        }
+    },
+    {
+        "sentence": "Das wei\u00dfe Papier fiel auf dem schwarzen Tisch sofort auf.",
+        "clicked_words": [],
+        "focus_words": [
+            "Papier",
+            "auffallen"
+        ],
+        "english_translation": "The white paper immediately stood out on the black table.",
+        "user_translation": "The white paper stood out immediately on the black table",
+        "word_validations": {
+            "Papier": true,
+            "auffallen": true
+        }
+    },
+    {
+        "sentence": "Als ich erstmals aus dem Haus heraus kam, sah ich den blauen Himmel.",
+        "clicked_words": [],
+        "focus_words": [
+            "heraus",
+            "erstmals"
+        ],
+        "english_translation": "When I first came out of the house, I saw the blue sky.",
+        "user_translation": "When I first came out of the house, I saw the blue sky",
+        "word_validations": {
+            "heraus": true,
+            "erstmals": true
+        }
+    },
+    {
+        "sentence": "Die Sch\u00fcler m\u00fcssen leise nachdenken, w\u00e4hrend der Professor spricht.",
+        "clicked_words": [],
+        "focus_words": [
+            "leise",
+            "nachdenken"
+        ],
+        "english_translation": "The students have to think quietly while the professor is speaking.",
+        "user_translation": "The schools kids must easily think it over, while the professor is speaking ",
+        "word_validations": {
+            "leise": false,
+            "nachdenken": true
+        }
+    },
+    {
+        "sentence": "Die junge Generation findet neue Wagen interessanter als die alte.",
+        "clicked_words": [],
+        "focus_words": [
+            "Wagen",
+            "Generation"
+        ],
+        "english_translation": "The younger generation finds new cars more interesting than the old ones.",
+        "user_translation": "The young generation finds new risks more inte",
+        "word_validations": {
+            "Wagen": false,
+            "Generation": true
+        }
+    },
+    {
+        "sentence": "Der chinesische Mann sitzt hinten im Haus.",
+        "clicked_words": [],
+        "focus_words": [
+            "hinten",
+            "chinesisch"
+        ],
+        "english_translation": "The Chinese man is sitting at the back of the house.",
+        "user_translation": "The chinese man sits behind the house ",
+        "word_validations": {
+            "hinten": false,
+            "chinesisch": true
+        }
+    },
+    {
+        "sentence": "Ich sage meinem Partner immer die Wahrheit, weil ich wei\u00df, dass Vertrauen wichtig ist.",
+        "clicked_words": [],
+        "focus_words": [
+            "Wahrheit",
+            "Partner"
+        ],
+        "english_translation": "I always tell my partner the truth because I know that trust is important.",
+        "user_translation": "I always tell my partner the truth, because I know, that trust is important",
+        "word_validations": {
+            "Wahrheit": true,
+            "Partner": true
+        }
+    },
+    {
+        "sentence": "Sie gab mir ein leises Zeichen mit der Hand.",
+        "clicked_words": [],
+        "focus_words": [
+            "leise",
+            "Zeichen"
+        ],
+        "english_translation": "She gave me a quiet sign with her hand.",
+        "user_translation": "Sie gave me a quiet sign with her hand",
+        "word_validations": {
+            "leise": true,
+            "Zeichen": true
+        }
+    },
+    {
+        "sentence": "In der Tat lag das neue gro\u00dfe Schiff schon seit zwei Tagen im Meer.",
+        "clicked_words": [],
+        "focus_words": [
+            "Tat",
+            "Schiff"
+        ],
+        "english_translation": "In fact, the new large ship had already been in the sea for two days.",
+        "user_translation": "The new big ship has already been in the sea for 2 days. ",
+        "word_validations": {
+            "Tat": false,
+            "Schiff": true
+        }
+    },
+    {
+        "sentence": "In der gro\u00dfen Stadt sehen wir tausend Wagen.",
+        "clicked_words": [],
+        "focus_words": [
+            "tausend",
+            "Wagen"
+        ],
+        "english_translation": "In the big city we see a thousand cars.",
+        "user_translation": "In the big city, we see thousands of cars",
+        "word_validations": {
+            "tausend": true,
+            "Wagen": true
+        }
+    },
+    {
+        "sentence": "Der Schutz der oberen R\u00e4ume ist nicht besonders stark.",
+        "clicked_words": [],
+        "focus_words": [
+            "Schutz",
+            "obere"
+        ],
+        "english_translation": "The protection of the upper rooms is not particularly strong.",
+        "user_translation": "The protection of the upper rooms is not especially strong",
+        "word_validations": {
+            "Schutz": true,
+            "obere": true
+        }
     }
 ]
